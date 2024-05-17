@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace GS.Models
 {
@@ -25,16 +26,22 @@ namespace GS.Models
         public string DayInWeek { get; set; }
 
         public string UserId { get; set; }
-        public string Notes { get; set; }
+        public string ClassLink { get; set; }
+        public float Price { get; set; }
         public int Idst { get; set; }
+        [DeleteBehavior(DeleteBehavior.Restrict)]
         public Subject Subject { get; set; }
         public int Idtimece { get; set; }
-        public TimeCourse timeCourse { get; set; }
-     
+        public TimeCourse TimeCourse { get; set; }
+        public int Idcs { get; set; }
+        [DeleteBehavior(DeleteBehavior.Restrict)]
+        public required Class Class { get; set; }
+        public int Idhk { get; set; }
+        public HomeWork homeWork { get; set; }
+        
         [ForeignKey("UserId")]
         [ValidateNever]
-        public ApplicationUser ApplicationUser { get; set; }
-        public List<CourseDetail> CourseDetails { get; set; }
+        public ApplicationUser? ApplicationUser { get; set; }
 
     }
 }
