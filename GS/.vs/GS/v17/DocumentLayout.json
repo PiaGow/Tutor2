@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "D:\\Study\\DA\\GS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240517185141_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240517185141_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\gs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\gs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\shared\\guess-view\\main.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\shared\\guess-view\\main.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\migrations\\20240517185141_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\migrations\\20240517185141_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -142,7 +158,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -170,7 +186,59 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GS",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\GS.csproj",
+              "RelativeDocumentMoniker": "GS\\GS.csproj",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\GS.csproj",
+              "RelativeToolTip": "GS\\GS.csproj",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-17T19:35:49.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.html",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Shared\\Guess-view\\main.html",
+              "RelativeDocumentMoniker": "GS\\Views\\Shared\\Guess-view\\main.html",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Shared\\Guess-view\\main.html",
+              "RelativeToolTip": "GS\\Views\\Shared\\Guess-view\\main.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-17T19:21:01.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GS\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAALECAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T19:07:35.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GS\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-17T19:06:29.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "20240517185141_Initial.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240517185141_Initial.cs",
               "RelativeDocumentMoniker": "GS\\Migrations\\20240517185141_Initial.cs",
@@ -183,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "20240517184429_Initial.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240517184429_Initial.cs",
               "RelativeDocumentMoniker": "GS\\Migrations\\20240517184429_Initial.cs",
@@ -191,12 +259,11 @@
               "RelativeToolTip": "GS\\Migrations\\20240517184429_Initial.cs",
               "ViewState": "AQIAADQAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:44:30.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T18:44:30.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Course.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Course.cs",
               "RelativeDocumentMoniker": "GS\\Models\\Course.cs",
@@ -204,12 +271,11 @@
               "RelativeToolTip": "GS\\Models\\Course.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAwwCAAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T16:41:50.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T16:41:50.096Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Class.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Class.cs",
               "RelativeDocumentMoniker": "GS\\Models\\Class.cs",
@@ -217,12 +283,11 @@
               "RelativeToolTip": "GS\\Models\\Class.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:07:58.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T18:07:58.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "DACSDbContext.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\DACSDbContext.cs",
               "RelativeDocumentMoniker": "GS\\Models\\DACSDbContext.cs",
@@ -230,12 +295,11 @@
               "RelativeToolTip": "GS\\Models\\DACSDbContext.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAqwCEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T17:19:00.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T17:19:00.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "GS\\Models\\ApplicationUser.cs",
@@ -243,12 +307,11 @@
               "RelativeToolTip": "GS\\Models\\ApplicationUser.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAA1wBcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T16:47:11.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T16:47:11.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Role.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Role.cs",
               "RelativeDocumentMoniker": "GS\\Models\\Role.cs",
@@ -256,12 +319,11 @@
               "RelativeToolTip": "GS\\Models\\Role.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T16:52:44.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T16:52:44.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "HomeWork.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\HomeWork.cs",
               "RelativeDocumentMoniker": "GS\\Models\\HomeWork.cs",
@@ -269,12 +331,11 @@
               "RelativeToolTip": "GS\\Models\\HomeWork.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T16:52:23.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T16:52:23.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Servicer.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Servicer.cs",
               "RelativeDocumentMoniker": "GS\\Models\\Servicer.cs",
@@ -282,12 +343,11 @@
               "RelativeToolTip": "GS\\Models\\Servicer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:43:39.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T15:43:39.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Bill.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Bill.cs",
               "RelativeDocumentMoniker": "GS\\Models\\Bill.cs",
@@ -295,12 +355,11 @@
               "RelativeToolTip": "GS\\Models\\Bill.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAAAA4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:17:18.928Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T15:17:18.928Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Subject.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Subject.cs",
               "RelativeDocumentMoniker": "GS\\Models\\Subject.cs",
@@ -308,12 +367,11 @@
               "RelativeToolTip": "GS\\Models\\Subject.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T16:51:44.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T16:51:44.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\appsettings.json",
               "RelativeDocumentMoniker": "GS\\appsettings.json",
@@ -321,12 +379,11 @@
               "RelativeToolTip": "GS\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-12T17:30:26.799Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-12T17:30:26.799Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "20240517181341_Initial.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240517181341_Initial.cs",
               "RelativeDocumentMoniker": "GS\\Migrations\\20240517181341_Initial.cs",
@@ -334,12 +391,11 @@
               "RelativeToolTip": "GS\\Migrations\\20240517181341_Initial.cs",
               "ViewState": "AQIAACACAAAAAAAAAIAwwCsCAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:13:41.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T18:13:41.528Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Program.cs",
               "RelativeDocumentMoniker": "GS\\Program.cs",
@@ -347,12 +403,11 @@
               "RelativeToolTip": "GS\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T17:14:33.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T17:14:33.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Course\\Index.cshtml",
               "RelativeDocumentMoniker": "GS\\Views\\Course\\Index.cshtml",
@@ -360,12 +415,11 @@
               "RelativeToolTip": "GS\\Views\\Course\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-15T16:07:23.688Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T16:07:23.688Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "_StatusMessage.cshtml",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
               "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
@@ -373,12 +427,11 @@
               "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-13T16:17:20.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T16:17:20.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
@@ -386,12 +439,11 @@
               "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "ViewState": "AQIAACwAAAAAAAAAAIBJwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-15T15:56:18.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T15:56:18.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "RequiredScore.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\RequiredScore.cs",
               "RelativeDocumentMoniker": "GS\\Models\\RequiredScore.cs",
@@ -399,12 +451,11 @@
               "RelativeToolTip": "GS\\Models\\RequiredScore.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAIBJwAkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:32:17.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T15:32:17.265Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -412,12 +463,11 @@
               "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAIBJwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-15T15:56:27.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-15T15:56:27.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "TransactionHistory.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\TransactionHistory.cs",
               "RelativeDocumentMoniker": "GS\\Models\\TransactionHistory.cs",
@@ -425,12 +475,11 @@
               "RelativeToolTip": "GS\\Models\\TransactionHistory.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAxwAoAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:23:05.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T15:23:05.201Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "ScaffoldingReadMe.txt",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "GS\\ScaffoldingReadMe.txt",
@@ -438,12 +487,11 @@
               "RelativeToolTip": "GS\\ScaffoldingReadMe.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-05-13T16:14:26.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-13T16:14:26.423Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "20240513140009_Initial.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240513140009_Initial.cs",
               "RelativeDocumentMoniker": "GS\\Migrations\\20240513140009_Initial.cs",
@@ -454,7 +502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "Ratting.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Ratting.cs",
               "RelativeDocumentMoniker": "GS\\Models\\Ratting.cs",
@@ -462,12 +510,11 @@
               "RelativeToolTip": "GS\\Models\\Ratting.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAxwAkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:37:47.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T15:37:47.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "TimeCourse.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\TimeCourse.cs",
               "RelativeDocumentMoniker": "GS\\Models\\TimeCourse.cs",
@@ -475,12 +522,11 @@
               "RelativeToolTip": "GS\\Models\\TimeCourse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAIBJwAsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T16:52:00.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T16:52:00.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "20240512180528_Initial.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512180528_Initial.cs",
               "RelativeDocumentMoniker": "GS\\Migrations\\20240512180528_Initial.cs",
@@ -491,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Assess.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Assess.cs",
               "RelativeDocumentMoniker": "GS\\Models\\Assess.cs",
@@ -499,12 +545,11 @@
               "RelativeToolTip": "GS\\Models\\Assess.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAA+wA8AAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:35:45.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T15:35:45.336Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "20240512180024_Initial.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512180024_Initial.cs",
               "RelativeDocumentMoniker": "GS\\Migrations\\20240512180024_Initial.cs",
@@ -515,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "20240512175455_Initial.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512175455_Initial.cs",
               "RelativeDocumentMoniker": "GS\\Migrations\\20240512175455_Initial.cs",
@@ -526,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "20240512175120_Initial.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512175120_Initial.cs",
               "RelativeDocumentMoniker": "GS\\Migrations\\20240512175120_Initial.cs",
@@ -537,7 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "20240512174425_Initial.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512174425_Initial.cs",
               "RelativeDocumentMoniker": "GS\\Migrations\\20240512174425_Initial.cs",
@@ -548,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "20240512173945_Initial.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512173945_Initial.cs",
               "RelativeDocumentMoniker": "GS\\Migrations\\20240512173945_Initial.cs",
@@ -559,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 35,
               "Title": "SectionExtensions.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Extensions\\SectionExtensions.cs",
               "RelativeDocumentMoniker": "GS\\Extensions\\SectionExtensions.cs",
@@ -567,12 +612,11 @@
               "RelativeToolTip": "GS\\Extensions\\SectionExtensions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:57:00.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-11T15:57:00.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 36,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "GS\\Models\\ErrorViewModel.cs",
@@ -580,8 +624,7 @@
               "RelativeToolTip": "GS\\Models\\ErrorViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T17:02:00.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T17:02:00.749Z"
             }
           ]
         },

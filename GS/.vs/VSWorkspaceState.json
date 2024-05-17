@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\GS"
+    "\\GS",
+    "\\GS\\Migrations",
+    "\\GS\\Views",
+    "\\GS\\Views\\Home",
+    "\\GS\\Views\\Shared",
+    "\\GS\\Views\\Shared\\Guess-view"
   ],
-  "SelectedNode": "\\GS.sln",
+  "SelectedNode": "\\GS\\Migrations\\20240517185141_Initial.cs",
   "PreviewInSolutionExplorer": false
 }

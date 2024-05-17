@@ -29,4 +29,10 @@
     <Folder Include="Views\Assess\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\css\.DS_Store" />
+    <None Include="wwwroot\js\.DS_Store" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\.DS_Store" />
+  </ItemGroup>
+
 </Project>
