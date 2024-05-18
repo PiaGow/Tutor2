@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -24,15 +24,14 @@
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Views\Account\" />
-    <Folder Include="Views\HomeWork\" />
-    <Folder Include="Views\Bill\" />
-    <Folder Include="Views\Assess\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\css\.DS_Store" />
     <None Include="wwwroot\js\.DS_Store" />
     <None Include="wwwroot\lib\bootstrap\dist\js\.DS_Store" />
+    <None Include="wwwroot\scss\.DS_Store" />
+    <None Include="wwwroot\scss\bootstrap\.DS_Store" />
   </ItemGroup>
 
 </Project>

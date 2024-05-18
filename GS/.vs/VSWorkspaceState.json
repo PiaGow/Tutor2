@@ -6,8 +6,9 @@
     "\\GS\\Views",
     "\\GS\\Views\\Home",
     "\\GS\\Views\\Shared",
-    "\\GS\\Views\\Shared\\Guess-view"
+    "\\GS\\Views\\Shared\\Guess-view",
+    "\\GS\\wwwroot"
   ],
-  "SelectedNode": "\\GS\\Migrations\\20240517185141_Initial.cs",
+  "SelectedNode": "\\GS.sln",
   "PreviewInSolutionExplorer": false
 }

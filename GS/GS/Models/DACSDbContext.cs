@@ -42,6 +42,7 @@ namespace GS.Models
             public virtual DbSet<TimeCourse> TimeCourses { get; set; }
             public virtual DbSet<HomeWork> HomeWork { get; set; }
             public virtual DbSet<Assess> Assesses { get; set; }
+        public virtual DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public virtual DbSet<Bill> Bills { get; set; }
         public virtual DbSet<Ratting> Ratings { get; set; }
         public virtual DbSet<TransactionHistory> TransactionHistory { get; set; }
