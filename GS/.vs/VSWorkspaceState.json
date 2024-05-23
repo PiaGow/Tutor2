@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\GS",
-    "\\GS\\Migrations",
+    "\\GS\\Controllers",
+    "\\GS\\Repositories",
     "\\GS\\Views",
     "\\GS\\Views\\Home",
     "\\GS\\Views\\Shared",

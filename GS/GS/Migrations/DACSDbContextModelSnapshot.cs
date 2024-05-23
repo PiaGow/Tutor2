@@ -111,6 +111,10 @@ namespace GS.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<string>("UserRole")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<int>("serviceIdService")
                         .HasColumnType("int");
 
@@ -127,6 +131,8 @@ namespace GS.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.HasIndex("SubjectIdst");
+
+                    b.HasIndex("UserRole");
 
                     b.HasIndex("serviceIdService");
 
@@ -603,6 +609,12 @@ namespace GS.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", "IdentityRole")
+                        .WithMany()
+                        .HasForeignKey("UserRole")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("GS.Models.Servicer", "service")
                         .WithMany()
                         .HasForeignKey("serviceIdService")
@@ -610,6 +622,8 @@ namespace GS.Migrations
                         .IsRequired();
 
                     b.Navigation("Class");
+
+                    b.Navigation("IdentityRole");
 
                     b.Navigation("Subject");
 

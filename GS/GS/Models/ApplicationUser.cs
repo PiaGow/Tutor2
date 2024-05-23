@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GS.Models
 {
@@ -20,5 +22,9 @@ namespace GS.Models
         public Class Class { get; set; }
         public int IdService { get; set; }
         public Servicer service { get; set; }
-    }
+        public string UserRole { get; set; }
+		[ForeignKey("UserRole")]
+		[ValidateNever]
+		public IdentityRole? IdentityRole { get; set; }
+	}
 }
