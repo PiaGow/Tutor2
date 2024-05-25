@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GS.Migrations
 {
     /// <inheritdoc />
-    public partial class v2 : Migration
+    public partial class v3 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -26,6 +26,38 @@ namespace GS.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "AspNetUsers",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Age = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Sex = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CreditCardNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IDCard = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IDCardImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    NormalizedEmail = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
+                    EmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
+                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
+                    TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
+                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
+                    LockoutEnabled = table.Column<bool>(type: "bit", nullable: false),
+                    AccessFailedCount = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Class",
                 columns: table => new
                 {
@@ -36,20 +68,6 @@ namespace GS.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Class", x => x.Idcs);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Servicers",
-                columns: table => new
-                {
-                    IdService = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Discount = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Servicers", x => x.IdService);
                 });
 
             migrationBuilder.CreateTable(
@@ -97,89 +115,6 @@ namespace GS.Migrations
                         column: x => x.RoleId,
                         principalTable: "AspNetRoles",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "HomeWork",
-                columns: table => new
-                {
-                    Idhk = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Namehk = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Timestart = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Timeend = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Assignmentsubmitted = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TimeSubmitted = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Idcs = table.Column<int>(type: "int", nullable: false),
-                    ClassIdcs = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_HomeWork", x => x.Idhk);
-                    table.ForeignKey(
-                        name: "FK_HomeWork_Class_ClassIdcs",
-                        column: x => x.ClassIdcs,
-                        principalTable: "Class",
-                        principalColumn: "Idcs",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "AspNetUsers",
-                columns: table => new
-                {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Age = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Sex = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CreditCardNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IDCard = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IDCardImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Discriminator = table.Column<string>(type: "nvarchar(21)", maxLength: 21, nullable: false),
-                    Idst = table.Column<int>(type: "int", nullable: true),
-                    SubjectIdst = table.Column<int>(type: "int", nullable: true),
-                    Idcs = table.Column<int>(type: "int", nullable: true),
-                    ClassIdcs = table.Column<int>(type: "int", nullable: true),
-                    IdService = table.Column<int>(type: "int", nullable: true),
-                    serviceIdService = table.Column<int>(type: "int", nullable: true),
-                    UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    NormalizedEmail = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
-                    EmailConfirmed = table.Column<bool>(type: "bit", nullable: false),
-                    PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
-                    TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
-                    LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    LockoutEnabled = table.Column<bool>(type: "bit", nullable: false),
-                    AccessFailedCount = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AspNetUsers", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_AspNetUsers_Class_ClassIdcs",
-                        column: x => x.ClassIdcs,
-                        principalTable: "Class",
-                        principalColumn: "Idcs",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_AspNetUsers_Servicers_serviceIdService",
-                        column: x => x.serviceIdService,
-                        principalTable: "Servicers",
-                        principalColumn: "IdService",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_AspNetUsers_Subjects_SubjectIdst",
-                        column: x => x.SubjectIdst,
-                        principalTable: "Subjects",
-                        principalColumn: "Idst",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -313,6 +248,166 @@ namespace GS.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Ratings",
+                columns: table => new
+                {
+                    GradeNumber = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    CourseNumber = table.Column<float>(type: "real", nullable: false),
+                    ReviewNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Ratings", x => x.GradeNumber);
+                    table.ForeignKey(
+                        name: "FK_Ratings_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RequiredScores",
+                columns: table => new
+                {
+                    IdRC = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    GPA = table.Column<float>(type: "real", nullable: false),
+                    Achievements = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RequiredScores", x => x.IdRC);
+                    table.ForeignKey(
+                        name: "FK_RequiredScores_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Servicers",
+                columns: table => new
+                {
+                    IdService = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Discount = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ApplicationUserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Servicers", x => x.IdService);
+                    table.ForeignKey(
+                        name: "FK_Servicers_AspNetUsers_ApplicationUserId",
+                        column: x => x.ApplicationUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ApplicationUserClass",
+                columns: table => new
+                {
+                    ClassesIdcs = table.Column<int>(type: "int", nullable: false),
+                    applicationsId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ApplicationUserClass", x => new { x.ClassesIdcs, x.applicationsId });
+                    table.ForeignKey(
+                        name: "FK_ApplicationUserClass_AspNetUsers_applicationsId",
+                        column: x => x.applicationsId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ApplicationUserClass_Class_ClassesIdcs",
+                        column: x => x.ClassesIdcs,
+                        principalTable: "Class",
+                        principalColumn: "Idcs",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "HomeWork",
+                columns: table => new
+                {
+                    Idhk = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Namehk = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Timestart = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Timeend = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Assignmentsubmitted = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TimeSubmitted = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Idcs = table.Column<int>(type: "int", nullable: false),
+                    ClassIdcs = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HomeWork", x => x.Idhk);
+                    table.ForeignKey(
+                        name: "FK_HomeWork_Class_ClassIdcs",
+                        column: x => x.ClassIdcs,
+                        principalTable: "Class",
+                        principalColumn: "Idcs",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ApplicationUserSubject",
+                columns: table => new
+                {
+                    SubjectsIdst = table.Column<int>(type: "int", nullable: false),
+                    applicationsId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ApplicationUserSubject", x => new { x.SubjectsIdst, x.applicationsId });
+                    table.ForeignKey(
+                        name: "FK_ApplicationUserSubject_AspNetUsers_applicationsId",
+                        column: x => x.applicationsId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ApplicationUserSubject_Subjects_SubjectsIdst",
+                        column: x => x.SubjectsIdst,
+                        principalTable: "Subjects",
+                        principalColumn: "Idst",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ClassSubject",
+                columns: table => new
+                {
+                    classesIdcs = table.Column<int>(type: "int", nullable: false),
+                    subjectsIdst = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ClassSubject", x => new { x.classesIdcs, x.subjectsIdst });
+                    table.ForeignKey(
+                        name: "FK_ClassSubject_Class_classesIdcs",
+                        column: x => x.classesIdcs,
+                        principalTable: "Class",
+                        principalColumn: "Idcs",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_ClassSubject_Subjects_subjectsIdst",
+                        column: x => x.subjectsIdst,
+                        principalTable: "Subjects",
+                        principalColumn: "Idst",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Courses",
                 columns: table => new
                 {
@@ -363,48 +458,6 @@ namespace GS.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Ratings",
-                columns: table => new
-                {
-                    GradeNumber = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    CourseNumber = table.Column<float>(type: "real", nullable: false),
-                    ReviewNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Ratings", x => x.GradeNumber);
-                    table.ForeignKey(
-                        name: "FK_Ratings_AspNetUsers_UserId",
-                        column: x => x.UserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "RequiredScores",
-                columns: table => new
-                {
-                    IdRC = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    GPA = table.Column<float>(type: "real", nullable: false),
-                    Achievements = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_RequiredScores", x => x.IdRC);
-                    table.ForeignKey(
-                        name: "FK_RequiredScores_AspNetUsers_UserId",
-                        column: x => x.UserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "TransactionHistory",
                 columns: table => new
                 {
@@ -424,6 +477,16 @@ namespace GS.Migrations
                         principalTable: "Bills",
                         principalColumn: "IdBill");
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ApplicationUserClass_applicationsId",
+                table: "ApplicationUserClass",
+                column: "applicationsId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ApplicationUserSubject_applicationsId",
+                table: "ApplicationUserSubject",
+                column: "applicationsId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
@@ -458,21 +521,6 @@ namespace GS.Migrations
                 column: "NormalizedEmail");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_ClassIdcs",
-                table: "AspNetUsers",
-                column: "ClassIdcs");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_serviceIdService",
-                table: "AspNetUsers",
-                column: "serviceIdService");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_SubjectIdst",
-                table: "AspNetUsers",
-                column: "SubjectIdst");
-
-            migrationBuilder.CreateIndex(
                 name: "UserNameIndex",
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
@@ -488,6 +536,11 @@ namespace GS.Migrations
                 name: "IX_Bills_UserId",
                 table: "Bills",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ClassSubject_subjectsIdst",
+                table: "ClassSubject",
+                column: "subjectsIdst");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Courses_ClassIdcs",
@@ -525,6 +578,11 @@ namespace GS.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Servicers_ApplicationUserId",
+                table: "Servicers",
+                column: "ApplicationUserId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_TransactionHistory_BillIdBill",
                 table: "TransactionHistory",
                 column: "BillIdBill");
@@ -533,6 +591,12 @@ namespace GS.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "ApplicationUserClass");
+
+            migrationBuilder.DropTable(
+                name: "ApplicationUserSubject");
+
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");
 
@@ -552,6 +616,9 @@ namespace GS.Migrations
                 name: "Assesses");
 
             migrationBuilder.DropTable(
+                name: "ClassSubject");
+
+            migrationBuilder.DropTable(
                 name: "Courses");
 
             migrationBuilder.DropTable(
@@ -564,28 +631,28 @@ namespace GS.Migrations
                 name: "RequiredScores");
 
             migrationBuilder.DropTable(
+                name: "Servicers");
+
+            migrationBuilder.DropTable(
                 name: "TransactionHistory");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
+                name: "Subjects");
+
+            migrationBuilder.DropTable(
                 name: "TimeCourses");
+
+            migrationBuilder.DropTable(
+                name: "Class");
 
             migrationBuilder.DropTable(
                 name: "Bills");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
-
-            migrationBuilder.DropTable(
-                name: "Class");
-
-            migrationBuilder.DropTable(
-                name: "Servicers");
-
-            migrationBuilder.DropTable(
-                name: "Subjects");
         }
     }
 }

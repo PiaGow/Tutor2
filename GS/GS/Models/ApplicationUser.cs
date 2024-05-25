@@ -16,9 +16,11 @@ namespace GS.Models
         public string? CreditCardNumber { get; set; }
         public string? IDCard { get; set; }
         public string? IDCardImg { get; set; }
-        
+        public List<Subject> Subjects { get; set; }
+        public List<Class> Classes { get; set; }
+        public List<Servicer> service { get; set; }
 
 
 
-	}
+    }
 }

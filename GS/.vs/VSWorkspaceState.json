@@ -4,6 +4,7 @@
     "\\GS",
     "\\GS\\Models",
     "\\GS\\Views",
+    "\\GS\\Views\\Courses",
     "\\GS\\Views\\Home",
     "\\GS\\Views\\Shared",
     "\\GS\\Views\\Shared\\Guess-view",

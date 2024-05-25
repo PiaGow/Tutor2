@@ -53,7 +53,7 @@ namespace GS.Controllers
 		//								where role.Name =="Gia Sư"
 		//								select user).ToList();
 		//	return View(UserinTutorRole);
-		//}
+		//},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
         public async Task<IActionResult> Details(int? id)
         {
             var userID = _userManager.GetUserId(HttpContext.User);

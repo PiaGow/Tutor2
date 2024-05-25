@@ -9,5 +9,8 @@ namespace GS.Models
         public int Idst { get; set; }
         [DisplayName("Tên Môn Học")]
         public string? Namest { get; set; }
+        public List<Course> courses { get; set; }
+        public List<Class> classes { get; set; }
+        public List<ApplicationUser> applications { get; set; }
     }
 }

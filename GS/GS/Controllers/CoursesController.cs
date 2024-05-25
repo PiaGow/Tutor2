@@ -6,16 +6,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GS.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace GS.Controllers
 {
     public class CoursesController : Controller
     {
+        private UserManager<ApplicationUser> _userManager;
+        private RoleManager<IdentityRole> _roleManager;
         private readonly DACSDbContext _context;
 
-        public CoursesController(DACSDbContext context)
+        public CoursesController( DACSDbContext applicationUser, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
-            _context = context;
+            _context = applicationUser;
+            _userManager = userManager;
+            _roleManager = roleManager;
+
         }
 
         // GET: Courses
@@ -58,10 +64,23 @@ namespace GS.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Idce,NameCourse,Starttime,Endtime,Courseinformation,DayInWeek,UserId,ClassLink,Price,Idst,Idtimece,Idcs,Idhk")] Course course)
         {
+            var userID = _userManager.GetUserId(HttpContext.User);
+            if (userID == null)
+            {
+                return RedirectToAction("Identity", "Login", "Account");
+
+            }
+            else
+            {
+                ApplicationUser user = _userManager.FindByIdAsync(userID).Result;
+                
+            }
+
             if (ModelState.IsValid)
             {
                 _context.Add(course);
                 await _context.SaveChangesAsync();
+               
                 return RedirectToAction(nameof(Index));
             }
             ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", course.UserId);

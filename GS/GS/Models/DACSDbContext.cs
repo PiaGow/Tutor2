@@ -36,7 +36,6 @@ namespace GS.Models
         public virtual DbSet<RequiredScore> RequiredScores { get; set; }
         public virtual DbSet<Servicer> Servicers { get; set; }
         public virtual DbSet<Class> Class { get; set; }
-        public virtual DbSet<UserDetail> UserDetail { get; set; }
     }
     
 }
