@@ -36,9 +36,7 @@ namespace GS.Models
         public int Idcs { get; set; }
         [DeleteBehavior(DeleteBehavior.Restrict)]
         public required Class Class { get; set; }
-        public int Idhk { get; set; }
-        public HomeWork homeWork { get; set; }
-        
+
         [ForeignKey("UserId")]
         [ValidateNever]
         public ApplicationUser? ApplicationUser { get; set; }

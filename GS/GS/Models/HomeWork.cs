@@ -20,7 +20,9 @@ namespace GS.Models
         
         [DisplayName("Thời Gian Nộp")]
         public string? TimeSubmitted { get; set; }
-        
+        public int Idcs { get; set; }
+        public Class Class { get; set; }
+
 
     }
 }

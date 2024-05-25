@@ -30,8 +30,17 @@ namespace GS.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Age")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CreditCardNumber")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Discriminator")
@@ -48,6 +57,12 @@ namespace GS.Migrations
 
                     b.Property<string>("FullName")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IDCard")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IDCardImg")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("LockoutEnabled")
@@ -74,6 +89,9 @@ namespace GS.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sex")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("TwoFactorEnabled")
@@ -107,6 +125,9 @@ namespace GS.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdAS"));
+
+                    b.Property<string>("AssessedId")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Content")
                         .HasColumnType("nvarchar(max)");
@@ -203,9 +224,6 @@ namespace GS.Migrations
                     b.Property<int>("Idcs")
                         .HasColumnType("int");
 
-                    b.Property<int>("Idhk")
-                        .HasColumnType("int");
-
                     b.Property<int>("Idst")
                         .HasColumnType("int");
 
@@ -235,9 +253,6 @@ namespace GS.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("homeWorkIdhk")
-                        .HasColumnType("int");
-
                     b.HasKey("Idce");
 
                     b.HasIndex("ClassIdcs");
@@ -247,8 +262,6 @@ namespace GS.Migrations
                     b.HasIndex("TimeCourseIdtimece");
 
                     b.HasIndex("UserId");
-
-                    b.HasIndex("homeWorkIdhk");
 
                     b.ToTable("Courses");
                 });
@@ -263,6 +276,12 @@ namespace GS.Migrations
 
                     b.Property<string>("Assignmentsubmitted")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ClassIdcs")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Idcs")
+                        .HasColumnType("int");
 
                     b.Property<string>("Namehk")
                         .HasColumnType("nvarchar(max)");
@@ -280,6 +299,8 @@ namespace GS.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Idhk");
+
+                    b.HasIndex("ClassIdcs");
 
                     b.ToTable("HomeWork");
                 });
@@ -556,23 +577,8 @@ namespace GS.Migrations
                 {
                     b.HasBaseType("GS.Models.ApplicationUser");
 
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Age")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("ClassIdcs")
                         .HasColumnType("int");
-
-                    b.Property<string>("CreditCardNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("IDCard")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("IDCardImg")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("IdService")
                         .HasColumnType("int");
@@ -582,9 +588,6 @@ namespace GS.Migrations
 
                     b.Property<int>("Idst")
                         .HasColumnType("int");
-
-                    b.Property<string>("Sex")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SubjectIdst")
                         .HasColumnType("int");
@@ -645,12 +648,6 @@ namespace GS.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("GS.Models.HomeWork", "homeWork")
-                        .WithMany()
-                        .HasForeignKey("homeWorkIdhk")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("ApplicationUser");
 
                     b.Navigation("Class");
@@ -658,8 +655,17 @@ namespace GS.Migrations
                     b.Navigation("Subject");
 
                     b.Navigation("TimeCourse");
+                });
 
-                    b.Navigation("homeWork");
+            modelBuilder.Entity("GS.Models.HomeWork", b =>
+                {
+                    b.HasOne("GS.Models.Class", "Class")
+                        .WithMany()
+                        .HasForeignKey("ClassIdcs")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Class");
                 });
 
             modelBuilder.Entity("GS.Models.Ratting", b =>
