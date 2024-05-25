@@ -17,21 +17,8 @@ namespace GS.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            if (modelBuilder == null)
-                throw new ArgumentNullException("modelBuilder");
-
-            // for the other conventions, we do a metadata model loop
-            foreach (var entityType in modelBuilder.Model.GetEntityTypes())
-            {
-                // equivalent of modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-                entityType.SetTableName(entityType.DisplayName());
-
-                // equivalent of modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
-                entityType.GetForeignKeys()
-                    .Where(fk => !fk.IsOwnership && fk.DeleteBehavior == DeleteBehavior.Cascade)
-                    .ToList()
-                    .ForEach(fk => fk.DeleteBehavior = DeleteBehavior.Restrict);
-            }
+           
+            
 
             base.OnModelCreating(modelBuilder);
         }
@@ -49,6 +36,7 @@ namespace GS.Models
         public virtual DbSet<RequiredScore> RequiredScores { get; set; }
         public virtual DbSet<Servicer> Servicers { get; set; }
         public virtual DbSet<Class> Class { get; set; }
+        public virtual DbSet<UserDetail> UserDetail { get; set; }
     }
     
 }

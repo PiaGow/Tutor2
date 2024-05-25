@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GS.Migrations
 {
     /// <inheritdoc />
-    public partial class v1 : Migration
+    public partial class v2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -57,7 +57,7 @@ namespace GS.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Servicer",
+                name: "Servicers",
                 columns: table => new
                 {
                     IdService = table.Column<int>(type: "int", nullable: false)
@@ -67,11 +67,11 @@ namespace GS.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Servicer", x => x.IdService);
+                    table.PrimaryKey("PK_Servicers", x => x.IdService);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Subject",
+                name: "Subjects",
                 columns: table => new
                 {
                     Idst = table.Column<int>(type: "int", nullable: false)
@@ -80,11 +80,11 @@ namespace GS.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Subject", x => x.Idst);
+                    table.PrimaryKey("PK_Subjects", x => x.Idst);
                 });
 
             migrationBuilder.CreateTable(
-                name: "TimeCourse",
+                name: "TimeCourses",
                 columns: table => new
                 {
                     Idtimece = table.Column<int>(type: "int", nullable: false)
@@ -94,7 +94,7 @@ namespace GS.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TimeCourse", x => x.Idtimece);
+                    table.PrimaryKey("PK_TimeCourses", x => x.Idtimece);
                 });
 
             migrationBuilder.CreateTable(
@@ -124,20 +124,19 @@ namespace GS.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Discriminator = table.Column<string>(type: "nvarchar(21)", maxLength: 21, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Age = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Sex = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreditCardNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IDCard = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IDCardImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Idst = table.Column<int>(type: "int", nullable: false),
-                    SubjectIdst = table.Column<int>(type: "int", nullable: false),
-                    Idcs = table.Column<int>(type: "int", nullable: false),
-                    ClassIdcs = table.Column<int>(type: "int", nullable: false),
-                    IdService = table.Column<int>(type: "int", nullable: false),
-                    serviceIdService = table.Column<int>(type: "int", nullable: false),
-                    UserRole = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Idst = table.Column<int>(type: "int", nullable: true),
+                    SubjectIdst = table.Column<int>(type: "int", nullable: true),
+                    Idcs = table.Column<int>(type: "int", nullable: true),
+                    ClassIdcs = table.Column<int>(type: "int", nullable: true),
+                    IdService = table.Column<int>(type: "int", nullable: true),
+                    serviceIdService = table.Column<int>(type: "int", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -146,6 +145,7 @@ namespace GS.Migrations
                     PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
                     TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
                     LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
@@ -156,29 +156,23 @@ namespace GS.Migrations
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_AspNetUsers_AspNetRoles_UserRole",
-                        column: x => x.UserRole,
-                        principalTable: "AspNetRoles",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
                         name: "FK_AspNetUsers_Class_ClassIdcs",
                         column: x => x.ClassIdcs,
                         principalTable: "Class",
                         principalColumn: "Idcs",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_AspNetUsers_Servicer_serviceIdService",
+                        name: "FK_AspNetUsers_Servicers_serviceIdService",
                         column: x => x.serviceIdService,
-                        principalTable: "Servicer",
+                        principalTable: "Servicers",
                         principalColumn: "IdService",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_AspNetUsers_Subject_SubjectIdst",
+                        name: "FK_AspNetUsers_Subjects_SubjectIdst",
                         column: x => x.SubjectIdst,
-                        principalTable: "Subject",
+                        principalTable: "Subjects",
                         principalColumn: "Idst",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -206,8 +200,8 @@ namespace GS.Migrations
                 name: "AspNetUserLogins",
                 columns: table => new
                 {
-                    LoginProvider = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
-                    ProviderKey = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
+                    LoginProvider = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    ProviderKey = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     ProviderDisplayName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
@@ -251,8 +245,8 @@ namespace GS.Migrations
                 columns: table => new
                 {
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    LoginProvider = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
+                    LoginProvider = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Value = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -267,7 +261,7 @@ namespace GS.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Assess",
+                name: "Assesses",
                 columns: table => new
                 {
                     IdAS = table.Column<int>(type: "int", nullable: false)
@@ -279,16 +273,16 @@ namespace GS.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Assess", x => x.IdAS);
+                    table.PrimaryKey("PK_Assesses", x => x.IdAS);
                     table.ForeignKey(
-                        name: "FK_Assess_AspNetUsers_UserId",
+                        name: "FK_Assesses_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
-                name: "Bill",
+                name: "Bills",
                 columns: table => new
                 {
                     IdBill = table.Column<int>(type: "int", nullable: false)
@@ -301,16 +295,16 @@ namespace GS.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Bill", x => x.IdBill);
+                    table.PrimaryKey("PK_Bills", x => x.IdBill);
                     table.ForeignKey(
-                        name: "FK_Bill_AspNetUsers_UserId",
+                        name: "FK_Bills_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
-                name: "Course",
+                name: "Courses",
                 columns: table => new
                 {
                     Idce = table.Column<int>(type: "int", nullable: false)
@@ -334,41 +328,41 @@ namespace GS.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Course", x => x.Idce);
+                    table.PrimaryKey("PK_Courses", x => x.Idce);
                     table.ForeignKey(
-                        name: "FK_Course_AspNetUsers_UserId",
+                        name: "FK_Courses_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Course_Class_ClassIdcs",
+                        name: "FK_Courses_Class_ClassIdcs",
                         column: x => x.ClassIdcs,
                         principalTable: "Class",
                         principalColumn: "Idcs",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Course_HomeWork_homeWorkIdhk",
+                        name: "FK_Courses_HomeWork_homeWorkIdhk",
                         column: x => x.homeWorkIdhk,
                         principalTable: "HomeWork",
                         principalColumn: "Idhk",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Course_Subject_SubjectIdst",
+                        name: "FK_Courses_Subjects_SubjectIdst",
                         column: x => x.SubjectIdst,
-                        principalTable: "Subject",
+                        principalTable: "Subjects",
                         principalColumn: "Idst",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Course_TimeCourse_TimeCourseIdtimece",
+                        name: "FK_Courses_TimeCourses_TimeCourseIdtimece",
                         column: x => x.TimeCourseIdtimece,
-                        principalTable: "TimeCourse",
+                        principalTable: "TimeCourses",
                         principalColumn: "Idtimece",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Ratting",
+                name: "Ratings",
                 columns: table => new
                 {
                     GradeNumber = table.Column<int>(type: "int", nullable: false)
@@ -379,17 +373,17 @@ namespace GS.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Ratting", x => x.GradeNumber);
+                    table.PrimaryKey("PK_Ratings", x => x.GradeNumber);
                     table.ForeignKey(
-                        name: "FK_Ratting_AspNetUsers_UserId",
+                        name: "FK_Ratings_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "RequiredScore",
+                name: "RequiredScores",
                 columns: table => new
                 {
                     IdRC = table.Column<int>(type: "int", nullable: false)
@@ -400,13 +394,13 @@ namespace GS.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_RequiredScore", x => x.IdRC);
+                    table.PrimaryKey("PK_RequiredScores", x => x.IdRC);
                     table.ForeignKey(
-                        name: "FK_RequiredScore_AspNetUsers_UserId",
+                        name: "FK_RequiredScores_AspNetUsers_UserId",
                         column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -424,9 +418,9 @@ namespace GS.Migrations
                 {
                     table.PrimaryKey("PK_TransactionHistory", x => x.IdTH);
                     table.ForeignKey(
-                        name: "FK_TransactionHistory_Bill_BillIdBill",
+                        name: "FK_TransactionHistory_Bills_BillIdBill",
                         column: x => x.BillIdBill,
-                        principalTable: "Bill",
+                        principalTable: "Bills",
                         principalColumn: "IdBill");
                 });
 
@@ -478,11 +472,6 @@ namespace GS.Migrations
                 column: "SubjectIdst");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AspNetUsers_UserRole",
-                table: "AspNetUsers",
-                column: "UserRole");
-
-            migrationBuilder.CreateIndex(
                 name: "UserNameIndex",
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
@@ -490,48 +479,48 @@ namespace GS.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Assess_UserId",
-                table: "Assess",
+                name: "IX_Assesses_UserId",
+                table: "Assesses",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Bill_UserId",
-                table: "Bill",
+                name: "IX_Bills_UserId",
+                table: "Bills",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Course_ClassIdcs",
-                table: "Course",
+                name: "IX_Courses_ClassIdcs",
+                table: "Courses",
                 column: "ClassIdcs");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Course_homeWorkIdhk",
-                table: "Course",
+                name: "IX_Courses_homeWorkIdhk",
+                table: "Courses",
                 column: "homeWorkIdhk");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Course_SubjectIdst",
-                table: "Course",
+                name: "IX_Courses_SubjectIdst",
+                table: "Courses",
                 column: "SubjectIdst");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Course_TimeCourseIdtimece",
-                table: "Course",
+                name: "IX_Courses_TimeCourseIdtimece",
+                table: "Courses",
                 column: "TimeCourseIdtimece");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Course_UserId",
-                table: "Course",
+                name: "IX_Courses_UserId",
+                table: "Courses",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Ratting_UserId",
-                table: "Ratting",
+                name: "IX_Ratings_UserId",
+                table: "Ratings",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_RequiredScore_UserId",
-                table: "RequiredScore",
+                name: "IX_RequiredScores_UserId",
+                table: "RequiredScores",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
@@ -559,43 +548,43 @@ namespace GS.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Assess");
+                name: "Assesses");
 
             migrationBuilder.DropTable(
-                name: "Course");
+                name: "Courses");
 
             migrationBuilder.DropTable(
-                name: "Ratting");
+                name: "Ratings");
 
             migrationBuilder.DropTable(
-                name: "RequiredScore");
+                name: "RequiredScores");
 
             migrationBuilder.DropTable(
                 name: "TransactionHistory");
 
             migrationBuilder.DropTable(
+                name: "AspNetRoles");
+
+            migrationBuilder.DropTable(
                 name: "HomeWork");
 
             migrationBuilder.DropTable(
-                name: "TimeCourse");
+                name: "TimeCourses");
 
             migrationBuilder.DropTable(
-                name: "Bill");
+                name: "Bills");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "AspNetRoles");
-
-            migrationBuilder.DropTable(
                 name: "Class");
 
             migrationBuilder.DropTable(
-                name: "Servicer");
+                name: "Servicers");
 
             migrationBuilder.DropTable(
-                name: "Subject");
+                name: "Subjects");
         }
     }
 }

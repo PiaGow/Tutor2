@@ -8,6 +8,7 @@
     "\\GS\\Views\\Home",
     "\\GS\\Views\\Shared",
     "\\GS\\Views\\Shared\\Guess-view",
+    "\\GS\\Views\\Tutors",
     "\\GS\\wwwroot"
   ],
   "SelectedNode": "\\GS.sln",

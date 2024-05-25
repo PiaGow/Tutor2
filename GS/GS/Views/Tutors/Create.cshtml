@@ -17,25 +17,8 @@
                 <input asp-for="FullName" class="form-control" />
                 <span asp-validation-for="FullName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <textarea asp-for="PhoneNumber" class="form-control"></textarea>
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IDCardImg" class="control-label"></label>
-                <input type="file" asp-for="IDCardImg" class="form-control" />
-                <span asp-validation-for="IDCardImg" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdentityRole" class="control-label"></label>
-                <select asp-for="IdentityRole" asp-items="ViewBag.Indentity" class="form-control"></select>
-            </div>
+
+
             <div class="form-group mt-4">
                 <input type="submit" value="Create" class="btn btn-success" />
             </div>
