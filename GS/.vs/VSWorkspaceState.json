@@ -2,12 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\GS",
+    "\\GS\\Views",
     "\\GS\\Views\\Courses",
     "\\GS\\Views\\Home",
     "\\GS\\Views\\Shared",
     "\\GS\\Views\\Shared\\Guess-view",
     "\\GS\\Views\\Tutors"
   ],
-  "SelectedNode": "\\GS.sln",
+  "SelectedNode": "\\GS\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }
