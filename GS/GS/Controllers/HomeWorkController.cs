@@ -53,7 +53,7 @@ namespace GS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Idhk,Namehk,Status,Timestart,Timeend,Assignmentsubmitted,TimeSubmitted")] HomeWork homeWork)
+        public async Task<IActionResult> Create([Bind("Idhk,Namehk,Status,Timestart,Timeend,Assignmentsubmitted,TimeSubmitted,Idce")] HomeWork homeWork)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace GS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Idhk,Namehk,Status,Timestart,Timeend,Assignmentsubmitted,TimeSubmitted")] HomeWork homeWork)
+        public async Task<IActionResult> Edit(int id, [Bind("Idhk,Namehk,Status,Timestart,Timeend,Assignmentsubmitted,TimeSubmitted,Idce")] HomeWork homeWork)
         {
             if (id != homeWork.Idhk)
             {

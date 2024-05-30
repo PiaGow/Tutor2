@@ -8,8 +8,8 @@ namespace GS.Models
         [Key]
         public int Idtimece { get; set; }
         [DisplayName("Giờ Học")]
-        public DateTime? Timestart { get; set; }
+        public TimeOnly? Timestart { get; set; }
         [DisplayName("Giờ Kết Thúc")]
-        public DateTime? Timeend { get; set; }
+        public TimeOnly? Timeend { get; set; }
     }
 }

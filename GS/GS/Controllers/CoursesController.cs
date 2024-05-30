@@ -12,17 +12,17 @@ namespace GS.Controllers
 {
     public class CoursesController : Controller
     {
+        private readonly DACSDbContext _context;
         private UserManager<ApplicationUser> _userManager;
         private RoleManager<IdentityRole> _roleManager;
-        private readonly DACSDbContext _context;
 
-        public CoursesController( DACSDbContext applicationUser, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
-        {
-            _context = applicationUser;
-            _userManager = userManager;
-            _roleManager = roleManager;
+        public CoursesController(DACSDbContext context, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
+		{
+			_context = context;
+			_userManager = userManager;
+			_roleManager = roleManager;
 
-        }
+		}
 
         // GET: Courses
         public async Task<IActionResult> Index()
@@ -53,7 +53,7 @@ namespace GS.Controllers
         // GET: Courses/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id");
+            ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id");
             return View();
         }
 
@@ -62,28 +62,27 @@ namespace GS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Idce,NameCourse,Starttime,Endtime,Courseinformation,DayInWeek,UserId,ClassLink,Price,Idst,Idtimece,Idcs,Idhk")] Course course)
+        public async Task<IActionResult> Create([Bind("Idce,NameCourse,Starttime,Endtime,Courseinformation,DayInWeek,UserId,ClassLink,Price,Idst,Idtimece,Idcs")] Course course)
         {
-            var userID = _userManager.GetUserId(HttpContext.User);
-            if (userID == null)
-            {
-                return RedirectToAction("Identity", "Login", "Account");
-
-            }
-            else
-            {
-                ApplicationUser user = _userManager.FindByIdAsync(userID).Result;
-                
-            }
-
+            var User = _userManager.Users;
+            var UserinTutorRole = (from user in _context.Users
+                                   join userRole in _context.UserRoles
+                                   on user.Id equals userRole.UserId
+                                   join role in _context.Roles
+                                   on userRole.RoleId equals role.Id
+                                   where role.Name == "Gia Sư"
+                                   select user).ToList();
             if (ModelState.IsValid)
             {
                 _context.Add(course);
                 await _context.SaveChangesAsync();
-               
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", course.UserId);
+            ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id", course.ApplicationUser.FullName);
+            ViewData["Idst"] = new SelectList(_context.Subjects, "Id", "Id");
+            ViewData["Idcs"] = new SelectList(_context.Class,"Id","Id",course.Class.Name);
+            ViewData["Idtimece"] = new SelectList(_context.TimeCourses,"Id","Id",course.TimeCourse.Timestart);
+            
             return View(course);
         }
 
@@ -100,7 +99,7 @@ namespace GS.Controllers
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", course.UserId);
+            ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id", course.UserId);
             return View(course);
         }
 
@@ -109,7 +108,7 @@ namespace GS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Idce,NameCourse,Starttime,Endtime,Courseinformation,DayInWeek,UserId,ClassLink,Price,Idst,Idtimece,Idcs,Idhk")] Course course)
+        public async Task<IActionResult> Edit(int id, [Bind("Idce,NameCourse,Starttime,Endtime,Courseinformation,DayInWeek,UserId,ClassLink,Price,Idst,Idtimece,Idcs")] Course course)
         {
             if (id != course.Idce)
             {
@@ -136,7 +135,7 @@ namespace GS.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "Id", "Id", course.UserId);
+            ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id", course.UserId);
             return View(course);
         }
 

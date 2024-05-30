@@ -89,8 +89,8 @@ namespace GS.Migrations
                 {
                     Idtimece = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Timestart = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Timeend = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    Timestart = table.Column<TimeOnly>(type: "time", nullable: true),
+                    Timeend = table.Column<TimeOnly>(type: "time", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -334,32 +334,6 @@ namespace GS.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "HomeWork",
-                columns: table => new
-                {
-                    Idhk = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Namehk = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Timestart = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Timeend = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    Assignmentsubmitted = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TimeSubmitted = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Idcs = table.Column<int>(type: "int", nullable: false),
-                    ClassIdcs = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_HomeWork", x => x.Idhk);
-                    table.ForeignKey(
-                        name: "FK_HomeWork_Class_ClassIdcs",
-                        column: x => x.ClassIdcs,
-                        principalTable: "Class",
-                        principalColumn: "Idcs",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "ApplicationUserSubject",
                 columns: table => new
                 {
@@ -478,6 +452,32 @@ namespace GS.Migrations
                         principalColumn: "IdBill");
                 });
 
+            migrationBuilder.CreateTable(
+                name: "HomeWork",
+                columns: table => new
+                {
+                    Idhk = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Namehk = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Timestart = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Timeend = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Assignmentsubmitted = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TimeSubmitted = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Idce = table.Column<int>(type: "int", nullable: false),
+                    CourseIdce = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HomeWork", x => x.Idhk);
+                    table.ForeignKey(
+                        name: "FK_HomeWork_Courses_CourseIdce",
+                        column: x => x.CourseIdce,
+                        principalTable: "Courses",
+                        principalColumn: "Idce",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_ApplicationUserClass_applicationsId",
                 table: "ApplicationUserClass",
@@ -563,9 +563,9 @@ namespace GS.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_HomeWork_ClassIdcs",
+                name: "IX_HomeWork_CourseIdce",
                 table: "HomeWork",
-                column: "ClassIdcs");
+                column: "CourseIdce");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Ratings_UserId",
@@ -619,9 +619,6 @@ namespace GS.Migrations
                 name: "ClassSubject");
 
             migrationBuilder.DropTable(
-                name: "Courses");
-
-            migrationBuilder.DropTable(
                 name: "HomeWork");
 
             migrationBuilder.DropTable(
@@ -640,16 +637,19 @@ namespace GS.Migrations
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "Subjects");
+                name: "Courses");
 
             migrationBuilder.DropTable(
-                name: "TimeCourses");
+                name: "Bills");
 
             migrationBuilder.DropTable(
                 name: "Class");
 
             migrationBuilder.DropTable(
-                name: "Bills");
+                name: "Subjects");
+
+            migrationBuilder.DropTable(
+                name: "TimeCourses");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");

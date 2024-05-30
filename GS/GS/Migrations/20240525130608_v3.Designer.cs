@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GS.Migrations
 {
     [DbContext(typeof(DACSDbContext))]
-    [Migration("20240525091225_v3")]
+    [Migration("20240525130608_v3")]
     partial class v3
     {
         /// <inheritdoc />
@@ -316,10 +316,10 @@ namespace GS.Migrations
                     b.Property<string>("Assignmentsubmitted")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ClassIdcs")
+                    b.Property<int>("CourseIdce")
                         .HasColumnType("int");
 
-                    b.Property<int>("Idcs")
+                    b.Property<int>("Idce")
                         .HasColumnType("int");
 
                     b.Property<string>("Namehk")
@@ -339,7 +339,7 @@ namespace GS.Migrations
 
                     b.HasKey("Idhk");
 
-                    b.HasIndex("ClassIdcs");
+                    b.HasIndex("CourseIdce");
 
                     b.ToTable("HomeWork");
                 });
@@ -446,11 +446,11 @@ namespace GS.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Idtimece"));
 
-                    b.Property<DateTime?>("Timeend")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeOnly?>("Timeend")
+                        .HasColumnType("time");
 
-                    b.Property<DateTime?>("Timestart")
-                        .HasColumnType("datetime2");
+                    b.Property<TimeOnly?>("Timestart")
+                        .HasColumnType("time");
 
                     b.HasKey("Idtimece");
 
@@ -717,13 +717,13 @@ namespace GS.Migrations
 
             modelBuilder.Entity("GS.Models.HomeWork", b =>
                 {
-                    b.HasOne("GS.Models.Class", "Class")
+                    b.HasOne("GS.Models.Course", "Course")
                         .WithMany()
-                        .HasForeignKey("ClassIdcs")
+                        .HasForeignKey("CourseIdce")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Class");
+                    b.Navigation("Course");
                 });
 
             modelBuilder.Entity("GS.Models.Ratting", b =>
