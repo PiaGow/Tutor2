@@ -42,14 +42,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Trang Chủ</a>
                         </li>
-                        <li class="nav-item">
+                        @* <li class="nav-item">
                             <a class="nav-link text-white" href="/Introduction">Về Chúng Tôi</a>
+                        </li> *@
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Courses" asp-action="All">Khóa Học</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Courses" asp-action="Index">Khóa Học</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Tutors" asp-action="Index">Gia Sư</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Tutors" asp-action="All">Gia Sư</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="About" asp-action="Index">Blog</a>

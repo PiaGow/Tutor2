@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GS.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
+using System.Diagnostics;
 
 namespace GS.Controllers
 {
@@ -23,8 +25,13 @@ namespace GS.Controllers
 			_roleManager = roleManager;
 
 		}
+        public IActionResult All()
+        {
+            return View();
+        }
 
         // GET: Courses
+        [Authorize]
         public async Task<IActionResult> Index()
         {
             var dACSDbContext = _context.Courses.Include(c => c.ApplicationUser);
@@ -32,6 +39,7 @@ namespace GS.Controllers
         }
 
         // GET: Courses/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -51,6 +59,7 @@ namespace GS.Controllers
         }
 
         // GET: Courses/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id");
@@ -62,6 +71,7 @@ namespace GS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Create([Bind("Idce,NameCourse,Starttime,Endtime,Courseinformation,DayInWeek,UserId,ClassLink,Price,Idst,Idtimece,Idcs")] Course course)
         {
             var User = _userManager.Users;
@@ -87,6 +97,7 @@ namespace GS.Controllers
         }
 
         // GET: Courses/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -108,6 +119,7 @@ namespace GS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("Idce,NameCourse,Starttime,Endtime,Courseinformation,DayInWeek,UserId,ClassLink,Price,Idst,Idtimece,Idcs")] Course course)
         {
             if (id != course.Idce)
@@ -140,6 +152,7 @@ namespace GS.Controllers
         }
 
         // GET: Courses/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -161,6 +174,7 @@ namespace GS.Controllers
         // POST: Courses/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var course = await _context.Courses.FindAsync(id);
@@ -177,5 +191,6 @@ namespace GS.Controllers
         {
             return _context.Courses.Any(e => e.Idce == id);
         }
+
     }
 }

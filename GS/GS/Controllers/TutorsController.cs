@@ -21,13 +21,17 @@ namespace GS.Controllers
 			_roleManager = roleManager;
 
 		}
-  //      private readonly ITutorRepository _productRepository;
+		//      private readonly ITutorRepository _productRepository;
 		//public TutorsController(ITutorRepository productRepository)
 
 		//{
 		//	_productRepository = productRepository;
 		//}
 		//[Authorize]
+		public IActionResult All()
+		{
+			return View();
+		}
 		public async Task<IActionResult> Index()
 		{
 			//return View(_dacsdbContext.Users.ToList());
