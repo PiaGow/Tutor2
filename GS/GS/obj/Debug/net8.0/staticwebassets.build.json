@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Sofrg7KmeL0s5fTbTBIaI9W6j/Bde/WSIH2jRIPsd8E=",
+  "Hash": "ychJ4k9Q73AS8Bjjg7iQH9xoLRAG4Z/e2fapdmLgN+w=",
   "Source": "GS",
   "BasePath": "_content/GS",
   "Mode": "Default",
@@ -1744,6 +1744,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\person_4.jpg"
+    },
+    {
+      "Identity": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\sach-giao-khoa-hinh-hoc-12.jpg",
+      "SourceId": "GS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Study\\DA\\GS\\GS\\wwwroot\\",
+      "BasePath": "_content/GS",
+      "RelativePath": "images/sach-giao-khoa-hinh-hoc-12.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\sach-giao-khoa-hinh-hoc-12.jpg"
     },
     {
       "Identity": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\teacher-1.jpg",

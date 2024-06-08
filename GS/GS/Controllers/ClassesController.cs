@@ -18,8 +18,15 @@ namespace GS.Controllers
             _context = context;
         }
 
-        // GET: Classes
-        public async Task<IActionResult> Index()
+		public async Task<IEnumerable<Class>> GetAllAsync()
+		{
+			// return await _context.Products.ToListAsync();
+			return await _context.Class
+			.Include(p => p.courses) // Include thông tin về category
+			.ToListAsync();
+		}
+		// GET: Classes
+		public async Task<IActionResult> Index()
         {
             return View(await _context.Class.ToListAsync());
         }

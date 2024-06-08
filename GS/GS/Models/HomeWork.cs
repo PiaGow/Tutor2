@@ -1,5 +1,7 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GS.Models
 {
@@ -21,8 +23,10 @@ namespace GS.Models
         [DisplayName("Thời Gian Nộp")]
         public string? TimeSubmitted { get; set; }
         public int Idce { get; set; }
-        public Course Course { get; set; }
-
+        [ForeignKey("Idce")]
+        [ValidateNever]
+        public required Course Course { get; set; }
+        public string HkDetail { get; set; }
 
     }
 }

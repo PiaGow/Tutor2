@@ -121,6 +121,10 @@
       "PackagePath": "staticwebassets\\images\\person_4.jpg"
     },
     {
+      "Id": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\sach-giao-khoa-hinh-hoc-12.jpg",
+      "PackagePath": "staticwebassets\\images\\sach-giao-khoa-hinh-hoc-12.jpg"
+    },
+    {
       "Id": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\teacher-1.jpg",
       "PackagePath": "staticwebassets\\images\\teacher-1.jpg"
     },

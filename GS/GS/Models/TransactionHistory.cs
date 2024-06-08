@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GS.Models
 {
@@ -9,6 +11,8 @@ namespace GS.Models
         public string? Receiver { get; set; }
         public DateTime Date { get; set; }
         public int IdBill { get; set; }
+        [ForeignKey("IdBill")]
+        [ValidateNever]
         public Bill? Bill { get; set; }
 
 

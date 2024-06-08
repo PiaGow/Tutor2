@@ -21,6 +21,8 @@ builder.Services.AddControllersWithViews();
 // comment
 //builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
 //    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddScoped<ClassesController>();
+builder.Services.AddScoped<SubjectsController>();
 
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()

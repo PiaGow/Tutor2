@@ -10,10 +10,8 @@ namespace GS.Models
     {
         [Key]
         public int Idce { get; set; }
-        [Required, StringLength(100)]
         [DisplayName("Tên Khóa Học")]
         public string NameCourse { get; set; }
-        [Required, StringLength(100)]
         [DisplayName("Ngày Bắt Đầu")]
         public DateTime? Starttime { get; set; }
         [DisplayName("Ngày Kết Thúc")]
@@ -24,22 +22,28 @@ namespace GS.Models
         public string? Courseinformation { get; set; }
         [DisplayName("Ngày Học")]
         public string DayInWeek { get; set; }
-
+        [DisplayName("Ảnh Minh Họa")]
+        public string? CourseImg { get; set; }
         public string UserId { get; set; }
         public string ClassLink { get; set; }
         public float Price { get; set; }
         public int Idst { get; set; }
-        [DeleteBehavior(DeleteBehavior.Restrict)]
+        [ForeignKey("Idst")]
+        [ValidateNever]
         public Subject Subject { get; set; }
         public int Idtimece { get; set; }
+        [ForeignKey("Idtimece")]
+        [ValidateNever]
         public TimeCourse TimeCourse { get; set; }
         public int Idcs { get; set; }
-        [DeleteBehavior(DeleteBehavior.Restrict)]
+        [ForeignKey("Idcs")]
+        [ValidateNever]
         public required Class Class { get; set; }
 
         [ForeignKey("UserId")]
         [ValidateNever]
         public ApplicationUser? ApplicationUser { get; set; }
+
 
     }
 }

@@ -240,11 +240,11 @@ namespace GS.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Idce"));
 
-                    b.Property<int>("ClassIdcs")
-                        .HasColumnType("int");
-
                     b.Property<string>("ClassLink")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CourseImg")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Courseinformation")
@@ -268,22 +268,13 @@ namespace GS.Migrations
 
                     b.Property<string>("NameCourse")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("Price")
                         .HasColumnType("real");
 
                     b.Property<DateTime?>("Starttime")
-                        .IsRequired()
-                        .HasMaxLength(100)
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("SubjectIdst")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TimeCourseIdtimece")
-                        .HasColumnType("int");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -291,11 +282,11 @@ namespace GS.Migrations
 
                     b.HasKey("Idce");
 
-                    b.HasIndex("ClassIdcs");
+                    b.HasIndex("Idcs");
 
-                    b.HasIndex("SubjectIdst");
+                    b.HasIndex("Idst");
 
-                    b.HasIndex("TimeCourseIdtimece");
+                    b.HasIndex("Idtimece");
 
                     b.HasIndex("UserId");
 
@@ -313,8 +304,9 @@ namespace GS.Migrations
                     b.Property<string>("Assignmentsubmitted")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CourseIdce")
-                        .HasColumnType("int");
+                    b.Property<string>("HkDetail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Idce")
                         .HasColumnType("int");
@@ -336,7 +328,7 @@ namespace GS.Migrations
 
                     b.HasKey("Idhk");
 
-                    b.HasIndex("CourseIdce");
+                    b.HasIndex("Idce");
 
                     b.ToTable("HomeWork");
                 });
@@ -462,9 +454,6 @@ namespace GS.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdTH"));
 
-                    b.Property<int?>("BillIdBill")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
@@ -476,7 +465,7 @@ namespace GS.Migrations
 
                     b.HasKey("IdTH");
 
-                    b.HasIndex("BillIdBill");
+                    b.HasIndex("IdBill");
 
                     b.ToTable("TransactionHistory");
                 });
@@ -681,19 +670,19 @@ namespace GS.Migrations
                 {
                     b.HasOne("GS.Models.Class", "Class")
                         .WithMany("courses")
-                        .HasForeignKey("ClassIdcs")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .HasForeignKey("Idcs")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("GS.Models.Subject", "Subject")
                         .WithMany("courses")
-                        .HasForeignKey("SubjectIdst")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .HasForeignKey("Idst")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("GS.Models.TimeCourse", "TimeCourse")
                         .WithMany()
-                        .HasForeignKey("TimeCourseIdtimece")
+                        .HasForeignKey("Idtimece")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -716,7 +705,7 @@ namespace GS.Migrations
                 {
                     b.HasOne("GS.Models.Course", "Course")
                         .WithMany()
-                        .HasForeignKey("CourseIdce")
+                        .HasForeignKey("Idce")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -756,7 +745,9 @@ namespace GS.Migrations
                 {
                     b.HasOne("GS.Models.Bill", "Bill")
                         .WithMany()
-                        .HasForeignKey("BillIdBill");
+                        .HasForeignKey("IdBill")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Bill");
                 });

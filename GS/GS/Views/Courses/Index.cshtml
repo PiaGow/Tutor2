@@ -5,11 +5,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Danh Sách Khóa Học Của Tôi</h1>
+<h1>Index</h1>
 
 <p>
+    <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table" >
     <thead>
         <tr>
             <th>
@@ -28,42 +29,73 @@
                 @Html.DisplayNameFor(model => model.DayInWeek)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TimeCourse.Timestart)
+                @Html.DisplayNameFor(model => model.CourseImg)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TimeCourse.Timeend)
+                @Html.DisplayNameFor(model => model.ClassLink)
             </th>
-
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Subject)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TimeCourse)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Class)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApplicationUser)
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
-               <td>
-                    @Html.DisplayFor(modelItem => item.NameCourse)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Starttime)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Endtime)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Courseinformation)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DayInWeek)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TimeCourse.Timestart)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TimeCourse.Timeend)
-                </td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@item.Idce">Chi Tiết</a> 
-                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameCourse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Starttime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Endtime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Courseinformation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DayInWeek)
+            </td>
+            <td>
+                    <img src=" @Html.DisplayFor(modelItem => item.CourseImg)" alt="" style="height: 300px "/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Subject.Idst)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeCourse.Idtimece)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Class.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ApplicationUser.Id)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Idce">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Idce">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Idce">Delete</a>
+            </td>
         </tr>
 }
     </tbody>

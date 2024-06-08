@@ -23,9 +23,16 @@ namespace GS.Controllers
         {
             return View(await _context.Subjects.ToListAsync());
         }
+		public async Task<IEnumerable<Subject>> GetAllAsync()
+		{
+			// return await _context.Products.ToListAsync();
+			return await _context.Subjects
+			.Include(p => p.courses) // Include thông tin về category
+			.ToListAsync();
+		}
 
-        // GET: Subjects/Details/5
-        public async Task<IActionResult> Details(int? id)
+		// GET: Subjects/Details/5
+		public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {

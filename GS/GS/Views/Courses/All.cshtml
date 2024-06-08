@@ -1,6 +1,8 @@
 ﻿@{
 	Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@model IEnumerable<GS.Models.Course>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,31 +55,67 @@
 						</form>
 					</div>
 
+
+
 					<div class="sidebar-box bg-white p-4 ftco-animate">
-						<h3 class="heading-sidebar">Course Category</h3>
-						<form action="#" class="browse-form">
-							<label for="option-category-1"><input type="checkbox" id="option-category-1" name="vehicle" value="" checked> Design &amp; Illustration</label><br>
-							<label for="option-category-2"><input type="checkbox" id="option-category-2" name="vehicle" value=""> Web Development</label><br>
-							<label for="option-category-3"><input type="checkbox" id="option-category-3" name="vehicle" value=""> Programming</label><br>
-							<label for="option-category-4"><input type="checkbox" id="option-category-4" name="vehicle" value=""> Music &amp; Entertainment</label><br>
-							<label for="option-category-5"><input type="checkbox" id="option-category-5" name="vehicle" value=""> Photography</label><br>
-							<label for="option-category-6"><input type="checkbox" id="option-category-6" name="vehicle" value=""> Health &amp; Fitness</label><br>
-						</form>
+						<h3 class="heading-sidebar">Lớp Học</h3>
+						
+						<div class="list-group list-group-flush">
+							@foreach (var categoryCountPair in ViewBag.BookCountByClass)
+							{
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="checkbox_@categoryCountPair.Key" value="@categoryCountPair.Key" onchange="reloadPage()">
+									<label class="form-check-label" for="checkbox_@categoryCountPair.Key">
+										@categoryCountPair.Key (@categoryCountPair.Value)
+									</label>
+								</div>
+							}
+
+							<script>
+								function reloadPage() {
+									var selectedCategories = [];
+									$('input[type=checkbox]').each(function () {
+										if ($(this).is(':checked')) {
+											selectedCategories.push($(this).val());
+										}
+									});
+									var url = '/Home/Index?categoryName=' + selectedCategories.join(',');
+									window.location.href = url;
+								}
+							</script>
+							
+						</div>
 					</div>
 
 					<div class="sidebar-box bg-white p-4 ftco-animate">
-						<h3 class="heading-sidebar">Course Instructor</h3>
-						<form action="#" class="browse-form">
-							<label for="option-instructor-1"><input type="checkbox" id="option-instructor-1" name="vehicle" value="" checked> Ronald Jackson</label><br>
-							<label for="option-instructor-2"><input type="checkbox" id="option-instructor-2" name="vehicle" value=""> John Dee</label><br>
-							<label for="option-instructor-3"><input type="checkbox" id="option-instructor-3" name="vehicle" value=""> Nathan Messy</label><br>
-							<label for="option-instructor-4"><input type="checkbox" id="option-instructor-4" name="vehicle" value=""> Tony Griffin</label><br>
-							<label for="option-instructor-5"><input type="checkbox" id="option-instructor-5" name="vehicle" value=""> Ben Howard</label><br>
-							<label for="option-instructor-6"><input type="checkbox" id="option-instructor-6" name="vehicle" value=""> Harry Potter</label><br>
-						</form>
+						<h3 class="heading-sidebar">Môn Học</h3>
+						<div class="list-group list-group-flush">
+							@foreach (var categoryCountPair in ViewBag.BookCountBySubject)
+							{
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="checkbox_@categoryCountPair.Key" value="@categoryCountPair.Key" onchange="reloadPage()">
+									<label class="form-check-label" for="checkbox_@categoryCountPair.Key">
+										@categoryCountPair.Key (@categoryCountPair.Value)
+									</label>
+								</div>
+							}
+
+							<script>
+								function reloadPage() {
+									var selectedCategories = [];
+									$('input[type=checkbox]').each(function () {
+										if ($(this).is(':checked')) {
+											selectedCategories.push($(this).val());
+										}
+									});
+									var url = '/Home/Index?categoryName=' + selectedCategories.join(',');
+									window.location.href = url;
+								}
+							</script>
+						</div>
 					</div>
 
-					<div class="sidebar-box bg-white p-4 ftco-animate">
+				@* 	<div class="sidebar-box bg-white p-4 ftco-animate">
 						<h3 class="heading-sidebar">Course Type</h3>
 						<form action="#" class="browse-form">
 							<label for="option-course-type-1"><input type="checkbox" id="option-course-type-1" name="vehicle" value="" checked> Basic</label><br>
@@ -95,11 +133,31 @@
 							<label for="option-software-4"><input type="checkbox" id="option-software-4" name="vehicle" value=""> WordPress</label><br>
 							<label for="option-software-5"><input type="checkbox" id="option-software-5" name="vehicle" value=""> HTML &amp; CSS</label><br>
 						</form>
-					</div>
+					</div> *@
 				</div>
 				<div class="col-lg-9">
 					<div class="row">
-						<div class="col-md-6 d-flex align-items-stretch ftco-animate">
+						@foreach (var item in Model)
+						{
+							<div class="col-md-6 d-flex align-items-stretch ftco-animate">
+								<div class="project-wrap">
+									<a href="@Url.Action("Details", "Courses", new { id = item.Idce })" class="img" style="background-image: url('@item.CourseImg');">
+										<span class="price">@item.Class.Name</span>
+									</a>
+									<div class="text p-4">
+										<h3><a href="@Url.Action("Details", "Courses", new { id = item.Idce })">@item.NameCourse</a></h3>
+										<p class="advisor">Advisor <span>@item.ApplicationUser.FullName</span></p>
+										<ul class="d-flex justify-content-between">
+											<li><span class="flaticon-shower"></span>@item.Subject.Namest</li>
+											<li class="price">$@item.Price</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						}
+
+
+						@* <div class="col-md-6 d-flex align-items-stretch ftco-animate">
 							<div class="project-wrap">
 								<a href="#" class="img" style="background-image: url(/images/work-1.jpg);">
 									<span class="price">Software</span>
@@ -189,7 +247,7 @@
 									</ul>
 								</div>
 							</div>
-						</div>
+						</div> *@
 					</div>
 					<div class="row mt-5">
 						<div class="col">
