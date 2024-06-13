@@ -7,323 +7,89 @@
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\courses\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\courses\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240607163702_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240607163702_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240525124314_v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240525124314_v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240525032934_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240525032934_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240524162420_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240524162420_v1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240524155742_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240524155742_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240517184429_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240517184429_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240517181341_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240517181341_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240513140009_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240513140009_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240512180528_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240512180528_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240512180024_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240512180024_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240512175455_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240512175455_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DA\\GS\\GS\\Migrations\\20240512175120_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240512175120_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\userdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\tutors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\tutors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\homework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\homework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\servicer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\servicer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\ratting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\ratting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\timecourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\timecourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\transactionhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\transactionhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\requiredscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\requiredscore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\bills1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\bills1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\timecoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\timecoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\paymentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\paymentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\bills1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\bills1\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\bills1\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\bills1\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\migrations\\20240607171742_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\migrations\\20240607171742_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\assessescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\assessescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\gs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\gs.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\tutors\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\tutors\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\tutors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\tutors\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\tutorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\tutorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\about\\blog1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\about\\blog1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\manage\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\manage\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\manage\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\manage\\deletepersonaldata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\manage\\deletepersonaldata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\manage\\externallogins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\manage\\externallogins.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\manage\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\manage\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\manage\\_managenav.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\_statusmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\manage\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\areas\\identity\\pages\\account\\manage\\managenavpages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\timecourses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\timecourses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\homeworkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\homeworkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\tutors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\tutors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\assess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\assess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\repositories\\eftutorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\repositories\\eftutorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\repositories\\itutorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\repositories\\itutorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\repositories\\iclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\repositories\\iclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\extensions\\sectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\extensions\\sectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\controllers\\rattingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\rattingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\repositories\\efsubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\repositories\\efsubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\repositories\\isubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\repositories\\isubjectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\repositories\\efclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\repositories\\efclassrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\gs.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\gs.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\wwwroot\\scss\\style.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\wwwroot\\scss\\style.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\da\\gs\\gs\\models\\dacsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\dacsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "DockedHeight": 345,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bills1Controller.cs",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\Bills1Controller.cs",
+              "RelativeDocumentMoniker": "GS\\Controllers\\Bills1Controller.cs",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\Bills1Controller.cs",
+              "RelativeToolTip": "GS\\Controllers\\Bills1Controller.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAAmwLwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T07:34:52Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Courses\\Details.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Courses\\Details.cshtml",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Courses\\Details.cshtml",
+              "RelativeToolTip": "GS\\Views\\Courses\\Details.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAmwEIAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T07:35:38.706Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Bills1\\Index.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Bills1\\Index.cshtml",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Bills1\\Index.cshtml",
+              "RelativeToolTip": "GS\\Views\\Bills1\\Index.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T07:31:53.662Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
@@ -350,20 +116,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Program.cs",
-              "RelativeDocumentMoniker": "GS\\Program.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Program.cs",
-              "RelativeToolTip": "GS\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T09:07:45.796Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -373,919 +126,80 @@
               "RelativeDocumentMoniker": "GS\\Views\\Courses\\All.cshtml",
               "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Courses\\All.cshtml",
               "RelativeToolTip": "GS\\Views\\Courses\\All.cshtml",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAkwIoAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-08T08:55:40.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\CoursesController.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\CoursesController.cs",
-              "RelativeToolTip": "GS\\Controllers\\CoursesController.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAuwFwAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T07:38:00.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClassesController.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\ClassesController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\ClassesController.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\ClassesController.cs",
-              "RelativeToolTip": "GS\\Controllers\\ClassesController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T09:02:23.469Z",
+              "WhenOpened": "2024-06-13T07:44:02.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Courses\\Edit.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Courses\\Edit.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Courses\\Edit.cshtml",
-              "RelativeToolTip": "GS\\Views\\Courses\\Edit.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAADAAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-07T17:23:30.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Servicer.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Servicer.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\Servicer.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\Servicer.cs",
-              "RelativeToolTip": "GS\\Models\\Servicer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T16:34:49.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Ratting.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Ratting.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\Ratting.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\Ratting.cs",
-              "RelativeToolTip": "GS\\Models\\Ratting.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAuwA0AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:37:47.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\Role.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\Role.cs",
-              "RelativeToolTip": "GS\\Models\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T16:34:46.559Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SubjectsController.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\SubjectsController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\SubjectsController.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\SubjectsController.cs",
-              "RelativeToolTip": "GS\\Controllers\\SubjectsController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T12:40:21.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "HomeWork.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\HomeWork.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\HomeWork.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\HomeWork.cs",
-              "RelativeToolTip": "GS\\Models\\HomeWork.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAQwBwAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T16:52:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Tutors\\Index.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Tutors\\Index.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Tutors\\Index.cshtml",
-              "RelativeToolTip": "GS\\Views\\Tutors\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAAOAAAA",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Courses\\Index.cshtml",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Courses\\Index.cshtml",
+              "RelativeToolTip": "GS\\Views\\Courses\\Index.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T06:58:13.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserDetail.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\UserDetail.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\UserDetail.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\UserDetail.cs",
-              "RelativeToolTip": "GS\\Models\\UserDetail.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAcwAYAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T16:36:32.613Z"
+              "WhenOpened": "2024-06-13T07:37:35.715Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "20240607163702_initial.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240607163702_initial.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240607163702_initial.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240607163702_initial.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240607163702_initial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "GS\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAkwBEAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T16:37:02.434Z"
+              "WhenOpened": "2024-06-13T07:36:49.731Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "TimeCourse.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\TimeCourse.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\TimeCourse.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\TimeCourse.cs",
-              "RelativeToolTip": "GS\\Models\\TimeCourse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAbAAAA",
+              "DocumentIndex": 4,
+              "Title": "20240607171742_initial.cs",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240607171742_initial.cs",
+              "RelativeDocumentMoniker": "GS\\Migrations\\20240607171742_initial.cs",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240607171742_initial.cs",
+              "RelativeToolTip": "GS\\Migrations\\20240607171742_initial.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBcAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:46:22.601Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "TransactionHistory.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\TransactionHistory.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\TransactionHistory.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\TransactionHistory.cs",
-              "RelativeToolTip": "GS\\Models\\TransactionHistory.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAA4AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:23:05.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "RequiredScore.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\RequiredScore.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\RequiredScore.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\RequiredScore.cs",
-              "RelativeToolTip": "GS\\Models\\RequiredScore.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAkAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:32:17.265Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Bills1Controller.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\Bills1Controller.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\Bills1Controller.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\Bills1Controller.cs",
-              "RelativeToolTip": "GS\\Controllers\\Bills1Controller.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAgwC8AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T12:48:04.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "BillsController.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\BillsController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\BillsController.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\BillsController.cs",
-              "RelativeToolTip": "GS\\Controllers\\BillsController.cs",
-              "ViewState": "AQIAAJAAAAAAAAAAAAAAAAsAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T04:11:14.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "TimeCoursesController.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\TimeCoursesController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\TimeCoursesController.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\TimeCoursesController.cs",
-              "RelativeToolTip": "GS\\Controllers\\TimeCoursesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T12:46:17.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "PaymentModel.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\PaymentModel.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\PaymentModel.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\PaymentModel.cs",
-              "RelativeToolTip": "GS\\Controllers\\PaymentModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T11:26:25.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Bills1\\Index.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Bills1\\Index.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Bills1\\Index.cshtml",
-              "RelativeToolTip": "GS\\Views\\Bills1\\Index.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAADEAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:24:41.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Bills1\\Create.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Bills1\\Create.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Bills1\\Create.cshtml",
-              "RelativeToolTip": "GS\\Views\\Bills1\\Create.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABMAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T11:40:33.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "AssessesController.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\AssessesController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\AssessesController.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\AssessesController.cs",
-              "RelativeToolTip": "GS\\Controllers\\AssessesController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAIBJwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T02:51:53.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "GS\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAYwC4AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-31T11:49:49.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "GS.csproj",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\GS.csproj",
-              "RelativeDocumentMoniker": "GS\\GS.csproj",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\GS.csproj",
-              "RelativeToolTip": "GS\\GS.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-17T19:35:49.076Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "All.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Tutors\\All.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Tutors\\All.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Tutors\\All.cshtml",
-              "RelativeToolTip": "GS\\Views\\Tutors\\All.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAIBJwBYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-31T12:06:04.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Tutors\\Create.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Tutors\\Create.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Tutors\\Create.cshtml",
-              "RelativeToolTip": "GS\\Views\\Tutors\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T06:17:27.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "TutorsController.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\TutorsController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\TutorsController.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\TutorsController.cs",
-              "RelativeToolTip": "GS\\Controllers\\TutorsController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCEAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T15:55:42.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "AboutController.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\AboutController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\AboutController.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\AboutController.cs",
-              "RelativeToolTip": "GS\\Controllers\\AboutController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwA4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T06:33:06.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Blog1.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\About\\Blog1.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\About\\Blog1.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\About\\Blog1.cshtml",
-              "RelativeToolTip": "GS\\Views\\About\\Blog1.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T06:48:41.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:08:25.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\About\\Index.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\About\\Index.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\About\\Index.cshtml",
-              "RelativeToolTip": "GS\\Views\\About\\Index.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAIBJwDwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T06:45:56.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:08:04.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "ChangePassword.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:08:26.705Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "DeletePersonalData.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:08:30.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "ExternalLogins.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:08:38.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "_StatusMessage.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\_StatusMessage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:08:23.694Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:08:10.294Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:08:08.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "AccessDenied.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:07:59.889Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:07:58.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "_ManageNav.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:07:11.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "_StatusMessage.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\_StatusMessage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:07:57.036Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T14:07:50.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T14:07:39.864Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "ManageNavPages.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAqwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T14:07:23.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "GS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T07:36:38.77Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "GS\\Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T06:25:46.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\TimeCourses\\Create.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\TimeCourses\\Create.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\TimeCourses\\Create.cshtml",
-              "RelativeToolTip": "GS\\Views\\TimeCourses\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-25T13:02:14.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "HomeWorkController.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\HomeWorkController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\HomeWorkController.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\HomeWorkController.cs",
-              "RelativeToolTip": "GS\\Controllers\\HomeWorkController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T12:45:30.284Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Tutors\\Details.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Tutors\\Details.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Tutors\\Details.cshtml",
-              "RelativeToolTip": "GS\\Views\\Tutors\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-24T17:40:37.018Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "GS\\ScaffoldingReadMe.txt",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "GS\\ScaffoldingReadMe.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-05-13T16:14:26.423Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "GS\\Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "GS\\Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-25T07:31:24.321Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "Assess.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Assess.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\Assess.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\Assess.cs",
-              "RelativeToolTip": "GS\\Models\\Assess.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T15:35:45.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "EFTutorRepository.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Repositories\\EFTutorRepository.cs",
-              "RelativeDocumentMoniker": "GS\\Repositories\\EFTutorRepository.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Repositories\\EFTutorRepository.cs",
-              "RelativeToolTip": "GS\\Repositories\\EFTutorRepository.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAiwDIAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T15:28:17.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "ITutorRepository.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Repositories\\ITutorRepository.cs",
-              "RelativeDocumentMoniker": "GS\\Repositories\\ITutorRepository.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Repositories\\ITutorRepository.cs",
-              "RelativeToolTip": "GS\\Repositories\\ITutorRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T15:28:05.886Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "IClassRepository.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Repositories\\IClassRepository.cs",
-              "RelativeDocumentMoniker": "GS\\Repositories\\IClassRepository.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Repositories\\IClassRepository.cs",
-              "RelativeToolTip": "GS\\Repositories\\IClassRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T06:07:10.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "SectionExtensions.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Extensions\\SectionExtensions.cs",
-              "RelativeDocumentMoniker": "GS\\Extensions\\SectionExtensions.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Extensions\\SectionExtensions.cs",
-              "RelativeToolTip": "GS\\Extensions\\SectionExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T11:16:45.337Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "RattingsController.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Controllers\\RattingsController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\RattingsController.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Controllers\\RattingsController.cs",
-              "RelativeToolTip": "GS\\Controllers\\RattingsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T02:53:26.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Home\\Privacy.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "GS\\Views\\Home\\Privacy.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-22T15:05:27.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "GS\\Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-23T06:25:48.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "EFSubjectRepository.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Repositories\\EFSubjectRepository.cs",
-              "RelativeDocumentMoniker": "GS\\Repositories\\EFSubjectRepository.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Repositories\\EFSubjectRepository.cs",
-              "RelativeToolTip": "GS\\Repositories\\EFSubjectRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T06:06:59.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "ISubjectRepository.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Repositories\\ISubjectRepository.cs",
-              "RelativeDocumentMoniker": "GS\\Repositories\\ISubjectRepository.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Repositories\\ISubjectRepository.cs",
-              "RelativeToolTip": "GS\\Repositories\\ISubjectRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T06:07:26.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
-              "Title": "EFClassRepository.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Repositories\\EFClassRepository.cs",
-              "RelativeDocumentMoniker": "GS\\Repositories\\EFClassRepository.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Repositories\\EFClassRepository.cs",
-              "RelativeToolTip": "GS\\Repositories\\EFClassRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T06:06:43.962Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "GS",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\GS.csproj",
-              "RelativeDocumentMoniker": "GS\\GS.csproj",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\GS.csproj",
-              "RelativeToolTip": "GS\\GS.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-22T15:26:41.672Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
-              "Title": "style.css",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\wwwroot\\css\\style.css",
-              "RelativeDocumentMoniker": "GS\\wwwroot\\css\\style.css",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\wwwroot\\css\\style.css",
-              "RelativeToolTip": "GS\\wwwroot\\css\\style.css",
-              "ViewState": "AQIAAM4BAAAAAAAAACBjwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-18T08:07:27.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "style.scss",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\wwwroot\\scss\\style.scss",
-              "RelativeDocumentMoniker": "GS\\wwwroot\\scss\\style.scss",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\wwwroot\\scss\\style.scss",
-              "RelativeToolTip": "GS\\wwwroot\\scss\\style.scss",
-              "ViewState": "AQIAAIYBAAAAAAAAACBjwJsBAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2024-05-18T08:06:28.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20240525124314_v3.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240525124314_v3.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240525124314_v3.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240525124314_v3.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240525124314_v3.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T12:43:14.512Z"
+              "WhenOpened": "2024-06-13T07:32:58.958Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "20240525032934_v2.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240525032934_v2.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240525032934_v2.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240525032934_v2.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240525032934_v2.cs",
+              "Title": "DACSDbContext.cs",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\DACSDbContext.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\DACSDbContext.cs",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\DACSDbContext.cs",
+              "RelativeToolTip": "GS\\Models\\DACSDbContext.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T03:29:35.108Z"
+              "WhenOpened": "2024-06-13T07:29:51.855Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20240524155742_v2.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240524155742_v2.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240524155742_v2.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240524155742_v2.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240524155742_v2.cs",
+              "DocumentIndex": 7,
+              "Title": "Bill.cs",
+              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Models\\Bill.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\Bill.cs",
+              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Models\\Bill.cs",
+              "RelativeToolTip": "GS\\Models\\Bill.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T15:57:42.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "20240524162420_v1.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240524162420_v1.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240524162420_v1.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240524162420_v1.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240524162420_v1.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-24T16:24:20.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20240517184429_Initial.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240517184429_Initial.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240517184429_Initial.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240517184429_Initial.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240517184429_Initial.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:44:30.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "20240517181341_Initial.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240517181341_Initial.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240517181341_Initial.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240517181341_Initial.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240517181341_Initial.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:13:41.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20240513140009_Initial.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240513140009_Initial.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240513140009_Initial.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240513140009_Initial.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240513140009_Initial.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T14:00:09.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20240512180528_Initial.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512180528_Initial.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240512180528_Initial.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512180528_Initial.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240512180528_Initial.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:05:28.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "20240512180024_Initial.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512180024_Initial.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240512180024_Initial.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512180024_Initial.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240512180024_Initial.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:00:24.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "20240512175455_Initial.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512175455_Initial.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240512175455_Initial.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512175455_Initial.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240512175455_Initial.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T17:54:55.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20240512175120_Initial.cs",
-              "DocumentMoniker": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512175120_Initial.cs",
-              "RelativeDocumentMoniker": "GS\\Migrations\\20240512175120_Initial.cs",
-              "ToolTip": "D:\\Study\\DA\\GS\\GS\\Migrations\\20240512175120_Initial.cs",
-              "RelativeToolTip": "GS\\Migrations\\20240512175120_Initial.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T17:51:21.013Z"
+              "WhenOpened": "2024-06-13T07:29:46.738Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 200,
+          "DockedHeight": 167,
           "SelectedChildIndex": -1,
           "Children": [
             {

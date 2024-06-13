@@ -17,7 +17,10 @@ namespace GS.Controllers
         {
             _context = context;
         }
-
+        public async Task<IActionResult> GetAll()
+        {
+            return View();
+        }
         // GET: Subjects
         public async Task<IActionResult> Index()
         {

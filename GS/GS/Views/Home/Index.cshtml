@@ -3,6 +3,7 @@
 
 @{
     ViewData["Title"] = "Log in";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @using Microsoft.AspNetCore.Identity;
 @using Microsoft.AspNetCore.Authorization;
@@ -39,7 +40,7 @@
                     <span class="subheading">Chào Mừng Đến với Gia Sư Online Việt!</span>
                     <h1 class="mb-4">Nơi Cung Cấp Những Khóa Học Chất Lượng Cho Bạn</h1>
                     <p class="caps">Luôn sẵn sàng đem tri thức đến với bạn, vượt qua mọi không gian và thời gian.</p>
-                    <p class="mb-0"><a href="#" class="btn btn-primary">Học Ngay</a> <a href="#" class="btn btn-white">Xem Thêm</a></p>
+                    <p class="mb-0"><a href="/Identity/Account/Login" class="btn btn-primary">Học Ngay</a> <a href="/Courses/All" class="btn btn-white">Xem Thêm</a></p>
                 </div>
             </div>
         </div>
@@ -141,7 +142,7 @@
                     </a>
                 </div>
                 <div class="col-md-12 text-center mt-5">
-                    <a href="#" class="btn btn-secondary">Xem Tất Cả</a>
+                    <a href="/Courses/All" class="btn btn-secondary">Xem Tất Cả</a>
                 </div>
             </div>
         </div>
@@ -158,11 +159,11 @@
             <div class="row">
                 <div class="col-md-4 ftco-animate">
                     <div class="project-wrap">
-                        <a href="#" class="img" style="background-image: url(images/work-1.jpg);">
+                        <a href="/Courses/All" class="img" style="background-image: url(images/work-1.jpg);">
                             <span class="price">Software</span>
                         </a>
                         <div class="text p-4">
-                            <h3><a href="#">Design for the web with adobe photoshop</a></h3>
+                            <h3><a href="/Courses/All">Design for the web with adobe photoshop</a></h3>
                             <p class="advisor">Advisor <span>Tony Garret</span></p>
                             <ul class="d-flex justify-content-between">
                                 <li><span class="flaticon-shower"></span>2300</li>
@@ -173,11 +174,11 @@
                 </div>
                 <div class="col-md-4 ftco-animate">
                     <div class="project-wrap">
-                        <a href="#" class="img" style="background-image: url(images/work-2.jpg);">
+                        <a href="/Courses/All" class="img" style="background-image: url(images/work-2.jpg);">
                             <span class="price">Software</span>
                         </a>
                         <div class="text p-4">
-                            <h3><a href="#">Design for the web with adobe photoshop</a></h3>
+                            <h3><a href="/Courses/All">Design for the web with adobe photoshop</a></h3>
                             <p class="advisor">Advisor <span>Tony Garret</span></p>
                             <ul class="d-flex justify-content-between">
                                 <li><span class="flaticon-shower"></span>2300</li>
@@ -188,11 +189,11 @@
                 </div>
                 <div class="col-md-4 ftco-animate">
                     <div class="project-wrap">
-                        <a href="#" class="img" style="background-image: url('/images/work-3.jpg');">
+                        <a href="/Courses/All" class="img" style="background-image: url('/images/work-3.jpg');">
                             <span class="price">Software</span>
                         </a>
                         <div class="text p-4">
-                            <h3><a href="#">Design for the web with adobe photoshop</a></h3>
+                            <h3><a href="/Courses/All">Design for the web with adobe photoshop</a></h3>
                             <p class="advisor">Advisor <span>Tony Garret</span></p>
                             <ul class="d-flex justify-content-between">
                                 <li><span class="flaticon-shower"></span>2300</li>
@@ -204,11 +205,11 @@
 
                 <div class="col-md-4 ftco-animate">
                     <div class="project-wrap">
-                        <a href="#" class="img" style="background-image: url('/images/work-4.jpg');">
+                        <a href="/Courses/All" class="img" style="background-image: url('/images/work-4.jpg');">
                             <span class="price">Software</span>
                         </a>
                         <div class="text p-4">
-                            <h3><a href="#">Design for the web with adobe photoshop</a></h3>
+                            <h3><a href="/Courses/All">Design for the web with adobe photoshop</a></h3>
                             <p class="advisor">Advisor <span>Tony Garret</span></p>
                             <ul class="d-flex justify-content-between">
                                 <li><span class="flaticon-shower"></span>2300</li>
@@ -219,11 +220,11 @@
                 </div>
                 <div class="col-md-4 ftco-animate">
                     <div class="project-wrap">
-                        <a href="#" class="img" style="background-image: url('/images/work-5.jpg');">
+                        <a href="/Courses/All" class="img" style="background-image: url('/images/work-5.jpg');">
                             <span class="price">Software</span>
                         </a>
                         <div class="text p-4">
-                            <h3><a href="#">Design for the web with adobe photoshop</a></h3>
+                            <h3><a href="/Courses/All">Design for the web with adobe photoshop</a></h3>
                             <p class="advisor">Advisor <span>Tony Garret</span></p>
                             <ul class="d-flex justify-content-between">
                                 <li><span class="flaticon-shower"></span>2300</li>
@@ -234,11 +235,11 @@
                 </div>
                 <div class="col-md-4 ftco-animate">
                     <div class="project-wrap">
-                        <a href="#" class="img" style="background-image: url(images/work-6.jpg);">
+                        <a href="/Courses/All" class="img" style="background-image: url(images/work-6.jpg);">
                             <span class="price">Software</span>
                         </a>
                         <div class="text p-4">
-                            <h3><a href="#">Design for the web with adobe photoshop</a></h3>
+                            <h3><a href="/Courses/All">Design for the web with adobe photoshop</a></h3>
                             <p class="advisor">Advisor <span>Tony Garret</span></p>
                             <ul class="d-flex justify-content-between">
                                 <li><span class="flaticon-shower"></span>2300</li>
@@ -314,7 +315,7 @@
                                     <span class="subheading">Nâng Cấp Bản Thân Bạn</span>
                                     <h2 class="mb-4">Học Tất Cả Mọi Thứ Bạn Muốn </h2>
                                     <p>Bất kỳ ai cũng có thể học hỏi, khám phá và sáng tạo. Không có giới hạn cho sự hiểu biết và không có biên giới cho sự tò mò. Những cư dân văn bản mù lòa tin rằng kiến thức là vô hạn và việc học là một hành trình không bao giờ kết thúc. Và chúng tôi mang đến cho bạn những dịch vụ, trải nghiệm tốt nhất khi đến với chúng tôi Trung Tâm Gia sư mọi đều tốt nhất đều giành cho bạn.</p>
-                                    <p><a href="#" class="btn btn-primary">Đăng Ký Ngay!</a></p>
+                                    <p><a href="/Identity/Account/Register" class="btn btn-primary">Đăng Ký Ngay!</a></p>
                                 </div>
                             </div>
                         </div>
@@ -458,7 +459,7 @@
                         <div class="overlay"></div>
                         <h2>We Are StudyLab An Online Learning Center</h2>
                         <p>We can manage your dream building A small river named Duden flows by their place</p>
-                        <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Enroll Now</a></p>
+                        <p class="mb-0"><a href="/Identity/Account/Register" class="btn btn-primary px-4 py-3">Enroll Now</a></p>
                     </div>
                 </div>
             </div>

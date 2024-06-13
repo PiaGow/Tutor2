@@ -5,10 +5,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Details</h1>
+<h1>Chi Tiết Khóa Học</h1>
 
 <div>
-    <h4>Course</h4>
+    <h4></h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -41,51 +41,72 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.DayInWeek)
         </dd>
-        <dt class = "col-sm-2">
+@*         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.CourseImg)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.CourseImg)
-        </dd>
-        <dt class = "col-sm-2">
+        </dd> *@
+@*         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.ClassLink)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.ClassLink)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
+        </dd> *@
+        
+        <dt class="col-sm-2">
+            @Html.DisplayName("Lớp")
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Subject)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Subject.Idst)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TimeCourse)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TimeCourse.Idtimece)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Class)
-        </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Class.Name)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ApplicationUser)
+            @Html.DisplayNameFor(model => model.Subject.Namest)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ApplicationUser.Id)
+            @Html.DisplayFor(model => model.Subject.Namest)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayName("Giờ Học")
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TimeCourse.Timestart) @Html.Display("-") @Html.DisplayFor(model=>model.TimeCourse.Timeend)
+        </dd>
+        
+        <dt class = "col-sm-2">
+            @Html.DisplayName("Gia Sư Giảng Dạy")
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ApplicationUser.FullName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayName("Giá")
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Idce">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    @* <a asp-action="~/Bill/Create" asp-route-id="@Model?.Idce">Học Ngay</a>  *@
+    <a class="btn btn-primary flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer" asp-controller="Bills1" asp-action="Create">
+        Thanh Toán
+    </a> 
 </div>
+<script>
+
+function goCheckOut() {
+    if (!User.Identity.IsAuthenticated)
+    {
+            window.location.href = "/Identity/Account/Login";
+        
+    }
+        
+        
+        // window.location.href = "/Identity/Account/Login";
+
+    
+        
+
+    }
+</script>

@@ -59,5 +59,8 @@ app.MapRazorPages();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+app.MapControllerRoute(
+	   name: "courseByClass",
+	   pattern: "Course/ByClass/{id}",
+	   defaults: new { controller = "Course", action = "ByClass" });
 app.Run();

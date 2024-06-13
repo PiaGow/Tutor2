@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GS.Models;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
 namespace GS.Controllers
 {
@@ -21,9 +23,113 @@ namespace GS.Controllers
             _classesController = classesController;
             _subjectsController = subjectsController;
         }
+		[HttpGet]
+		public async Task<IActionResult> Search(string searchString)
+		{
+			if (string.IsNullOrEmpty(searchString))
+			{
+				return Json(new List<Course>());
+			}
 
-        // GET: Courses
-        public async Task<IActionResult> Index()
+			var courses = await _context.Courses
+										.Include(c => c.Class)
+										.Include(c => c.Subject)
+										.Include(c => c.ApplicationUser)
+										.Where(c => c.NameCourse.Contains(searchString) ||
+													c.Courseinformation.Contains(searchString) ||
+													c.Class.Name.Contains(searchString) ||
+													c.Subject.Namest.Contains(searchString) ||
+													c.ApplicationUser.FullName.Contains(searchString))
+										.Select(c => new
+										{
+											c.Idce,
+											c.NameCourse,
+											c.CourseImg,
+											ClassName = c.Class.Name,
+											AdvisorName = c.ApplicationUser.FullName,
+											SubjectName = c.Subject.Namest,
+											c.Price
+										})
+										.ToListAsync();
+
+			return Json(courses);
+		}
+	
+	[HttpGet]
+		public async Task<IActionResult> GetCoursesByCategories(string categories)
+		{
+            
+			var selectedCategories = categories?.Split(',') ?? new string[0];
+			var courses = await _context.Courses //tìm theo lớp và môn
+										.Include(c => c.Class)
+                                        .Include(c=> c.Subject)
+                                        .Include(c=>c.ApplicationUser)
+										.Where(c => selectedCategories.Contains(c.Subject.Namest))
+										.Where(c => selectedCategories.Contains(c.Class.Name))
+										.ToListAsync();
+			if (courses.IsNullOrEmpty() && categories == null)// nếu ds null thì tìm lấy tất cả course trong data 
+			{
+				courses = await _context.Courses
+										.Include(c => c.Class)
+										.Include(c => c.Subject)
+										.Include(c => c.ApplicationUser)
+										.ToListAsync();
+			}
+			if (courses.IsNullOrEmpty())// nếu ds null thì tìm lấy ds course của tất cả lớp theo môn 
+            {
+                courses= await _context.Courses
+										.Include(c => c.Class)
+										.Include(c => c.Subject)
+										.Include(c => c.ApplicationUser)
+										.Where(c => selectedCategories.Contains(c.Subject.Namest))
+										.ToListAsync();
+			}
+			if (courses.IsNullOrEmpty())// nếu ds null thì tìm lấy ds course của tất cả môn theo lớp
+			{
+				courses = await _context.Courses
+										.Include(c => c.Class)
+										.Include(c => c.Subject)
+										.Include(c => c.ApplicationUser)
+										.Where(c => selectedCategories.Contains(c.Class.Name))
+										.ToListAsync();
+			}
+			
+			//var html = new StringBuilder();
+			//html.Append("<table class='table'><thead><tr>");
+			//html.Append("<th>Tên Khóa Học</th>");
+			//html.Append("<th>Ngày Bắt Đầu</th>");
+			//html.Append("<th>Ngày Kết Thúc</th>");
+			//html.Append("<th>Thông Tin Khóa Học</th>");
+			//html.Append("<th>Ngày Học</th>");
+			//html.Append("<th>Ảnh Minh Họa</th>");
+			//html.Append("<th>Giá</th>");
+			//html.Append("<th>Lớp Học</th>");
+			//html.Append("</tr></thead><tbody>");
+
+			//foreach (var course in courses)
+			//{
+
+			//             html.Append("<tr>");
+			//             html.AppendFormat("<td>{0}</td>", course.NameCourse);
+			//             html.AppendFormat("<td>{0}</td>", course.Starttime?.ToString("dd/MM/yyyy"));
+			//             html.AppendFormat("<td>{0}</td>", course.Endtime?.ToString("dd/MM/yyyy"));
+			//             html.AppendFormat("<td>{0}</td>", course.Courseinformation);
+			//             html.AppendFormat("<td>{0}</td>", course.DayInWeek);
+			//             html.AppendFormat("<td>{0}</td>", !string.IsNullOrEmpty(course.CourseImg) ? $"<img src='{course.CourseImg}' alt='Course Image' style='max-width: 100px;' />" : "");
+			//             html.AppendFormat("<td>{0}</td>", course.Price);
+			//             html.AppendFormat("<td>{0}</td>", course.Class.Name);
+			//             html.Append("</tr>");
+
+			//         }
+			//html.Append("</tbody></table>");
+
+
+			//return Content(html.ToString(), "text/html");
+			return PartialView("_View",courses);
+			
+		}
+
+		public async Task<IActionResult> Index()
         {
             var dACSDbContext = _context.Courses.Include(c => c.ApplicationUser).Include(c => c.Class).Include(c => c.Subject).Include(c => c.TimeCourse);
             return View(await dACSDbContext.ToListAsync());
@@ -53,11 +159,11 @@ namespace GS.Controllers
 			{
 				course = course.Where(p => p.Class.Name == categoryName);
 			}
-			foreach (var category in classes)
+			foreach (var category1 in classes)
 			{
 				// Đếm số lượng sách của từng thể loại
-				var bookCount1 = await CountBooksByClassAsync(category.Idcs);
-				bookCountByClass[category.Name] = bookCount1;
+				var bookCount1 = await CountBooksByClassAsync(category1.Idcs);
+				bookCountByClass[category1.Name] = bookCount1;
 			}
 			var bookCountBySubjects = new Dictionary<string, int>();
 			if (!string.IsNullOrEmpty(categoryName))
@@ -248,12 +354,13 @@ namespace GS.Controllers
 		public async Task<int> CountBooksByClassAsync(int categoryId)
 		{
 			// Sử dụng LINQ để đếm số lượng sách có categoryId tương ứng
-			return await _context.Class.CountAsync(b => b.Idcs == categoryId);
+			return await _context.Courses.CountAsync(b => b.Idcs == categoryId);
 		}
 		public async Task<int> CountBooksBySubjectAsync(int categoryId)
 		{
 			// Sử dụng LINQ để đếm số lượng sách có categoryId tương ứng
-			return await _context.Subjects.CountAsync(b => b.Idst == categoryId);
+			return await _context.Courses.CountAsync(b => b.Idst == categoryId);
 		}
-	}
+        
+    }
 }

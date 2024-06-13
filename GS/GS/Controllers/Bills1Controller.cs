@@ -6,24 +6,28 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GS.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace GS.Controllers
 {
     public class Bills1Controller : Controller
     {
         private readonly DACSDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public Bills1Controller(DACSDbContext context)
+        public Bills1Controller(DACSDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Bills1
-        public async Task<IActionResult> Index()
-        {
-            var dACSDbContext = _context.Bills.Include(b => b.ApplicationUser);
-            return View(await dACSDbContext.ToListAsync());
-        }
+        //public async Task<IActionResult> Index()
+        //{
+        //    var dACSDbContext = _context.Bills.Include(b => b.ApplicationUser);
+        //    return View(await dACSDbContext.ToListAsync());
+        //}
 
         // GET: Bills1/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -159,5 +163,55 @@ namespace GS.Controllers
         {
             return _context.Bills.Any(e => e.IdBill == id);
         }
+       
+    
+        [Authorize]
+      
+
+        // POST: Bill/CreateBill
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateBill(int courseId)
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return Challenge();
+            }
+
+            var course = await _context.Courses.FindAsync(courseId);
+            if (course == null)
+            {
+                return NotFound();
+            }
+
+            var bill = new Bill
+            {
+                Name = $"Thanh toán cho khóa học {course.NameCourse}",
+                DateOfPayment = DateTime.Now,
+                TotalDiscount = 0, // Bạn có thể tính toán giảm giá nếu cần
+                TotalMoney = course.Price,
+                UserId = user.Id,
+                ApplicationUser = user
+            };
+
+            _context.Bills.Add(bill);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Index", "Bill");
+        }
+            
+
+        // GET: Bill/Index
+        public async Task<IActionResult> Index()
+        {
+            var bills = await _context.Bills
+                                        .Include(b => b.ApplicationUser)
+                                        .ToListAsync();
+            return View(bills);
+        }
     }
 }
+
+
+

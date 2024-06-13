@@ -2,6 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\GS",
+    "\\GS\\Controllers",
+    "\\GS\\Momo",
     "\\GS\\Views",
     "\\GS\\Views\\Courses",
     "\\GS\\Views\\Home",
