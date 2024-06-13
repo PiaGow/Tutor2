@@ -5,68 +5,181 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - My Classroom</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Namehk)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Timestart)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Timeend)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Assignmentsubmitted)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TimeSubmitted)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Idce)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Namehk)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Timestart)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Timeend)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Assignmentsubmitted)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TimeSubmitted)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Idce)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Idhk">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Idhk">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Idhk">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+        .navbar {
+            background-color: #3c4043;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #3c4043;
+            color: white;
+            padding-top: 20px;
+            transform: translateX(0);
+            transition: transform 0.3s ease;
+        }
+
+            .sidebar.hidden {
+                transform: translateX(-250px);
+            }
+
+            .sidebar a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 10px 20px;
+            }
+
+                .sidebar a:hover {
+                    background-color: #5f6368;
+                }
+
+        .main-content {
+            padding: 20px;
+            margin-left: 250px;
+            transition: margin-left 0.3s ease;
+        }
+
+            .main-content.expanded {
+                margin-left: 0;
+            }
+
+        .toggle-button {
+            position: fixed;
+            top: 20px;
+            left: 250px;
+            background-color: #3c4043;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: left 0.3s ease;
+        }
+
+            .toggle-button.collapsed {
+                left: 0;
+            }
+
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .course-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33.333% - 40px);
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+            .course-card:hover {
+                transform: translateY(-5px);
+            }
+
+        .course-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .course-description {
+            color: #757575;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="/">Dashboard</a>
+        <a href="/courses">Courses</a>
+        <a href="/calendar">Calendar</a>
+        <a href="/settings">Settings</a>
+    </div>
+
+    <button id="toggleButton" class="toggle-button" onclick="toggleSidebar()">☰</button>
+
+    <div id="mainContent" class="main-content">
+        <h1>Welcome to My Classroom</h1>
+        <div class="course-list">
+            <div class="course-card">
+                <div class="course-title">ABC</div>
+                <div class="course-description">XYZ</div>
+            </div>
+            <div class="course-card">
+                <div class="course-title">ABC</div>
+                <div class="course-description">XYZ</div>
+            </div>
+            <div class="course-card">
+                <div class="course-title">ABC</div>
+                <div class="course-description">XYZ</div>
+            </div>
+            <div class="course-card">
+                <div class="course-title">ABC</div>
+                <div class="course-description">XYZ</div>
+            </div>
+            <div class="course-card">
+                <div class="course-title">ABC</div>
+                <div class="course-description">XYZ</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var mainContent = document.getElementById("mainContent");
+            var toggleButton = document.getElementById("toggleButton");
+
+            if (sidebar.classList.contains("hidden")) {
+                sidebar.classList.remove("hidden");
+                mainContent.classList.remove("expanded");
+                toggleButton.classList.remove("collapsed");
+                toggleButton.textContent = "☰";
+            } else {
+                sidebar.classList.add("hidden");
+                mainContent.classList.add("expanded");
+                toggleButton.classList.add("collapsed");
+                toggleButton.textContent = "☰";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+

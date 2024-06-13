@@ -2,11 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\GS",
-    "\\GS\\Controllers",
-    "\\GS\\Momo",
+    "\\GS\\Areas",
+    "\\GS\\Areas\\Identity",
+    "\\GS\\Areas\\Identity\\Pages",
+    "\\GS\\Areas\\Identity\\Pages\\Account",
+    "\\GS\\Areas\\Identity\\Pages\\Account\\Manage",
     "\\GS\\Views",
-    "\\GS\\Views\\Courses",
-    "\\GS\\Views\\Home",
     "\\GS\\Views\\Shared",
     "\\GS\\Views\\Shared\\Guess-view",
     "\\GS\\Views\\Tutors"

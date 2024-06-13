@@ -49,6 +49,7 @@ namespace GS.Controllers
         }
 
         // GET: Bills1/Create
+        [Authorize]
         public IActionResult Create()
         {
             ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id");
