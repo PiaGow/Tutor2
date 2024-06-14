@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using GS.Models;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Identity;
+using GS.Momo;
+using Newtonsoft.Json.Linq;
 
 namespace GS.Controllers
 {
@@ -16,12 +19,21 @@ namespace GS.Controllers
         private readonly DACSDbContext _context;
         private readonly ClassesController _classesController;
         private readonly SubjectsController _subjectsController;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public CoursesController(DACSDbContext context, ClassesController classesController, SubjectsController subjectsController)
+        private const string MomoEndpoint = "https://test-payment.momo.vn/gw_payment/transactionProcessor";
+        private const string PartnerCode = "MOMO5RGX20191128";
+        private const string AccessKey = "M8brj9K6E22vXoDB";
+        private const string SecretKey = "nqQiVSgDMy809JoPF6OzP5OdBUB550Y4";
+        private const string ReturnUrl = "https://localhost:44336/MyCourses";
+        private const string NotifyUrl = "https://localhost:44336/MyCourses";
+
+        public CoursesController(UserManager<ApplicationUser> userManager, DACSDbContext context, ClassesController classesController, SubjectsController subjectsController)
         {
             _context = context;
             _classesController = classesController;
             _subjectsController = subjectsController;
+            _userManager = userManager;
         }
 		[HttpGet]
 		public async Task<IActionResult> Search(string searchString)
@@ -361,6 +373,125 @@ namespace GS.Controllers
 			// Sử dụng LINQ để đếm số lượng sách có categoryId tương ứng
 			return await _context.Courses.CountAsync(b => b.Idst == categoryId);
 		}
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Pay(int courseId)
+        //{
+        //    var userId = _userManager.GetUserId(User);
+        //    var course = await _context.Courses.FirstOrDefaultAsync(c => c.Idce == courseId);
+
+        //    if (course == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    var bill = new Bill
+        //    {
+        //        Name = course.NameCourse,
+        //        DateOfPayment = DateTime.Now,
+        //        TotalDiscount = 0,
+        //        TotalMoney = course.Price,
+        //        UserId = userId
+        //    };
+
+        //    _context.Bills.Add(bill);
+        //    await _context.SaveChangesAsync();
+
+        //    return RedirectToAction(nameof(Index));
+        //}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         
+        public async Task<IActionResult> Pay(int id)
+        {
+            var course = await _context.Courses.FindAsync(id);
+            if (course == null)
+            {
+                return NotFound();
+            }
+
+            var userId = _userManager.GetUserId(User);
+            var orderId = Guid.NewGuid().ToString();
+            var requestId = Guid.NewGuid().ToString();
+
+            var rawHash = "partnerCode=" + PartnerCode +
+                          "&accessKey=" + AccessKey +
+                          "&requestId=" + requestId +
+                          "&amount=" + course.Price +
+                          "&orderId=" + orderId +
+                          "&orderInfo=" + course.NameCourse +
+                          "&returnUrl=" + ReturnUrl +
+                          "&notifyUrl=" + NotifyUrl +
+                          "&extraData=";
+
+            MoMoSecurity crypto = new MoMoSecurity();
+            string signature = crypto.signSHA256(rawHash, SecretKey);
+
+            JObject message = new JObject
+            {
+                { "partnerCode", PartnerCode },
+                { "accessKey", AccessKey },
+                { "requestId", requestId },
+                { "amount", course.Price.ToString() },
+                { "orderId", orderId },
+                { "orderInfo", course.NameCourse },
+                { "returnUrl", ReturnUrl },
+                { "notifyUrl", NotifyUrl },
+                { "extraData", "" },
+                { "requestType", "captureMoMoWallet" },
+                { "signature", signature }
+            };
+
+            string responseFromMomo = PaymentRequest.sendPaymentRequest(MomoEndpoint, message.ToString());
+
+            JObject jmessage = JObject.Parse(responseFromMomo);
+
+            if (jmessage.ContainsKey("payUrl"))
+            {
+                return Redirect(jmessage.GetValue("payUrl").ToString());
+            }
+            else
+            {
+                return BadRequest("Payment initiation failed.");
+            }
+            return View(course);
+        }
+
+        public async Task<IActionResult> PaymentResult(string partnerCode, string orderId, string requestId, string amount, string orderInfo, string orderType, string transId, string resultCode, string message, string payType, string responseTime, string extraData, string signature)
+        {
+            if (resultCode == "0")
+            {
+                var userId = _userManager.GetUserId(User);
+
+                var bill = new Bill
+                {
+                    Name = orderInfo,
+                    DateOfPayment = DateTime.Now,
+                    TotalDiscount = 0,
+                    TotalMoney = float.Parse(amount),
+                    UserId = userId,
+                    ApplicationUser = await _userManager.FindByIdAsync(userId)
+                };
+
+                _context.Bills.Add(bill);
+                await _context.SaveChangesAsync();
+
+                return View(Index());
+            }
+            else
+            {
+                ViewBag.ErrorMessage = message;
+                return View("PaymentError");
+            }
+        }
+
+        // Additional methods for handling payment notifications
+        [HttpPost]
+        public IActionResult PaymentNotify()
+        {
+            // Implement logic to handle payment notifications here
+            return Ok();
+        }
+     
     }
 }

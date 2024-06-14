@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\Gi3Fch_12.webp",
+      "PackagePath": "staticwebassets\\images\\Gi3Fch_12.webp"
+    },
+    {
       "Id": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\about-1.jpg",
       "PackagePath": "staticwebassets\\images\\about-1.jpg"
     },
@@ -123,6 +127,10 @@
     {
       "Id": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\sach-giao-khoa-hinh-hoc-12.jpg",
       "PackagePath": "staticwebassets\\images\\sach-giao-khoa-hinh-hoc-12.jpg"
+    },
+    {
+      "Id": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\sach-giao-khoa-hoa-hoc-9.png",
+      "PackagePath": "staticwebassets\\images\\sach-giao-khoa-hoa-hoc-9.png"
     },
     {
       "Id": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\teacher-1.jpg",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ychJ4k9Q73AS8Bjjg7iQH9xoLRAG4Z/e2fapdmLgN+w=",
+  "Hash": "gfa1Dr0Fe7fE7Ys/Tu0E3JsIxB5kB7yPPxLmIRv52vk=",
   "Source": "GS",
   "BasePath": "_content/GS",
   "Mode": "Default",
@@ -1537,6 +1537,25 @@
       "OriginalItemSpec": "wwwroot\\images\\bg_4.jpg"
     },
     {
+      "Identity": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\Gi3Fch_12.webp",
+      "SourceId": "GS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Study\\DA\\GS\\GS\\wwwroot\\",
+      "BasePath": "_content/GS",
+      "RelativePath": "images/Gi3Fch_12.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Gi3Fch_12.webp"
+    },
+    {
       "Identity": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\image_1.jpg",
       "SourceId": "GS",
       "SourceType": "Discovered",
@@ -1763,6 +1782,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\sach-giao-khoa-hinh-hoc-12.jpg"
+    },
+    {
+      "Identity": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\sach-giao-khoa-hoa-hoc-9.png",
+      "SourceId": "GS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Study\\DA\\GS\\GS\\wwwroot\\",
+      "BasePath": "_content/GS",
+      "RelativePath": "images/sach-giao-khoa-hoa-hoc-9.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\sach-giao-khoa-hoa-hoc-9.png"
     },
     {
       "Identity": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\teacher-1.jpg",

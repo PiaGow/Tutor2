@@ -6,33 +6,43 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GS.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace GS.Controllers
 {
     public class MyCoursesController : Controller
     {
         private readonly DACSDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public MyCoursesController(DACSDbContext context)
+        public MyCoursesController(DACSDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
-        // GET: MyCourses
+        // GET: Courses
         public async Task<IActionResult> Index()
         {
-            var dACSDbContext = _context.Courses.Include(c => c.ApplicationUser).Include(c => c.Class).Include(c => c.Subject).Include(c => c.TimeCourse);
-            return View(await dACSDbContext.ToListAsync());
+            var userId = _userManager.GetUserId(User);
+
+            var courses = await _context.Courses
+                .Include(c => c.ApplicationUser)
+                .Include(c => c.Class)
+                .Include(c => c.Subject)
+                .Where(c => c.UserId == userId)
+                .ToListAsync();
+
+            return View(courses);
         }
 
-        // GET: MyCourses/Details/5
+        // GET: Courses/Details/5
         public async Task<IActionResult> Details(int id)
         {
             var course = await _context.Courses
                 .Include(c => c.ApplicationUser)
                 .Include(c => c.Class)
                 .Include(c => c.Subject)
-                
                 .FirstOrDefaultAsync(m => m.Idce == id);
 
             if (course == null)

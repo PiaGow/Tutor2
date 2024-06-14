@@ -43,7 +43,7 @@ namespace GS.Models
         [ForeignKey("UserId")]
         [ValidateNever]
         public ApplicationUser? ApplicationUser { get; set; }
-
+        List<HomeWork> homeWorks { get; set; }  
 
     }
 }
