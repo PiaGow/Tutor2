@@ -133,7 +133,7 @@
         <div class="course-list">
             @foreach (var course in Model)
             {
-                    <div class="course-card" onclick="location.href='@Url.Action("Details", "Courses", new { id = course.Idce })'">
+                    <div class="course-card" onclick="location.href='@Url.Action("Details", "MyCourses", new { id = course.Idce })'">
                         <div class="course-title">@course.NameCourse</div>
                     <div class="course-description">@course.ApplicationUser.FullName</div>
                    

@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GS.Controllers
 {
 	public class PaymentModel : Controller
 	{
-		public IActionResult Index()
+        [Authorize]
+        public IActionResult Index()
 		{
 			return View();
 		}

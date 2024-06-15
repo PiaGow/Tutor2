@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GS.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GS.Controllers
 {
@@ -25,8 +26,9 @@ namespace GS.Controllers
 			.Include(p => p.courses) // Include thông tin về category
 			.ToListAsync();
 		}
-		// GET: Classes
-		public async Task<IActionResult> Index()
+        // GET: Classes
+        [Authorize ]
+        public async Task<IActionResult> Index()
         {
             return View(await _context.Class.ToListAsync());
         }
@@ -50,6 +52,7 @@ namespace GS.Controllers
         }
 
         // GET: Classes/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -72,6 +75,7 @@ namespace GS.Controllers
         }
 
         // GET: Classes/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -123,6 +127,7 @@ namespace GS.Controllers
         }
 
         // GET: Classes/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

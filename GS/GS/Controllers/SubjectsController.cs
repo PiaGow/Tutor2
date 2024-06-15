@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GS.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GS.Controllers
 {
@@ -53,6 +54,7 @@ namespace GS.Controllers
         }
 
         // GET: Subjects/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -75,6 +77,7 @@ namespace GS.Controllers
         }
 
         // GET: Subjects/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -126,6 +129,7 @@ namespace GS.Controllers
         }
 
         // GET: Subjects/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)

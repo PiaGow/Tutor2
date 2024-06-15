@@ -11,6 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity;
 using GS.Momo;
 using Newtonsoft.Json.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GS.Controllers
 {
@@ -214,9 +215,22 @@ namespace GS.Controllers
                 return NotFound();
             }
 
-            return View(course);
-        }
+            
 
+            var suggestedCourses = _context.Courses
+                .Where(c => c.Idcs == course.Idcs && c.Idce != course.Idce)
+                .Include(c => c.ApplicationUser)
+                .ToList();
+
+            var viewModel = new CourseDetailsViewModel
+            {
+                Course = course,
+                SuggestedCourses = suggestedCourses
+            };
+
+            return View(viewModel);
+        }
+        [Authorize]
         // GET: Courses/Create
         public IActionResult Create()
         {
@@ -264,6 +278,7 @@ namespace GS.Controllers
         }
 
         // GET: Courses/Edit/5
+        [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -323,6 +338,7 @@ namespace GS.Controllers
         }
 
         // GET: Courses/Delete/5
+        [Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -399,6 +415,7 @@ namespace GS.Controllers
 
         //    return RedirectToAction(nameof(Index));
         //}
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         

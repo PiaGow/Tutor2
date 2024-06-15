@@ -6,74 +6,169 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using GS.Models;
 using Microsoft.EntityFrameworkCore;
+using DocumentFormat.OpenXml.InkML;
 namespace GS.Controllers
 {
-	public class TutorsController : Controller
-		
-	{
-        private UserManager<ApplicationUser> _userManager;
-		private RoleManager<IdentityRole> _roleManager;
-		private DACSDbContext _dacsdbContext;
-		public TutorsController(DACSDbContext applicationUser, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
-		{
-			_dacsdbContext = applicationUser;
-			_userManager = userManager;
-			_roleManager = roleManager;
+    public class TutorsController : Controller
 
-		}
-		//      private readonly ITutorRepository _productRepository;
-		//public TutorsController(ITutorRepository productRepository)
+    {
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly DACSDbContext _context;
 
-		//{
-		//	_productRepository = productRepository;
-		//}
-		//[Authorize]
-		public IActionResult All()
-		{
-			return View();
-		}
-		public async Task<IActionResult> Index()
-		{
-			//return View(_dacsdbContext.Users.ToList());
-            var User = _userManager.Users;
-            var UserinTutorRole = (from user in _dacsdbContext.Users
-                                   join userRole in _dacsdbContext.UserRoles
-                                   on user.Id equals userRole.UserId
-                                   join role in _dacsdbContext.Roles
-                                   on userRole.RoleId equals role.Id
-                                   where role.Name == "Gia Sư"
-                                   select user).ToList();
-            return View(UserinTutorRole);
-
-        }
-		//public async Task<IActionResult> Detail()
-		//{
-		//	var User = _userManager.Users;
-		//	var UserinTutorRole = (from user in _dacsdbContext.Users
-		//								join userRole in _dacsdbContext.UserRoles
-		//								on user.Id equals userRole.UserId
-		//								join role in _dacsdbContext.Roles
-		//								on userRole.RoleId equals role.Id
-		//								where role.Name =="Gia Sư"
-		//								select user).ToList();
-		//	return View(UserinTutorRole);
-		//},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-        public async Task<IActionResult> Details(int? id)
+        public TutorsController(UserManager<ApplicationUser> userManager, DACSDbContext context)
         {
-            var userID = _userManager.GetUserId(HttpContext.User);
-            if(userID==null)
-            {
-                return RedirectToAction("Identity","Login", "Account");
-
-            }
-            else
-            {
-                ApplicationUser user = _userManager.FindByIdAsync(userID).Result;
-                return View(user);
-            }
+            _userManager = userManager;
+            _context = context;
+        }
+        public async Task<IActionResult> All()
+        {
+            return View();
+        }
+        // GET: ApplicationUser
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Users.ToListAsync());
         }
 
-        // GET: Classes/Create
-        
+        // GET: ApplicationUser/Details/5
+        public async Task<IActionResult> Details(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = _context.Users
+                .Include(u => u.Subjects)
+                .Include(u => u.Classes)
+                .Include(u => u.service)
+                .FirstOrDefault(m => m.Id == id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var courses = _context.Courses
+                .Where(c => c.ApplicationUser.Id == id)
+                .ToList();
+
+            var viewModel = new ApplicationUserDetailsViewModel
+            {
+                ApplicationUser = user,
+                Courses = courses
+            };
+
+            return View(viewModel);
+        }
+
+        // GET: ApplicationUser/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: ApplicationUser/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("FullName,PhoneNumber,Address,Age,Sex,CreditCardNumber,IDCard,IDCardImg,UserName,Email,PasswordHash")] ApplicationUser user)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _userManager.CreateAsync(user, user.PasswordHash);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction(nameof(Index));
+                }
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+            return View(user);
+        }
+
+        // GET: ApplicationUser/Edit/5
+        public async Task<IActionResult> Edit(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _context.Users.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
+        }
+
+        // POST: ApplicationUser/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(string id, [Bind("Id,FullName,PhoneNumber,Address,Age,Sex,CreditCardNumber,IDCard,IDCardImg,UserName,Email,PasswordHash")] ApplicationUser user)
+        {
+            if (id != user.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(user);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!UserExists(user.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(user);
+        }
+
+        // GET: ApplicationUser/Delete/5
+        public async Task<IActionResult> Delete(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _context.Users
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return View(user);
+        }
+
+        // POST: ApplicationUser/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(string id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool UserExists(string id)
+        {
+            return _context.Users.Any(e => e.Id == id);
+        }
     }
 }
