@@ -8,6 +8,7 @@
     "\\GS\\Areas\\Identity\\Pages\\Account",
     "\\GS\\Areas\\Identity\\Pages\\Account\\Manage",
     "\\GS\\Controllers",
+    "\\GS\\Models",
     "\\GS\\Views",
     "\\GS\\Views\\MyCourses",
     "\\GS\\Views\\Shared",

@@ -104,24 +104,31 @@ namespace GS.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            if (!_roleManager.RoleExistsAsync(Role.Role_Tutor).GetAwaiter().GetResult())
+            {
+                _roleManager.CreateAsync(new IdentityRole(Role.Role_Tutor)).GetAwaiter().GetResult();
+            }
+
             if (!_roleManager.RoleExistsAsync(Role.Role_Student).GetAwaiter().GetResult())
             {
                 _roleManager.CreateAsync(new IdentityRole(Role.Role_Student)).GetAwaiter().GetResult();
-                _roleManager.CreateAsync(new IdentityRole(Role.Role_Tutor)).GetAwaiter().GetResult();
-                _roleManager.CreateAsync(new IdentityRole(Role.Role_Admin)).GetAwaiter().GetResult();
             }
+
+            // Provide both "Gia Sư" and "Học Sinh" for selection
             Input = new()
             {
-                Rolelist = _roleManager.Roles.Select(x => x.Name).Select(i => new SelectListItem
-                {
-                    Text = i,
-                    Value = i
-                })
+                Rolelist = new List<SelectListItem>
+        {
+            new SelectListItem { Text = Role.Role_Tutor, Value = Role.Role_Tutor },
+            new SelectListItem { Text = Role.Role_Student, Value = Role.Role_Student }
+        }
             };
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-
         }
+    
+
+    
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
@@ -142,12 +149,16 @@ namespace GS.Areas.Identity.Pages.Account
                     _logger.LogInformation("User created a new account with password.");
                     if (!String.IsNullOrEmpty(Input.Role))
                     {
-                        await _userManager.AddToRoleAsync(user, Input.Role);
+                        if (Input.Role == Role.Role_Tutor || Input.Role == Role.Role_Student)
+                        {
+                            await _userManager.AddToRoleAsync(user, Input.Role);
+                        }
                     }
                     else
                     {
                         await _userManager.AddToRoleAsync(user, Role.Role_Student);
                     }
+
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
@@ -170,6 +181,7 @@ namespace GS.Areas.Identity.Pages.Account
                         return LocalRedirect(returnUrl);
                     }
                 }
+
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
