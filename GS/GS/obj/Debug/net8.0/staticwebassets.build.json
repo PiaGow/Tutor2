@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gfa1Dr0Fe7fE7Ys/Tu0E3JsIxB5kB7yPPxLmIRv52vk=",
+  "Hash": "VgFFg67dLZHisHBkF3W/imTJRYCVkyBkuvcrLwLWQnk=",
   "Source": "GS",
   "BasePath": "_content/GS",
   "Mode": "Default",
@@ -1687,6 +1687,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\loc.png"
+    },
+    {
+      "Identity": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\onlineedu1-1628588369676720089471-1630305182630463307619.webp",
+      "SourceId": "GS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Study\\DA\\GS\\GS\\wwwroot\\",
+      "BasePath": "_content/GS",
+      "RelativePath": "images/onlineedu1-1628588369676720089471-1630305182630463307619.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\onlineedu1-1628588369676720089471-1630305182630463307619.webp"
     },
     {
       "Identity": "D:\\Study\\DA\\GS\\GS\\wwwroot\\images\\person_1.jpg",

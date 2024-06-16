@@ -192,9 +192,31 @@
                     @Html.DisplayFor(model => model.Course.Price) VNĐ
                 </dd>
             </dl>
+            @*<form method="post" asp-action="Pay" asp-route-id="@Model.Course.Idce">
+            <button type="submit" class="btn btn-success">Thanh Toán</button>
+        </form>*@
+            @if (User.Identity.IsAuthenticated)
+{
+    var currentUserId = User.Claims.FirstOrDefault(c => c.Type == "UserId")?.Value;
+
+    if (Model.Course.ApplicationUser.Id != currentUserId)
+    {
             <form method="post" asp-action="Pay" asp-route-id="@Model.Course.Idce">
                 <button type="submit" class="btn btn-success">Thanh Toán</button>
             </form>
+    }
+    else
+    {
+                    <p>Only the owner of the course can make a payment.</p>
+                }
+}
+    else
+                {
+                    <form method="post" asp-action="Pay" asp-route-id="@Model.Course.Idce">
+                        <button type="submit" class="btn btn-success">Thanh Toán</button>
+                    </form>
+                }
+            
         </div>
 
         <div class="suggested-courses">

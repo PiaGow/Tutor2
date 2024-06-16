@@ -31,35 +31,35 @@ namespace GS.Controllers
         }
 
         // GET: ApplicationUser/Details/5
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(/*string id*/)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            //if (id == null)
+            //{
+            //    return NotFound();
+            //}
 
-            var user = _context.Users
-                .Include(u => u.Subjects)
-                .Include(u => u.Classes)
-                .Include(u => u.service)
-                .FirstOrDefault(m => m.Id == id);
+            //var user = _context.Users
+            //    .Include(u => u.Subjects)
+            //    .Include(u => u.Classes)
+            //    .Include(u => u.service)
+            //    .FirstOrDefault(m => m.Id == id);
 
-            if (user == null)
-            {
-                return NotFound();
-            }
+            //if (user == null)
+            //{
+            //    return NotFound();
+            //}
 
-            var courses = _context.Courses
-                .Where(c => c.ApplicationUser.Id == id)
-                .ToList();
+            //var courses = _context.Courses
+            //    .Where(c => c.ApplicationUser.Id == id)
+            //    .ToList();
 
-            var viewModel = new ApplicationUserDetailsViewModel
-            {
-                ApplicationUser = user,
-                Courses = courses
-            };
+            //var viewModel = new ApplicationUserDetailsViewModel
+            //{
+            //    ApplicationUser = user,
+            //    Courses = courses
+            //};
 
-            return View(viewModel);
+            return View();
         }
 
         // GET: ApplicationUser/Create

@@ -234,9 +234,9 @@ namespace GS.Controllers
         // GET: Courses/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id");
+            ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "FullName");
             ViewData["Idcs"] = new SelectList(_context.Class, "Idcs", "Name");
-            ViewData["Idst"] = new SelectList(_context.Subjects, "Idst", "Idst");
+            ViewData["Idst"] = new SelectList(_context.Subjects, "Idst", "Namest");
             ViewData["Idtimece"] = new SelectList(_context.TimeCourses, "Idtimece", "Idtimece");
             return View();
         }
@@ -462,7 +462,17 @@ namespace GS.Controllers
             string responseFromMomo = PaymentRequest.sendPaymentRequest(MomoEndpoint, message.ToString());
 
             JObject jmessage = JObject.Parse(responseFromMomo);
-
+            var bill = new Bill
+            {
+                Name = "Course",
+                DateOfPayment = DateTime.Now,
+                TotalDiscount = 0,
+                TotalMoney = course.Price,
+                UserId = userId,
+                ApplicationUser = await _userManager.FindByIdAsync(userId)
+            };
+            _context.Bills.Add(bill);
+            await _context.SaveChangesAsync();
             if (jmessage.ContainsKey("payUrl"))
             {
                 return Redirect(jmessage.GetValue("payUrl").ToString());

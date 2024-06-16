@@ -1,0 +1,60 @@
+﻿@page
+@model GS.Areas.Identity.Pages.Account.Manage.EditUserModel
+
+@{
+    ViewData["Title"] = "Edit User Information";
+}
+
+<h2>Edit User Information</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Input.FullName" class="control-label"></label>
+        <input asp-for="Input.FullName" class="form-control" />
+        <span asp-validation-for="Input.FullName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.PhoneNumber" class="control-label"></label>
+        <input asp-for="Input.PhoneNumber" class="form-control" />
+        <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.Address" class="control-label"></label>
+        <input asp-for="Input.Address" class="form-control" />
+        <span asp-validation-for="Input.Address" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.Age" class="control-label"></label>
+        <input asp-for="Input.Age" class="form-control" />
+        <span asp-validation-for="Input.Age" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.Sex" class="control-label"></label>
+        <input asp-for="Input.Sex" class="form-control" />
+        <span asp-validation-for="Input.Sex" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.CreditCardNumber" class="control-label"></label>
+        <input asp-for="Input.CreditCardNumber" class="form-control" />
+        <span asp-validation-for="Input.CreditCardNumber" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.IDCard" class="control-label"></label>
+        <input asp-for="Input.IDCard" class="form-control" />
+        <span asp-validation-for="Input.IDCard" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Input.IDCardImg" class="control-label">ID Card Image</label>
+        <input asp-for="Input.IDCardImg" type="file" class="form-control" />
+        <span asp-validation-for="Input.IDCardImg" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

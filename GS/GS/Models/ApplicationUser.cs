@@ -14,7 +14,9 @@ namespace GS.Models
         public string? Age { get; set; }
         public string? Sex { get; set; }
         public string? CreditCardNumber { get; set; }
-        public string? IDCard { get; set; }
+        [Required]
+        [RegularExpression(@"^\d{12}$", ErrorMessage = "ID Card must be 12 digits.")]
+        public string IDCard { get; set; }
         public string? IDCardImg { get; set; }
         public List<Subject> Subjects { get; set; }
         public List<Class> Classes { get; set; }
