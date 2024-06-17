@@ -1,0 +1,36 @@
+﻿@model GS.Models.TimeCourse
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>TimeCourse</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Timestart" class="control-label"></label>
+                <input asp-for="Timestart" class="form-control" />
+                <span asp-validation-for="Timestart" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Timeend" class="control-label"></label>
+                <input asp-for="Timeend" class="form-control" />
+                <span asp-validation-for="Timeend" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

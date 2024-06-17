@@ -1,0 +1,20 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GS",
+    "\\GS\\Areas",
+    "\\GS\\Areas\\Identity",
+    "\\GS\\Areas\\Identity\\Pages",
+    "\\GS\\Areas\\Identity\\Pages\\Account",
+    "\\GS\\Areas\\Identity\\Pages\\Account\\Manage",
+    "\\GS\\Controllers",
+    "\\GS\\Models",
+    "\\GS\\Views",
+    "\\GS\\Views\\MyCourses",
+    "\\GS\\Views\\Shared",
+    "\\GS\\Views\\Shared\\Guess-view",
+    "\\GS\\Views\\Tutors"
+  ],
+  "SelectedNode": "\\GS.sln",
+  "PreviewInSolutionExplorer": false
+}

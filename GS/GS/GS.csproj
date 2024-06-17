@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-GS-b91db8f3-0b6f-4263-9bbd-cec19b49980e</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\fonts\flaticon\backup.txt" />
+    <Content Remove="wwwroot\css\fonts\flaticon\font\flaticon.css" />
+    <Content Remove="wwwroot\css\fonts\flaticon\font\Flaticon.eot" />
+    <Content Remove="wwwroot\css\fonts\flaticon\font\flaticon.html" />
+    <Content Remove="wwwroot\css\fonts\flaticon\font\Flaticon.svg" />
+    <Content Remove="wwwroot\css\fonts\flaticon\font\Flaticon.ttf" />
+    <Content Remove="wwwroot\css\fonts\flaticon\font\Flaticon.woff" />
+    <Content Remove="wwwroot\css\fonts\flaticon\font\Flaticon.woff2" />
+    <Content Remove="wwwroot\css\fonts\flaticon\font\_flaticon.scss" />
+    <Content Remove="wwwroot\css\fonts\flaticon\license\license.pdf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Views\Account\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\.DS_Store" />
+    <None Include="wwwroot\css\fonts\flaticon\backup.txt" />
+    <None Include="wwwroot\css\fonts\flaticon\font\flaticon.css" />
+    <None Include="wwwroot\css\fonts\flaticon\font\Flaticon.eot" />
+    <None Include="wwwroot\css\fonts\flaticon\font\flaticon.html" />
+    <None Include="wwwroot\css\fonts\flaticon\font\Flaticon.svg" />
+    <None Include="wwwroot\css\fonts\flaticon\font\Flaticon.ttf" />
+    <None Include="wwwroot\css\fonts\flaticon\font\Flaticon.woff" />
+    <None Include="wwwroot\css\fonts\flaticon\font\Flaticon.woff2" />
+    <None Include="wwwroot\css\fonts\flaticon\font\_flaticon.scss" />
+    <None Include="wwwroot\css\fonts\flaticon\license\license.pdf" />
+    <None Include="wwwroot\js\.DS_Store" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\.DS_Store" />
+    <None Include="wwwroot\scss\.DS_Store" />
+    <None Include="wwwroot\scss\bootstrap\.DS_Store" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,112 @@
+﻿@model PaginatedList<GS.Models.Course>
+
+<!-- Phần CSS: -->
+<style>
+    .pagination {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+        .pagination li {
+            margin: 0 5px;
+        }
+
+            .pagination li a {
+                text-decoration: none;
+                color: black;
+                padding: 8px 12px;
+                border: 1px solid #ddd;
+            }
+
+                .pagination li a:hover {
+                    background-color: #f0f0f0;
+                }
+
+        .pagination .active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+
+    .project-wrap {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    .img {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .text {
+        padding: 10px;
+    }
+</style>
+
+<!-- Phần View HTML: -->
+<div class="container">
+    <div class="row">
+        @foreach (var course in Model)
+        {
+            <div class="col-md-4">
+                <div class="project-wrap">
+                    <a href="@Url.Action("Details", "Courses", new { id = course.Idce })" class="img" style="background-image: url('@course.CourseImg');">
+                        <span class="price">@course.Class.Name</span>
+                    </a>
+                    <div class="text p-4">
+                        <h3><a href="@Url.Action("Details", "Courses", new { id = course.Idce })">@course.NameCourse</a></h3>
+                        <p class="advisor">Advisor: <span>@course.ApplicationUser.FullName</span></p>
+                        <ul class="d-flex justify-content-between">
+                            <li><span class="flaticon-shower"></span>@course.Subject.Namest</li>
+                            <li class="price">@course.Price VNĐ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="row mt-5">
+        <div class="col">
+            <div class="block-27">
+                <ul>
+                    @if (Model.HasPreviousPage)
+                    {
+                        <li><a href="#" onclick="navigateToPage(@(Model.CurrentPage - 1))">&lt;</a></li>
+                    }
+
+                    @for (int i = 1; i <= Model.TotalPages; i++)
+                    {
+                        <li class="@((i == Model.CurrentPage) ? "active" : "")">
+                            <a href="#" onclick="navigateToPage(@i)">@i</a>
+                        </li>
+                    }
+
+                    @if (Model.HasNextPage)
+                    {
+                        <li><a href="#" onclick="navigateToPage(@(Model.CurrentPage + 1))">&gt;</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function navigateToPage(pageNumber) {
+            var url = '@Url.Action("GetCoursesByCategories", "Courses")'; // URL của action GetCoursesByCategories trong Controller
+            var query = window.location.search; // Lấy query string hiện tại
+            var newUrl = url + query.replace(/&page=\d+/, '') + '&page=' + pageNumber; // Loại bỏ trang hiện tại và thêm trang mới
+
+            // Gọi AJAX request
+            fetch(newUrl)
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector('#courseContainer').innerHTML = html; // Thay thế nội dung HTML của div chứa kết quả
+                })
+                .catch(error => console.error('Error loading page:', error));
+        }
+    </script>
