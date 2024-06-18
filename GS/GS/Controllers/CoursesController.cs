@@ -435,7 +435,7 @@ namespace GS.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        
+
         public async Task<IActionResult> Pay(int id)
         {
             var course = await _context.Courses.FindAsync(id);
@@ -462,23 +462,50 @@ namespace GS.Controllers
             string signature = crypto.signSHA256(rawHash, SecretKey);
 
             JObject message = new JObject
-            {
-                { "partnerCode", PartnerCode },
-                { "accessKey", AccessKey },
-                { "requestId", requestId },
-                { "amount", course.Price.ToString() },
-                { "orderId", orderId },
-                { "orderInfo", course.NameCourse },
-                { "returnUrl", ReturnUrl },
-                { "notifyUrl", NotifyUrl },
-                { "extraData", "" },
-                { "requestType", "captureMoMoWallet" },
-                { "signature", signature }
-            };
+    {
+        { "partnerCode", PartnerCode },
+        { "accessKey", AccessKey },
+        { "requestId", requestId },
+        { "amount", course.Price.ToString() },
+        { "orderId", orderId },
+        { "orderInfo", course.NameCourse },
+        { "returnUrl", ReturnUrl },
+        { "notifyUrl", NotifyUrl },
+        { "extraData", "" },
+        { "requestType", "captureMoMoWallet" },
+        { "signature", signature }
+    };
 
             string responseFromMomo = PaymentRequest.sendPaymentRequest(MomoEndpoint, message.ToString());
 
             JObject jmessage = JObject.Parse(responseFromMomo);
+
+            var bill = new Bill
+            {
+                Name = "Course",
+                DateOfPayment = DateTime.Now,
+                TotalDiscount = 0,
+                TotalMoney = course.Price,
+                UserId = userId,
+                ApplicationUser = await _userManager.FindByIdAsync(userId)
+            };
+
+            _context.Bills.Add(bill);
+            await _context.SaveChangesAsync();
+
+            // Get the course ID from the orderInfo or a way to associate it correctly
+
+            if (course != null)
+            {
+                var courseStudent = new CoursesStudent
+                {
+                    UserId = userId,
+                    Idce = course.Idce
+                };
+
+                _context.CoursesStudents.Add(courseStudent);
+                await _context.SaveChangesAsync();
+            }
 
             if (jmessage.ContainsKey("payUrl"))
             {
@@ -488,11 +515,27 @@ namespace GS.Controllers
             {
                 return BadRequest("Payment initiation failed.");
             }
-            return View(course);
+            // return statement after the redirection is not needed
         }
 
-        public async Task<IActionResult> PaymentResult(string partnerCode, string orderId, string requestId, string amount, string orderInfo, string orderType, string transId, string resultCode, string message, string payType, string responseTime, string extraData, string signature)
+        public async Task<IActionResult> PaymentResult()
         {
+            var query = Request.Query;
+
+            string partnerCode = query["partnerCode"];
+            string orderId = query["orderId"];
+            string requestId = query["requestId"];
+            string amount = query["amount"];
+            string orderInfo = query["orderInfo"];
+            string orderType = query["orderType"];
+            string transId = query["transId"];
+            string resultCode = query["resultCode"];
+            string message = query["message"];
+            string payType = query["payType"];
+            string responseTime = query["responseTime"];
+            string extraData = query["extraData"];
+            string signature = query["signature"];
+
             if (resultCode == "0")
             {
                 var userId = _userManager.GetUserId(User);
@@ -510,7 +553,22 @@ namespace GS.Controllers
                 _context.Bills.Add(bill);
                 await _context.SaveChangesAsync();
 
-                return View(Index());
+                // Get the course ID from the orderInfo or a way to associate it correctly
+                var course = await _context.Courses.FirstOrDefaultAsync(c => c.NameCourse == orderInfo);
+
+                if (course != null)
+                {
+                    var courseStudent = new CoursesStudent
+                    {
+                        UserId = userId,
+                        Idce = course.Idce
+                    };
+
+                    _context.CoursesStudents.Add(courseStudent);
+                    await _context.SaveChangesAsync();
+                }
+
+                return RedirectToAction("Index", "Home");
             }
             else
             {
@@ -518,6 +576,8 @@ namespace GS.Controllers
                 return View("PaymentError");
             }
         }
+
+
 
         // Additional methods for handling payment notifications
         [HttpPost]

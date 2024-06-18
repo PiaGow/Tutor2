@@ -24,7 +24,7 @@ namespace GS.Models
         public string DayInWeek { get; set; }
         [DisplayName("Ảnh Minh Họa")]
         public string? CourseImg { get; set; }
-        public string UserId { get; set; }
+        
         public string ClassLink { get; set; }
         public float Price { get; set; }
         public int Idst { get; set; }
@@ -40,10 +40,10 @@ namespace GS.Models
         [ValidateNever]
         public required Class Class { get; set; }
 
+        public string UserId { get; set; }
         [ForeignKey("UserId")]
         [ValidateNever]
         public ApplicationUser? ApplicationUser { get; set; }
-        List<HomeWork> homeWorks { get; set; }  
 
     }
 }

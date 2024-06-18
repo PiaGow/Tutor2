@@ -1,4 +1,4 @@
-﻿@model IEnumerable<GS.Models.Course>
+﻿@model IEnumerable<GS.Models.CoursesStudent>
 
 <!DOCTYPE html>
 <html>
@@ -134,8 +134,8 @@
             @foreach (var course in Model)
             {
                     <div class="course-card" onclick="location.href='@Url.Action("Details", "MyCourses", new { id = course.Idce })'">
-                        <div class="course-title">@course.NameCourse</div>
-                    <div class="course-description">@course.ApplicationUser.FullName</div>
+                        <div class="course-title">@course.Course.NameCourse</div>
+                    <div class="course-description">@course.Course.ApplicationUser.FullName</div>
                    
                 </div>
             }

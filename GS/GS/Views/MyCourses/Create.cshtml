@@ -1,4 +1,4 @@
-﻿@model GS.Models.Course
+﻿@model GS.Models.CoursesStudent
 
 @{
     ViewData["Title"] = "Create";
@@ -7,67 +7,19 @@
 
 <h1>Create</h1>
 
-<h4>Course</h4>
+<h4>CoursesStudent</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="NameCourse" class="control-label"></label>
-                <input asp-for="NameCourse" class="form-control" />
-                <span asp-validation-for="NameCourse" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Starttime" class="control-label"></label>
-                <input asp-for="Starttime" class="form-control" />
-                <span asp-validation-for="Starttime" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Endtime" class="control-label"></label>
-                <input asp-for="Endtime" class="form-control" />
-                <span asp-validation-for="Endtime" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Courseinformation" class="control-label"></label>
-                <input asp-for="Courseinformation" class="form-control" />
-                <span asp-validation-for="Courseinformation" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DayInWeek" class="control-label"></label>
-                <input asp-for="DayInWeek" class="form-control" />
-                <span asp-validation-for="DayInWeek" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CourseImg" class="control-label"></label>
-                <input asp-for="CourseImg" class="form-control" />
-                <span asp-validation-for="CourseImg" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="UserId" class="control-label"></label>
                 <select asp-for="UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="ClassLink" class="control-label"></label>
-                <input asp-for="ClassLink" class="form-control" />
-                <span asp-validation-for="ClassLink" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Idst" class="control-label"></label>
-                <select asp-for="Idst" class ="form-control" asp-items="ViewBag.Idst"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Idtimece" class="control-label"></label>
-                <select asp-for="Idtimece" class ="form-control" asp-items="ViewBag.Idtimece"></select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Idcs" class="control-label"></label>
-                <select asp-for="Idcs" class ="form-control" asp-items="ViewBag.Idcs"></select>
+                <label asp-for="Idce" class="control-label"></label>
+                <select asp-for="Idce" class ="form-control" asp-items="ViewBag.Idce"></select>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

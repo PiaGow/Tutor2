@@ -22,10 +22,10 @@ namespace GS.Models
         
         [DisplayName("Thời Gian Nộp")]
         public string? TimeSubmitted { get; set; }
-        public int Idce { get; set; }
-        [ForeignKey("Idce")]
+        public int Idcourse { get; set; }
+        [ForeignKey("Idcourse")]
         [ValidateNever]
-        public required Course Course { get; set; }
+        public required CoursesStudent CourseStudent { get; set; }
         public string HkDetail { get; set; }
 
     }

@@ -3,32 +3,112 @@
   "WorkspaceRootPath": "D:\\Study\\DACS\\Tutor2-master\\GS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\coursesstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\coursesstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\mycourses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\mycourses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Migrations\\20240618084117_v5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GS\\Migrations\\20240618084117_v5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\migrations\\20240618085223_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\migrations\\20240618085223_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\controllers\\paymentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\paymentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\homework\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\homework\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\homework\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\homework\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\homework\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\homework\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\homework\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\homework\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\homework\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\homework\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\controllers\\homeworkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\homeworkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\dacsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\dacsdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\revenue\\revenuecomparison.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\revenue\\revenuecomparison.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\revenue\\_billdetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\revenue\\_billdetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\courselistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\courselistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\controllers\\revenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\revenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\coursedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\coursedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\revenuecomparisonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\revenuecomparisonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\courses\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\courses\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\revenuecomparisonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\revenuecomparisonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\controllers\\revenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\revenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\revenue\\_billdetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\revenue\\_billdetailspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,26 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\courses\\_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\courses\\_view.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\coursedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\coursedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\courselistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\courselistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\homework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\homework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -79,10 +139,6 @@
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\tutors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\tutors\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -99,32 +155,12 @@
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\bills1controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\courses\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\controllers\\paymentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\paymentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\mycourses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\mycourses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\momo\\paymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\momo\\paymentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\homework\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\views\\homework\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -137,18 +173,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\momo\\momosecurity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\momo\\momosecurity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\controllers\\homeworkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\controllers\\homeworkcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\subject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|solutionrelative:gs\\models\\class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FA7FE3B-58E1-4FFD-9ADD-6F94C7AAA4B3}|GS\\GS.csproj|d:\\study\\dacs\\tutor2-master\\gs\\gs\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -173,8 +197,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 345,
-          "SelectedChildIndex": 8,
+          "DockedHeight": 268,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -205,317 +229,76 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_BillDetailsPartial.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Revenue\\_BillDetailsPartial.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Revenue\\_BillDetailsPartial.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Revenue\\_BillDetailsPartial.cshtml",
-              "RelativeToolTip": "GS\\Views\\Revenue\\_BillDetailsPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-18T06:16:24.733Z",
+              "Title": "CoursesStudent.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\CoursesStudent.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\CoursesStudent.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\CoursesStudent.cs",
+              "RelativeToolTip": "GS\\Models\\CoursesStudent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T17:26:30.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RevenueComparison.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Revenue\\RevenueComparison.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Revenue\\RevenueComparison.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Revenue\\RevenueComparison.cshtml",
-              "RelativeToolTip": "GS\\Views\\Revenue\\RevenueComparison.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-18T05:54:18.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RevenueController.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\RevenueController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\RevenueController.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\RevenueController.cs",
-              "RelativeToolTip": "GS\\Controllers\\RevenueController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAqwBYAAAANAAAA",
+              "Title": "MyCoursesController.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\MyCoursesController.cs",
+              "RelativeDocumentMoniker": "GS\\Controllers\\MyCoursesController.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\MyCoursesController.cs",
+              "RelativeToolTip": "GS\\Controllers\\MyCoursesController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDAAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T05:52:46.981Z",
+              "WhenOpened": "2024-06-18T17:00:25.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "GS\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAABkAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T17:36:41.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RevenueComparisonViewModel.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\RevenueComparisonViewModel.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\RevenueComparisonViewModel.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\RevenueComparisonViewModel.cs",
-              "RelativeToolTip": "GS\\Models\\RevenueComparisonViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T05:53:30.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "All.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\All.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Courses\\All.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\All.cshtml",
-              "RelativeToolTip": "GS\\Views\\Courses\\All.cshtml",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAmwF4AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T18:01:57.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Bill.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Bill.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\Bill.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Bill.cs",
-              "RelativeToolTip": "GS\\Models\\Bill.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAA8wAgAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T07:29:46.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAiwI0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T06:01:07.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "CoursesController.cs",
               "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\CoursesController.cs",
               "RelativeDocumentMoniker": "GS\\Controllers\\CoursesController.cs",
               "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\CoursesController.cs",
               "RelativeToolTip": "GS\\Controllers\\CoursesController.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAmwJIAAABcAAAA",
+              "ViewState": "AQIAAAICAAAAAAAAAAAgwBsCAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T17:59:19.083Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_View.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\_View.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Courses\\_View.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\_View.cshtml",
-              "RelativeToolTip": "GS\\Views\\Courses\\_View.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGoAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T17:36:59.688Z",
+              "WhenOpened": "2024-06-13T17:59:19.083Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CourseDetailsViewModel.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\CourseDetailsViewModel.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\CourseDetailsViewModel.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\CourseDetailsViewModel.cs",
-              "RelativeToolTip": "GS\\Models\\CourseDetailsViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T05:50:35.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Course.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\Course.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Course.cs",
-              "RelativeToolTip": "GS\\Models\\Course.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAA/wDEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T18:40:43.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CourseListViewModel.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\CourseListViewModel.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\CourseListViewModel.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\CourseListViewModel.cs",
-              "RelativeToolTip": "GS\\Models\\CourseListViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T15:39:05.395Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "HomeWork.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\HomeWork.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\HomeWork.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\HomeWork.cs",
-              "RelativeToolTip": "GS\\Models\\HomeWork.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAkwBwAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T18:41:34.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAB3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-15T07:40:53.011Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ApplicationUserDetailsViewModel.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\ApplicationUserDetailsViewModel.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\ApplicationUserDetailsViewModel.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\ApplicationUserDetailsViewModel.cs",
-              "RelativeToolTip": "GS\\Models\\ApplicationUserDetailsViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T07:01:02.463Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAuwE0AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T07:38:02.825Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "TutorsController.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\TutorsController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\TutorsController.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\TutorsController.cs",
-              "RelativeToolTip": "GS\\Controllers\\TutorsController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAgwBgAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T06:46:05.965Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Role.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Role.cs",
-              "RelativeDocumentMoniker": "GS\\Models\\Role.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Role.cs",
-              "RelativeToolTip": "GS\\Models\\Role.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T07:29:01.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 9,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "GS\\Models\\ApplicationUser.cs",
               "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\ApplicationUser.cs",
               "RelativeToolTip": "GS\\Models\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAsAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T07:36:49.731Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Tutors\\Details.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Tutors\\Details.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Tutors\\Details.cshtml",
-              "RelativeToolTip": "GS\\Views\\Tutors\\Details.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAADkAAAAjAAAA",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\MyCourses\\Index.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\MyCourses\\Index.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\MyCourses\\Index.cshtml",
+              "RelativeToolTip": "GS\\Views\\MyCourses\\Index.cshtml",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAIwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T17:40:22.184Z"
+              "WhenOpened": "2024-06-14T19:29:38.292Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ClassesController.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\ClassesController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\ClassesController.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\ClassesController.cs",
-              "RelativeToolTip": "GS\\Controllers\\ClassesController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAgwCYAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T06:19:36.577Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "SubjectsController.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\SubjectsController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\SubjectsController.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\SubjectsController.cs",
-              "RelativeToolTip": "GS\\Controllers\\SubjectsController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAkwIMAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T06:20:30.853Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Bills1Controller.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\Bills1Controller.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\Bills1Controller.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\Bills1Controller.cs",
-              "RelativeToolTip": "GS\\Controllers\\Bills1Controller.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAQwCIAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T06:20:22.151Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\Details.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Courses\\Details.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\Details.cshtml",
-              "RelativeToolTip": "GS\\Views\\Courses\\Details.cshtml",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAAAH4AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T17:43:18.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 8,
               "Title": "PaymentModel.cs",
               "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\PaymentModel.cs",
               "RelativeDocumentMoniker": "GS\\Controllers\\PaymentModel.cs",
@@ -527,115 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\MyCourses\\Index.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\MyCourses\\Index.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\MyCourses\\Index.cshtml",
-              "RelativeToolTip": "GS\\Views\\MyCourses\\Index.cshtml",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAvwIQAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-14T19:29:38.292Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "PaymentRequest.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Momo\\PaymentRequest.cs",
-              "RelativeDocumentMoniker": "GS\\Momo\\PaymentRequest.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Momo\\PaymentRequest.cs",
-              "RelativeToolTip": "GS\\Momo\\PaymentRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T15:13:20.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "MyCoursesController.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\MyCoursesController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\MyCoursesController.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\MyCoursesController.cs",
-              "RelativeToolTip": "GS\\Controllers\\MyCoursesController.cs",
-              "ViewState": "AQIAAJsAAAAAAAAAAADwv68AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T19:29:56.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Program.cs",
-              "RelativeDocumentMoniker": "GS\\Program.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Program.cs",
-              "RelativeToolTip": "GS\\Program.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAswEIAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T14:51:39.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Index.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\HomeWork\\Index.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Index.cshtml",
-              "RelativeToolTip": "GS\\Views\\HomeWork\\Index.cshtml",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAAAHoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-13T18:05:39.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "GS\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAswCoAAABqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-14T08:56:01.98Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Bills1\\Index.cshtml",
-              "RelativeDocumentMoniker": "GS\\Views\\Bills1\\Index.cshtml",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Bills1\\Index.cshtml",
-              "RelativeToolTip": "GS\\Views\\Bills1\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-14T20:38:58.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "MoMoSecurity.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Momo\\MoMoSecurity.cs",
-              "RelativeDocumentMoniker": "GS\\Momo\\MoMoSecurity.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Momo\\MoMoSecurity.cs",
-              "RelativeToolTip": "GS\\Momo\\MoMoSecurity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T15:13:04.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "HomeWorkController.cs",
-              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\HomeWorkController.cs",
-              "RelativeDocumentMoniker": "GS\\Controllers\\HomeWorkController.cs",
-              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\HomeWorkController.cs",
-              "RelativeToolTip": "GS\\Controllers\\HomeWorkController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAqwDsAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T09:43:59.532Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 7,
               "Title": "Subject.cs",
               "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Subject.cs",
               "RelativeDocumentMoniker": "GS\\Models\\Subject.cs",
@@ -647,19 +322,428 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\Details.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Courses\\Details.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\Details.cshtml",
+              "RelativeToolTip": "GS\\Views\\Courses\\Details.cshtml",
+              "ViewState": "AQIAALMAAAAAAAAAAAAAAMIAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T17:43:18.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20240618085223_initial.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Migrations\\20240618085223_initial.cs",
+              "RelativeDocumentMoniker": "GS\\Migrations\\20240618085223_initial.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Migrations\\20240618085223_initial.cs",
+              "RelativeToolTip": "GS\\Migrations\\20240618085223_initial.cs",
+              "ViewState": "AQIAAKkCAAAAAAAAAAAYwLMCAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T08:52:24.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Index.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\HomeWork\\Index.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Index.cshtml",
+              "RelativeToolTip": "GS\\Views\\HomeWork\\Index.cshtml",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAAAIAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T18:05:39.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Edit.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\HomeWork\\Edit.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Edit.cshtml",
+              "RelativeToolTip": "GS\\Views\\HomeWork\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T08:38:33.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Details.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\HomeWork\\Details.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Details.cshtml",
+              "RelativeToolTip": "GS\\Views\\HomeWork\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T08:38:26.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Delete.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\HomeWork\\Delete.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Delete.cshtml",
+              "RelativeToolTip": "GS\\Views\\HomeWork\\Delete.cshtml",
+              "ViewState": "AQIAACYAAAAAAAAAAAAcwDYAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T08:38:02.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Create.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\HomeWork\\Create.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\HomeWork\\Create.cshtml",
+              "RelativeToolTip": "GS\\Views\\HomeWork\\Create.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAcwCYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T08:37:32.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeWorkController.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\HomeWorkController.cs",
+              "RelativeDocumentMoniker": "GS\\Controllers\\HomeWorkController.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\HomeWorkController.cs",
+              "RelativeToolTip": "GS\\Controllers\\HomeWorkController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAA8wDwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T09:43:59.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DACSDbContext.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\DACSDbContext.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\DACSDbContext.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\DACSDbContext.cs",
+              "RelativeToolTip": "GS\\Models\\DACSDbContext.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCYAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T08:34:16.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RevenueComparison.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Revenue\\RevenueComparison.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Revenue\\RevenueComparison.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Revenue\\RevenueComparison.cshtml",
+              "RelativeToolTip": "GS\\Views\\Revenue\\RevenueComparison.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T05:54:18.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CourseListViewModel.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\CourseListViewModel.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\CourseListViewModel.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\CourseListViewModel.cs",
+              "RelativeToolTip": "GS\\Models\\CourseListViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T15:39:05.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CourseDetailsViewModel.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\CourseDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\CourseDetailsViewModel.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\CourseDetailsViewModel.cs",
+              "RelativeToolTip": "GS\\Models\\CourseDetailsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T05:50:35.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Class.cs",
               "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Class.cs",
               "RelativeDocumentMoniker": "GS\\Models\\Class.cs",
               "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Class.cs",
               "RelativeToolTip": "GS\\Models\\Class.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA5wBEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T18:40:52.638Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Bill.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Bill.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\Bill.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Bill.cs",
+              "RelativeToolTip": "GS\\Models\\Bill.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAA8wAgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T07:29:46.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "All.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\All.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Courses\\All.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\All.cshtml",
+              "RelativeToolTip": "GS\\Views\\Courses\\All.cshtml",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAmwF4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T18:01:57.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RevenueComparisonViewModel.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\RevenueComparisonViewModel.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\RevenueComparisonViewModel.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\RevenueComparisonViewModel.cs",
+              "RelativeToolTip": "GS\\Models\\RevenueComparisonViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T05:53:30.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GS\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAABkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T17:36:41.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RevenueController.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\RevenueController.cs",
+              "RelativeDocumentMoniker": "GS\\Controllers\\RevenueController.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\RevenueController.cs",
+              "RelativeToolTip": "GS\\Controllers\\RevenueController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAqwBYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T05:52:46.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "_BillDetailsPartial.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Revenue\\_BillDetailsPartial.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Revenue\\_BillDetailsPartial.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Revenue\\_BillDetailsPartial.cshtml",
+              "RelativeToolTip": "GS\\Views\\Revenue\\_BillDetailsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-18T06:16:24.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAiwI0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T06:01:07.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_View.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\_View.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Courses\\_View.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\_View.cshtml",
+              "RelativeToolTip": "GS\\Views\\Courses\\_View.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T17:36:59.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-15T07:40:53.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ApplicationUserDetailsViewModel.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\ApplicationUserDetailsViewModel.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\ApplicationUserDetailsViewModel.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\ApplicationUserDetailsViewModel.cs",
+              "RelativeToolTip": "GS\\Models\\ApplicationUserDetailsViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T07:01:02.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "GS\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAuwE0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T07:38:02.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TutorsController.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\TutorsController.cs",
+              "RelativeDocumentMoniker": "GS\\Controllers\\TutorsController.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\TutorsController.cs",
+              "RelativeToolTip": "GS\\Controllers\\TutorsController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAgwBgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T06:46:05.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Role.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "GS\\Models\\Role.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Models\\Role.cs",
+              "RelativeToolTip": "GS\\Models\\Role.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T07:29:01.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Tutors\\Details.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Tutors\\Details.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Tutors\\Details.cshtml",
+              "RelativeToolTip": "GS\\Views\\Tutors\\Details.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-13T17:40:22.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ClassesController.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\ClassesController.cs",
+              "RelativeDocumentMoniker": "GS\\Controllers\\ClassesController.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\ClassesController.cs",
+              "RelativeToolTip": "GS\\Controllers\\ClassesController.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAgwCYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T06:19:36.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SubjectsController.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\SubjectsController.cs",
+              "RelativeDocumentMoniker": "GS\\Controllers\\SubjectsController.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\SubjectsController.cs",
+              "RelativeToolTip": "GS\\Controllers\\SubjectsController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAkwIMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T06:20:30.853Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 37,
+              "Title": "Bills1Controller.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\Bills1Controller.cs",
+              "RelativeDocumentMoniker": "GS\\Controllers\\Bills1Controller.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\Bills1Controller.cs",
+              "RelativeToolTip": "GS\\Controllers\\Bills1Controller.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwCIAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T06:20:22.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "PaymentRequest.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Momo\\PaymentRequest.cs",
+              "RelativeDocumentMoniker": "GS\\Momo\\PaymentRequest.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Momo\\PaymentRequest.cs",
+              "RelativeToolTip": "GS\\Momo\\PaymentRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T15:13:20.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Program.cs",
+              "RelativeDocumentMoniker": "GS\\Program.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Program.cs",
+              "RelativeToolTip": "GS\\Program.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAswEIAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T14:51:39.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GS\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAswCoAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T08:56:01.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Bills1\\Index.cshtml",
+              "RelativeDocumentMoniker": "GS\\Views\\Bills1\\Index.cshtml",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Bills1\\Index.cshtml",
+              "RelativeToolTip": "GS\\Views\\Bills1\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-14T20:38:58.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MoMoSecurity.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Momo\\MoMoSecurity.cs",
+              "RelativeDocumentMoniker": "GS\\Momo\\MoMoSecurity.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Momo\\MoMoSecurity.cs",
+              "RelativeToolTip": "GS\\Momo\\MoMoSecurity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T15:13:04.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Courses\\Index.cshtml",
               "RelativeDocumentMoniker": "GS\\Views\\Courses\\Index.cshtml",
@@ -671,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "GS\\Controllers\\HomeController.cs",
@@ -683,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Views\\Bills1\\Create.cshtml",
               "RelativeDocumentMoniker": "GS\\Views\\Bills1\\Create.cshtml",
@@ -695,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "ManageNavPages.cs",
               "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
               "RelativeDocumentMoniker": "GS\\Areas\\Identity\\Pages\\Account\\Manage\\ManageNavPages.cs",
@@ -704,11 +788,23 @@
               "ViewState": "AQIAADAAAAAAAAAAAAAowDwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-13T08:44:14.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240618084117_v5.cs",
+              "DocumentMoniker": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Migrations\\20240618084117_v5.cs",
+              "RelativeDocumentMoniker": "GS\\Migrations\\20240618084117_v5.cs",
+              "ToolTip": "D:\\Study\\DACS\\Tutor2-master\\GS\\GS\\Migrations\\20240618084117_v5.cs",
+              "RelativeToolTip": "GS\\Migrations\\20240618084117_v5.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T08:41:17.481Z"
             }
           ]
         },
         {
-          "DockedHeight": 167,
+          "DockedHeight": 244,
           "SelectedChildIndex": -1,
           "Children": [
             {
