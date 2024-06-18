@@ -1,0 +1,25 @@
+﻿@model IEnumerable<GS.Models.Bill>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Bill ID</th>
+            <th>Loại Hóa Đơn</th>
+            <th>Date of Payment</th>
+            <th>Số Tiền</th>
+            <th>User</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var bill in Model)
+        {
+            <tr>
+                <td>@bill.IdBill</td>
+                <td>@bill.Name</td>
+                <td>@bill.DateOfPayment?.ToString("MM/dd/yyyy")</td>
+                <td>@bill.TotalMoney</td>
+                <td>@bill.ApplicationUser?.UserName</td>
+            </tr>
+        }
+    </tbody>
+</table>

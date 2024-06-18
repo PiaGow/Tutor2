@@ -579,3 +579,4 @@ D:\Study\DACS\Tutor2-master\GS\GS\obj\Debug\net8.0\refint\GS.dll
 D:\Study\DACS\Tutor2-master\GS\GS\obj\Debug\net8.0\GS.pdb
 D:\Study\DACS\Tutor2-master\GS\GS\obj\Debug\net8.0\GS.genruntimeconfig.cache
 D:\Study\DACS\Tutor2-master\GS\GS\obj\Debug\net8.0\ref\GS.dll
+D:\Study\DACS\Tutor2-master\GS\GS\obj\Debug\net8.0\GS.sourcelink.json

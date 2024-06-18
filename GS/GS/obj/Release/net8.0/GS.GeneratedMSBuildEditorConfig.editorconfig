@@ -294,6 +294,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDb3Vyc2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Study/DACS/Tutor2-master/GS/GS/Views/Revenue/RevenueComparison.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2ZW51ZVxSZXZlbnVlQ29tcGFyaXNvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/DACS/Tutor2-master/GS/GS/Views/Revenue/_BillDetailsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2ZW51ZVxfQmlsbERldGFpbHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Study/DACS/Tutor2-master/GS/GS/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

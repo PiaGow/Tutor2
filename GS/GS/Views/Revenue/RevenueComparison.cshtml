@@ -1,0 +1,108 @@
+﻿@model GS.Models.RevenueComparisonViewModel
+
+@{
+    ViewData["Title"] = "Doanh Thu";
+    var chartDataLabels = Newtonsoft.Json.JsonConvert.SerializeObject(Model.Labels);
+    var chartDataRevenues = Newtonsoft.Json.JsonConvert.SerializeObject(Model.Revenues);
+    var totalRevenue = Model.MonthlyRevenueDetails.Values.Sum();
+
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<!-- Include your chart.js library here -->
+<canvas id="revenueChart" width="400" height="200"></canvas>
+
+<!-- Display detailed revenue data -->
+<div>
+    @* <h2>Revenue Details:</h2>
+    <ul>
+        @foreach (var entry in Model.MonthlyRevenueDetails)
+        {
+            <li>@entry.Key: @entry.Value.ToString("C")</li>
+        }
+    </ul> *@
+    <h3>Tổng Doanh Thu: @totalRevenue.ToString("C")</h3> <!-- Display total revenue -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    var ctx = document.getElementById('revenueChart').getContext('2d');
+    var revenueChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Labels)),
+            datasets: [
+                {
+                    label: 'Revenue',
+                    data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Revenues)),
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)',
+                        'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)'
+                    ]
+                }
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            onClick: function (e, element) {
+                if (element.length > 0) {
+                    var index = element[0].index;
+                    var label = revenueChart.data.labels[index];
+                    loadBillDetails(label);
+                }
+            }
+        }
+    });
+
+    function loadBillDetails(month) {
+        console.log('Loading details for month:', month); // Debug log
+
+        // Format month as expected (trim and capitalize).
+        month = month.trim().toUpperCase();
+
+        $.ajax({
+            url: '@Url.Action("GetBillDetails", "Revenue")',
+            type: 'GET',
+            data: { month: month },
+            success: function (response) {
+                console.log('Success:', response); // Debug log
+                $('#billDetailsModal .modal-body').html(response);
+                $('#billDetailsModal').modal('show');
+            },
+            error: function (xhr, status, error) {
+                console.error('Error loading bill details:', xhr.responseText); // Detailed error log
+                alert('Error loading bill details: ' + xhr.responseText);
+            }
+        });
+    }
+</script>
+
+
+
+<!-- Modal for displaying bill details -->
+<div class="modal fade" id="billDetailsModal" tabindex="-1" aria-labelledby="billDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="billDetailsModalLabel">Chi Tiết Doanh Thu Tháng</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Bill details will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
