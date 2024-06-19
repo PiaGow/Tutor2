@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Identity;
 using GS.Momo;
 using Newtonsoft.Json.Linq;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace GS.Controllers
 {
@@ -161,10 +162,25 @@ namespace GS.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var dACSDbContext = _context.Courses.Include(c => c.ApplicationUser).Include(c => c.Class).Include(c => c.Subject).Include(c => c.TimeCourse);
-            return View(await dACSDbContext.ToListAsync());
+            // Assuming you have a way to get the currently logged-in user's ID
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Query the database to fetch the courses for the logged-in user
+            var userCoursesQuery = _context.Courses
+                .Include(c => c.ApplicationUser)
+                .Include(c => c.Class)
+                .Include(c => c.Subject)
+                .Include(c => c.TimeCourse)
+                .Where(c => c.UserId == userId);  // Filter by the logged-in user ID
+
+            // Execute the query and get the list of courses
+            var userCourses = await userCoursesQuery.ToListAsync();
+
+            // Return the view with the filtered list of courses
+            return View(userCourses);
         }
-		public async Task<IEnumerable<Course>> GetAllAsync()
+
+        public async Task<IEnumerable<Course>> GetAllAsync()
 		{
 			// return await _context.Products.ToListAsync();
 			return await _context.Courses
@@ -253,7 +269,7 @@ namespace GS.Controllers
         {
             ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id");
             ViewData["Idcs"] = new SelectList(_context.Class, "Idcs", "Name");
-            ViewData["Idst"] = new SelectList(_context.Subjects, "Idst", "Idst");
+            ViewData["Idst"] = new SelectList(_context.Subjects, "Idst", "Namest");
             ViewData["Idtimece"] = new SelectList(_context.TimeCourses, "Idtimece", "Idtimece");
             return View();
         }
@@ -261,28 +277,33 @@ namespace GS.Controllers
         // POST: Courses/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Courses/Create
         [HttpPost]
-        public async Task<IActionResult> Create( Course course, IFormFile courseImg)
-        
+        public async Task<IActionResult> Create(Course course, IFormFile courseImg)
         {
-
             if (ModelState.IsValid)
             {
                 if (courseImg != null)
                 {
                     course.CourseImg = await SaveImage(courseImg);
                 }
-                await _context.AddAsync(course);
-                 _context.Courses.Add(course);
+
+                
+                _context.Courses.Add(course);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            // If model state is not valid, set necessary ViewData
             ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id", course.UserId);
             ViewData["Idcs"] = new SelectList(_context.Class, "Idcs", "Name", course.Idcs);
-            ViewData["Idst"] = new SelectList(_context.Subjects, "Idst", "Idst", course.Idst);
+            ViewData["Idst"] = new SelectList(_context.Subjects, "Idst", "Namest", course.Idst);
             ViewData["Idtimece"] = new SelectList(_context.TimeCourses, "Idtimece", "Idtimece", course.Idtimece);
+
             return View(course);
         }
+
+
         private async Task<string> SaveImage(IFormFile image)
         {
             var savePath = Path.Combine("wwwroot/images", image.FileName);
@@ -291,8 +312,11 @@ namespace GS.Controllers
             {
                 await image.CopyToAsync(fileStream);
             }
+
             return "/images/" + image.FileName;
         }
+
+
 
         // GET: Courses/Edit/5
         [Authorize]
@@ -586,6 +610,39 @@ namespace GS.Controllers
             // Implement logic to handle payment notifications here
             return Ok();
         }
-     
+        public async Task<IActionResult> Details2(int id)
+        {
+            var course = await _context.Courses
+                .Include(c => c.Subject)
+                .Include(c => c.Class)
+                .Include(c => c.TimeCourse)
+                .Include(c => c.ApplicationUser)
+                .FirstOrDefaultAsync(c => c.Idce == id);
+
+            if (course == null)
+            {
+                return NotFound();
+            }
+
+            // Sort homework assignments and get top 70% based on some criteria.
+            
+           
+            var homeworkList = _context.HomeWork
+        .Where(hw => hw.Idce == course.Idce)
+        .ToList();
+            int homeworkCount = homeworkList.Count;
+            int displayCount = (int)(homeworkCount * 0.7);
+
+            var filteredHomeworks = homeworkList.ToList();
+
+            var viewModel = new CourseDetailsViewModelWithHomeWork
+            {
+                Course = course,
+                HomeworkList = filteredHomeworks
+            };
+
+            return View(viewModel);
+        }
+
     }
 }

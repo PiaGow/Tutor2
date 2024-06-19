@@ -6,22 +6,28 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GS.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace GS.Controllers
 {
     public class HomeWorkController : Controller
     {
         private readonly DACSDbContext _context;
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public HomeWorkController(DACSDbContext context)
+        public HomeWorkController(DACSDbContext context, IWebHostEnvironment webHostEnvironment, UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
+            _userManager = userManager;
         }
 
         // GET: HomeWork
         public async Task<IActionResult> Index()
         {
-            return View(await _context.HomeWork.ToListAsync());
+            var dACSDbContext = _context.HomeWork.Include(h => h.Course);
+            return View(await dACSDbContext.ToListAsync());
         }
 
         // GET: HomeWork/Details/5
@@ -33,6 +39,7 @@ namespace GS.Controllers
             }
 
             var homeWork = await _context.HomeWork
+                .Include(h => h.Course)
                 .FirstOrDefaultAsync(m => m.Idhk == id);
             if (homeWork == null)
             {
@@ -43,8 +50,9 @@ namespace GS.Controllers
         }
 
         // GET: HomeWork/Create
-        public IActionResult Create()
+        public IActionResult Create(int id)
         {
+            ViewData["Idce"] = new SelectList(_context.Courses, "Idce", "Idce");
             return View();
         }
 
@@ -53,7 +61,7 @@ namespace GS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Idhk,Namehk,Status,Timestart,Timeend,Assignmentsubmitted,TimeSubmitted,Idcourse")] HomeWork homeWork)
+        public async Task<IActionResult> Create([Bind("Idhk,Namehk,Timestart,Timeend,Details,Idce")] HomeWork homeWork)
         {
             if (ModelState.IsValid)
             {
@@ -61,6 +69,7 @@ namespace GS.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Idce"] = new SelectList(_context.Courses, "Idce", "Idce", homeWork.Idce);
             return View(homeWork);
         }
 
@@ -77,6 +86,7 @@ namespace GS.Controllers
             {
                 return NotFound();
             }
+            ViewData["Idce"] = new SelectList(_context.Courses, "Idce", "Idce", homeWork.Idce);
             return View(homeWork);
         }
 
@@ -85,7 +95,7 @@ namespace GS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Idhk,Namehk,Status,Timestart,Timeend,Assignmentsubmitted,TimeSubmitted,Idcourse")] HomeWork homeWork)
+        public async Task<IActionResult> Edit(int id, [Bind("Idhk,Namehk,Timestart,Timeend,Details,Idce")] HomeWork homeWork)
         {
             if (id != homeWork.Idhk)
             {
@@ -112,6 +122,7 @@ namespace GS.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Idce"] = new SelectList(_context.Courses, "Idce", "Idce", homeWork.Idce);
             return View(homeWork);
         }
 
@@ -124,6 +135,7 @@ namespace GS.Controllers
             }
 
             var homeWork = await _context.HomeWork
+                .Include(h => h.Course)
                 .FirstOrDefaultAsync(m => m.Idhk == id);
             if (homeWork == null)
             {
@@ -151,6 +163,32 @@ namespace GS.Controllers
         private bool HomeWorkExists(int id)
         {
             return _context.HomeWork.Any(e => e.Idhk == id);
+        }
+        public async Task<IActionResult> ViewHomework(int id)
+        {
+            var homework = await _context.HomeWork
+                .Include(h => h.Course)
+                .FirstOrDefaultAsync(m => m.Idhk == id);
+
+            if (homework == null)
+            {
+                return NotFound();
+            }
+
+            var submissions = await _context.HomeWorkStudents
+                .Include(h => h.ApplicationUser)
+                .Where(hs => hs.Idhk == id)
+                .ToListAsync();
+
+            ViewBag.HomeworkSubmissions = submissions;
+            return View(homework);
+        }
+        [HttpPost]
+        public async Task<IActionResult> SubmitHomework(int Idhk)
+        {
+            // Logic for submitting homework goes here
+            // For now, just redirect back to the homework details page
+            return RedirectToAction("ViewHomework", new { id = Idhk });
         }
     }
 }

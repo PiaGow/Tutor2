@@ -1,0 +1,204 @@
+﻿@model GS.Models.CourseDetailsViewModelWithHomeWork
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - My Classroom</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .navbar {
+            background-color: #3c4043;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin: 0 10px;
+            }
+
+        .sidebar {
+            position: fixed;
+            top: 55px;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #3c4043;
+            color: white;
+            padding-top: 20px;
+            transform: translateX(0);
+            transition: transform 0.3s ease;
+        }
+
+            .sidebar.hidden {
+                transform: translateX(-250px);
+            }
+
+            .sidebar a {
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 10px 20px;
+            }
+
+                .sidebar a:hover {
+                    background-color: #5f6368;
+                }
+
+        .main-content {
+            padding: 20px;
+            margin-left: 250px;
+            transition: margin-left 0.3s ease;
+        }
+
+            .main-content.expanded {
+                margin-left: 0;
+            }
+
+        .toggle-button {
+            position: fixed;
+            top: 55px;
+            left: 250px;
+            background-color: #3c4043;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: left 0.3s ease;
+        }
+
+            .toggle-button.collapsed {
+                left: 0;
+            }
+
+        .course-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .course-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: calc(33.333% - 40px);
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+
+            .course-card:hover {
+                transform: translateY(-5px);
+            }
+
+        .course-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .course-description {
+            color: #757575;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        
+@*         <div class="navbar-right">
+            <a href="/logout">Logout</a>
+        </div> *@
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="/">Dashboard</a>
+        <a href="/courses">Khóa Học Đang Dạy</a>
+        <a href="/calendar">Calendar</a>
+        <a href="/settings">Settings</a>
+    </div>
+
+    <button id="toggleButton" class="toggle-button" onclick="toggleSidebar()">☰</button>
+
+    <div id="mainContent" class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left Column: Course Details -->
+                <div class="col-md-7">
+                    <h1>@Model.Course.NameCourse</h1>
+                    <img src="@Model.Course.CourseImg" alt="Course Image" class="img-fluid mb-3" />
+                    <h4>Thông Tin Khóa Học</h4>
+                    <p>@Model.Course.Courseinformation</p>
+                    <h4>Ngày Bắt Đầu</h4>
+                    <p>@(Model.Course.Starttime.HasValue ? Model.Course.Starttime.Value.ToString("d MMM yyyy") : "N/A")</p>
+                    <h4>Ngày Kết Thúc</h4>
+                    <p>@(Model.Course.Endtime.HasValue ? Model.Course.Endtime.Value.ToString("d MMM yyyy") : "N/A")</p>
+                    <h4>Ngày Học</h4>
+                    <p>@Model.Course.DayInWeek</p>
+                    <h4>Giá</h4>
+                    <p>@Model.Course.Price.ToString("C")</p>
+                    <h4>ClassLink</h4>
+                    <p>@Model.Course.ClassLink</p>
+                    <h4>Thông Tin Giảng Viên</h4>
+                    <p>@Model.Course.ApplicationUser.FullName</p>
+                    <!-- Button to Edit Course -->
+                    <a href="@Url.Action("Edit", "Courses", new { id = Model.Course.Idce })" class="btn btn-warning">Edit Course</a>
+                </div>
+                <!-- Right Column: Homework List -->
+                <div class="col-md-5">
+                    <h2>Danh Sách Bài Tập</h2>
+                    <ul class="course-list">
+                        @foreach (var homework in Model.HomeworkList)
+                        {
+                            <div class="course-card" onclick="location.href='@Url.Action("Details", "Homework", new { id = homework.Idhk })'">
+                                <div class="course-card-title">@homework.Namehk</div>
+                                <div class="course-card-description">@homework.Timeend</div>
+                            </div>
+
+                           
+                        }
+                    </ul>
+                    <br>
+                    <!-- Button to Create Homework -->
+                    <form method="post" asp-action="Create" asp-controller="HomeWork" asp-route-idce="@Model.Course.Idce">
+                        <button type="submit" class="btn btn-success">Create Homework</button>
+                    </form>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var mainContent = document.getElementById("mainContent");
+            var toggleButton = document.getElementById("toggleButton");
+
+            if (sidebar.classList.contains("hidden")) {
+                sidebar.classList.remove("hidden");
+                mainContent.classList.remove("expanded");
+                toggleButton.classList.remove("collapsed");
+                toggleButton.textContent = "☰";
+            } else {
+                sidebar.classList.add("hidden");
+                mainContent.classList.add("expanded");
+                toggleButton.classList.add("collapsed");
+                toggleButton.textContent = "☰";
+            }
+        }
+    </script>
+</body>
+</html>
+

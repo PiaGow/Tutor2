@@ -39,21 +39,30 @@ namespace GS.Controllers
         // GET: MyCourses/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+            var courseStudent = _context.CoursesStudents
+                .Include(cs => cs.ApplicationUser)
+                .Include(cs => cs.Course)
+                .FirstOrDefault(cs => cs.Idcourses == id);
+
+            if (courseStudent == null)
             {
                 return NotFound();
             }
 
-            var coursesStudent = await _context.CoursesStudents
-                .Include(c => c.ApplicationUser)
-                .Include(c => c.Course)
-                .FirstOrDefaultAsync(m => m.Idcourses == id);
-            if (coursesStudent == null)
-            {
-                return NotFound();
-            }
+            var homeworkList = _context.HomeWork
+                .Where(hw => hw.Idce == courseStudent.Course.Idce)
+                .ToList();
 
-            return View(coursesStudent);
+            var homeworkSubmissions = _context.HomeWorkStudents
+                .Include(hws => hws.ApplicationUser)
+                .Include(hws => hws.HomeWork)
+                .Where(hws => homeworkList.Select(hw => hw.Idhk).Contains(hws.Idhk))
+                .ToList();
+
+            ViewBag.HomeworkList = homeworkList;
+            ViewBag.HomeworkSubmissions = homeworkSubmissions;
+
+            return View(courseStudent);
         }
 
         // GET: MyCourses/Create

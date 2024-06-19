@@ -226,6 +226,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Study/DACS/Tutor2-master/GS/GS/Views/Courses/Details2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Study/DACS/Tutor2-master/GS/GS/Views/Courses/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -260,6 +264,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Study/DACS/Tutor2-master/GS/GS/Views/HomeWork/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVdvcmtcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Study/DACS/Tutor2-master/GS/GS/Views/HomeWork/ViewHomework.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVdvcmtcVmlld0hvbWV3b3JrLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Study/DACS/Tutor2-master/GS/GS/Views/Home/Index.cshtml]

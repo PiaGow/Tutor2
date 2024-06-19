@@ -1,0 +1,29 @@
+﻿@model GS.Models.HomeWork
+
+@{
+    ViewData["Title"] = "Homework Details";
+    var homeworkSubmissions = ViewBag.HomeworkSubmissions as List<GS.Models.HomeWorkStudent>;
+}
+
+<h1>@Model.Namehk</h1>
+<p>Start Time: @(Model.Timestart.HasValue ? Model.Timestart.Value.ToString("g") : "N/A")</p>
+<p>End Time: @(Model.Timeend.HasValue ? Model.Timeend.Value.ToString("g") : "N/A")</p>
+<p>Description: @Model.Details</p>
+
+<h2>Submissions</h2>
+<ul>
+    @foreach (var submission in homeworkSubmissions)
+    {
+        <li>
+            <p>Student: @submission.ApplicationUser.FullName</p>
+            <p>Submitted: @submission.TimeSubmitted</p>
+            <p>Status: @submission.Assignmentsubmitted</p>
+            <p>Assignment: @submission.Assigmented</p>
+        </li>
+    }
+</ul>
+
+<form method="post" asp-action="SubmitHomework" asp-controller="HomeWork">
+    <input type="hidden" name="Idhk" value="@Model.Idhk" />
+    <button type="submit" class="btn btn-success">Nộp Homework</button>
+</form>

@@ -1,74 +1,109 @@
 ﻿@model GS.Models.Course
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Course";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create</h1>
+<h1>Create Course</h1>
 
-<h4>Course</h4>
 <hr />
+
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form asp-action="Create" method="post" enctype="multipart/form-data">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="NameCourse" class="control-label"></label>
                 <input asp-for="NameCourse" class="form-control" />
                 <span asp-validation-for="NameCourse" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Starttime" class="control-label"></label>
-                <input asp-for="Starttime" class="form-control" />
+                <input asp-for="Starttime" type="datetime-local" class="form-control" />
                 <span asp-validation-for="Starttime" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Endtime" class="control-label"></label>
-                <input asp-for="Endtime" class="form-control" />
+                <input asp-for="Endtime" type="datetime-local" class="form-control" />
                 <span asp-validation-for="Endtime" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Courseinformation" class="control-label"></label>
-                <input asp-for="Courseinformation" class="form-control" />
+                <textarea asp-for="Courseinformation" class="form-control"></textarea>
                 <span asp-validation-for="Courseinformation" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="DayInWeek" class="control-label"></label>
                 <input asp-for="DayInWeek" class="form-control" />
                 <span asp-validation-for="DayInWeek" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="CourseImg" class="control-label"></label>
                 <input type="file" asp-for="CourseImg" class="form-control" />
                 <span asp-validation-for="CourseImg" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="UserId" class="control-label"></label>
-                <select asp-for="UserId" class ="form-control" asp-items="ViewBag.UserId"></select>
+                <select asp-for="UserId" class="form-control">
+                    @foreach (var user in ViewBag.UserId as IEnumerable<SelectListItem>)
+                    {
+                        <option value="@user.Value">@user.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="UserId" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="ClassLink" class="control-label"></label>
                 <input asp-for="ClassLink" class="form-control" />
                 <span asp-validation-for="ClassLink" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
+                <input asp-for="Price" type="number" step="0.01" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Idst" class="control-label"></label>
-                <select asp-for="Idst" class ="form-control" asp-items="ViewBag.Idst"></select>
+                <select asp-for="Idst" class="form-control">
+                    @foreach (var subject in ViewBag.Idst as IEnumerable<SelectListItem>)
+                    {
+                        <option value="@subject.Value">@subject.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="Idst" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Idtimece" class="control-label"></label>
-                <select asp-for="Idtimece" class ="form-control" asp-items="ViewBag.Idtimece"></select>
+                <select asp-for="Idtimece" class="form-control">
+                    @foreach (var timeCourse in ViewBag.Idtimece as IEnumerable<SelectListItem>)
+                    {
+                        <option value="@timeCourse.Value">@timeCourse.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="Idtimece" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Idcs" class="control-label"></label>
-                <select asp-for="Idcs" class ="form-control" asp-items="ViewBag.Idcs"></select>
+                <select asp-for="Idcs" class="form-control">
+                    @foreach (var classOption in ViewBag.Idcs as IEnumerable<SelectListItem>)
+                    {
+                        <option value="@classOption.Value">@classOption.Text</option>
+                    }
+                </select>
+                <span asp-validation-for="Idcs" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -79,4 +114,3 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-

@@ -44,6 +44,6 @@ namespace GS.Models
         [ForeignKey("UserId")]
         [ValidateNever]
         public ApplicationUser? ApplicationUser { get; set; }
-
+        //public ICollection<HomeWork> HomeWorks { get; set; }
     }
 }

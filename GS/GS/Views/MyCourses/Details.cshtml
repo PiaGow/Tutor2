@@ -1,31 +1,114 @@
 ﻿@model GS.Models.CoursesStudent
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Course Details with Homework";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var homeworkList = ViewBag.HomeworkList as List<GS.Models.HomeWork>;
+    var homeworkSubmissions = ViewBag.HomeworkSubmissions as List<GS.Models.HomeWorkStudent>;
 }
 
-<h1>Details</h1>
+<div class="container">
+    <div class="course-details">
+        <h1>Thông Tin Khóa Học</h1>
 
-<div>
-    <h4>CoursesStudent</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ApplicationUser)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ApplicationUser.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Course)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Course.Idce)
-        </dd>
-    </dl>
+        <h4></h4>
+        <div class="card mb-3">
+            <div class="card-header">
+                <h3>Chi Tiết Khóa Học</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Thông Tin Khóa Học</h4>
+                        <dl class="row">
+                            <dt class="col-sm-6">Tên Khóa Học</dt>
+                            <dd class="col-sm-6">@Model.Course.NameCourse</dd>
+
+                            <dt class="col-sm-6">Ngày Bắt Đầu</dt>
+                            <dd class="col-sm-6">
+                                @(Model.Course.Starttime.HasValue ? Model.Course.Starttime.Value.ToString("d MMM yyyy") : "N/A")
+                            </dd>
+
+                            <dt class="col-sm-6">Ngày Kết Thúc</dt>
+                            <dd class="col-sm-6">
+                                @(Model.Course.Endtime.HasValue ? Model.Course.Endtime.Value.ToString("d MMM yyyy") : "N/A")
+                            </dd>
+
+                            <dt class="col-sm-6">Ngày Học</dt>
+                            <dd class="col-sm-6">@Model.Course.DayInWeek</dd>
+                            <dt class="col-sm-6">Link Học</dt>
+                            <dd class="col-sm-6">@Model.Course.ClassLink</dd>
+                            <dt class="col-sm-6">Gia Sư</dt>
+                            <dd class="col-sm-6">@Model.ApplicationUser.FullName</dd>
+
+                        </dl>
+                    </div>
+                    @* <div class="col-md-6">
+                        <h4 class="mb-3">Thông Tin Giáo Viên</h4>
+                        <dl class="row">
+                            <dt class="col-sm-6">Giá</dt>
+                            <dd class="col-sm-6">@Model.Course.Price.ToString("C")</dd>
+
+                            
+                            <dt class="col-sm-6">Gia Sư</dt>
+                            <dd class="col-sm-6">@Model.ApplicationUser.FullName</dd>
+                        </dl>
+                    </div> *@
+                </div>
+            </div>
+        </div>
+
+
+        <div class="action-buttons">
+@*             <a asp-action="Edit" asp-route-id="@Model.Course.Idce" class="btn btn-primary">Edit</a> |
+ *@            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+
+    <div class="homework-list">
+        <h4>Danh Sách Bài Tập</h4>
+        <ul class="list-group">
+            @foreach (var homework in homeworkList)
+            {
+                <li class="list-group-item">
+                    <h5>@homework.Namehk</h5>
+                    <p>Start Time: @(homework.Timestart.HasValue ? homework.Timestart.Value.ToString("g") : "N/A")</p>
+                    <p>End Time: @(homework.Timeend.HasValue ? homework.Timeend.Value.ToString("g") : "N/A")</p>
+                    <p>Description: @homework.Details</p>
+                    <a href="@Url.Action("ViewHomework", "HomeWork", new { id = homework.Idhk })" class="btn btn-primary btn-sm">Xem Bài Tập</a>
+
+                    @* <h6>Submissions</h6>
+                    <ul>
+                        @foreach (var submission in homeworkSubmissions.Where(s => s.Idhk == homework.Idhk))
+                        {
+                            <li>
+                                <p>Student: @submission.ApplicationUser.FullName</p>
+                                <p>Submitted: @submission.TimeSubmitted</p>
+                                <p>Status: @submission.Assignmentsubmitted</p>
+                                <p>Assignment: @submission.Assigmented</p>
+                            </li>
+                        }
+                    </ul> *@
+                </li>
+            }
+        </ul>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Idcourses">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+<style>
+    .container {
+        display: flex;
+    }
+
+    .course-details {
+        flex: 3;
+        padding-right: 20px;
+    }
+
+    .homework-list {
+        flex: 1;
+        border-left: 1px solid #ddd;
+        padding-left: 20px;
+    }
+</style>

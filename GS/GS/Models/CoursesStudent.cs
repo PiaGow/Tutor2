@@ -19,6 +19,6 @@ namespace GS.Models
 		[ForeignKey("Idce")]
 		[ValidateNever]
 		public Course? Course { get; set; }
-		List<HomeWork> HomeWorks { get; set; }
+        public List<HomeWork> HomeworkList { get; set; }
     }
 }

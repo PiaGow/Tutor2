@@ -328,23 +328,17 @@ namespace GS.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Idhk"));
 
-                    b.Property<string>("Assignmentsubmitted")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("CoursesStudentIdcourses")
+                        .HasColumnType("int");
 
-                    b.Property<string>("HkDetail")
+                    b.Property<string>("Details")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Idcourse")
+                    b.Property<int>("Idce")
                         .HasColumnType("int");
 
                     b.Property<string>("Namehk")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Status")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TimeSubmitted")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("Timeend")
@@ -355,9 +349,45 @@ namespace GS.Migrations
 
                     b.HasKey("Idhk");
 
-                    b.HasIndex("Idcourse");
+                    b.HasIndex("CoursesStudentIdcourses");
+
+                    b.HasIndex("Idce");
 
                     b.ToTable("HomeWork");
+                });
+
+            modelBuilder.Entity("GS.Models.HomeWorkStudent", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Assigmented")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Assignmentsubmitted")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Idhk")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TimeSubmitted")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Idhk");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("HomeWorkStudents");
                 });
 
             modelBuilder.Entity("GS.Models.Ratting", b =>
@@ -749,13 +779,36 @@ namespace GS.Migrations
 
             modelBuilder.Entity("GS.Models.HomeWork", b =>
                 {
-                    b.HasOne("GS.Models.CoursesStudent", "CourseStudent")
+                    b.HasOne("GS.Models.CoursesStudent", null)
+                        .WithMany("HomeworkList")
+                        .HasForeignKey("CoursesStudentIdcourses");
+
+                    b.HasOne("GS.Models.Course", "Course")
                         .WithMany()
-                        .HasForeignKey("Idcourse")
+                        .HasForeignKey("Idce")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("CourseStudent");
+                    b.Navigation("Course");
+                });
+
+            modelBuilder.Entity("GS.Models.HomeWorkStudent", b =>
+                {
+                    b.HasOne("GS.Models.HomeWork", "HomeWork")
+                        .WithMany()
+                        .HasForeignKey("Idhk")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GS.Models.ApplicationUser", "ApplicationUser")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApplicationUser");
+
+                    b.Navigation("HomeWork");
                 });
 
             modelBuilder.Entity("GS.Models.Ratting", b =>
@@ -857,6 +910,11 @@ namespace GS.Migrations
             modelBuilder.Entity("GS.Models.Class", b =>
                 {
                     b.Navigation("courses");
+                });
+
+            modelBuilder.Entity("GS.Models.CoursesStudent", b =>
+                {
+                    b.Navigation("HomeworkList");
                 });
 
             modelBuilder.Entity("GS.Models.Subject", b =>
