@@ -5,12 +5,21 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Create Course</h1>
+<h1>Tạo Khóa Học Mới</h1>
 
 <hr />
 
 <div class="row">
     <div class="col-md-6">
+        @if (!ViewData.ModelState.IsValid && ViewData.ModelState[string.Empty]?.Errors.Count > 0)
+        {
+            <div class="alert alert-danger">
+                @foreach (var error in ViewData.ModelState[string.Empty].Errors)
+                {
+                    <p>@error.ErrorMessage</p>
+                }
+            </div>
+        }
         <form asp-action="Create" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label asp-for="NameCourse" class="control-label"></label>
@@ -49,9 +58,9 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="UserId" class="control-label"></label>
+                <label asp-for="ApplicationUser.FullName" class="control-label"></label>
                 <select asp-for="UserId" class="form-control">
-                    @foreach (var user in ViewBag.UserId as IEnumerable<SelectListItem>)
+                    @foreach (var user in ViewData["UserId"] as IEnumerable<SelectListItem>)
                     {
                         <option value="@user.Value">@user.Text</option>
                     }
@@ -72,9 +81,9 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="Idst" class="control-label"></label>
+                <label asp-for="Subject.Namest" class="control-label"></label>
                 <select asp-for="Idst" class="form-control">
-                    @foreach (var subject in ViewBag.Idst as IEnumerable<SelectListItem>)
+                    @foreach (var subject in ViewData["Idst"] as IEnumerable<SelectListItem>)
                     {
                         <option value="@subject.Value">@subject.Text</option>
                     }
@@ -85,7 +94,7 @@
             <div class="form-group">
                 <label asp-for="Idtimece" class="control-label"></label>
                 <select asp-for="Idtimece" class="form-control">
-                    @foreach (var timeCourse in ViewBag.Idtimece as IEnumerable<SelectListItem>)
+                    @foreach (var timeCourse in ViewData["Idtimece"] as IEnumerable<SelectListItem>)
                     {
                         <option value="@timeCourse.Value">@timeCourse.Text</option>
                     }
@@ -94,9 +103,9 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="Idcs" class="control-label"></label>
+                <label asp-for="Class.Name" class="control-label"></label>
                 <select asp-for="Idcs" class="form-control">
-                    @foreach (var classOption in ViewBag.Idcs as IEnumerable<SelectListItem>)
+                    @foreach (var classOption in ViewData["Idcs"] as IEnumerable<SelectListItem>)
                     {
                         <option value="@classOption.Value">@classOption.Text</option>
                     }

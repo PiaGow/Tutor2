@@ -11,8 +11,8 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"> </div>
             <input type="hidden" asp-for="Idce" />
             <div class="form-group">
                 <label asp-for="NameCourse" class="control-label"></label>
@@ -41,11 +41,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="CourseImg" class="control-label"></label>
-                <input type="file" asp-for="CourseImg" class="form-control" id="imageInput" />
+                <input type="file" asp-for="CourseImg" class="form-control" name="CourseImg" id="CourseImg" />
+                <span asp-validation-for="CourseImg" class="text-danger"></span>
                 <br />
                 <img id="previewImage" alt="New Image" style="max-width:200px;" />
                 <img src="@Model.CourseImg" alt="Product Image" style="max-width:200px;" />
-                <span asp-validation-for="CourseImg" class="text-danger"></span>
+               
             </div>
             <div class="form-group">
                 <label asp-for="UserId" class="control-label"></label>

@@ -8,101 +8,199 @@
 
 }
 
-<h1>@ViewData["Title"]</h1>
-
-<!-- Include your chart.js library here -->
-<canvas id="revenueChart" width="400" height="200"></canvas>
-
-<!-- Display detailed revenue data -->
-<div>
-    @* <h2>Revenue Details:</h2>
-    <ul>
-        @foreach (var entry in Model.MonthlyRevenueDetails)
-        {
-            <li>@entry.Key: @entry.Value.ToString("C")</li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            overflow-x: hidden;
         }
-    </ul> *@
-    <h3>Tổng Doanh Thu: @totalRevenue.ToString("C")</h3> <!-- Display total revenue -->
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        #sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 57px;
+            left: -250px;
+            background-color: #f8f9fa;
+            transition: left 0.3s;
+            z-index: 1000;
+        }
 
-<script>
-    var ctx = document.getElementById('revenueChart').getContext('2d');
-    var revenueChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Labels)),
-            datasets: [
-                {
-                    label: 'Revenue',
-                    data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Revenues)),
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)',
-                        'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)',
-                        'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)',
-                        'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)'
-                    ]
-                }
-            ]
-        },
-        options: {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            },
-            onClick: function (e, element) {
-                if (element.length > 0) {
-                    var index = element[0].index;
-                    var label = revenueChart.data.labels[index];
-                    loadBillDetails(label);
-                }
+            #sidebar.active {
+                left: 0;
+            }
+
+        #sidebarToggle {
+            position: fixed;
+            top: 500px;
+            left: 60px;
+            z-index: 1100;
+        }
+
+        .content {
+            margin-left: 20px;
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+
+            .content.shifted {
+                margin-left: 270px;
+            }
+
+        .nav-link {
+            color: #000;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+            .nav-link:hover {
+                background-color: #007bff;
+                color: #fff;
+            }
+
+            .nav-link:active {
+                background-color: #0056b3;
+                color: #fff;
+            }
+    </style>
+</head>
+<body>
+
+    <button class="btn btn-primary" id="sidebarToggle">☰</button>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header p-3">
+            <h3>Menu</h3>
+        </div>
+        <nav class="nav flex-column">
+            <a class="nav-link p-3" href="/">Home</a>
+            <a class="nav-link p-3" href="/Revenue/RevenueComparison">Doanh Thu</a>
+            <a class="nav-link p-3" href="/Admin/ManageClasses">Quản Lý Lớp</a>
+            <a class="nav-link p-3" href="/Admin/ManageSubjects">Quản Lý Môn Học</a>
+            <a class="nav-link p-3" href="/Admin/ManageCourses">Quản Lý Khóa Học</a>
+            <a class="nav-link p-3" href="/Admin/ManageUsers">Quản Lý User</a>
+        </nav>
+    </div>
+
+    <div class="content" id="content">
+        <h1>@ViewData["Title"]</h1>
+
+        <canvas id="revenueChart" width="400" height="200"></canvas>
+
+        <div>
+            <h3>Tổng Doanh Thu: @totalRevenue.ToString("C")</h3>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#sidebarToggle').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('shifted');
+            });
+        });
+
+        function handleSearch(event) {
+            event.preventDefault();
+
+            var query = document.getElementById('searchQuery').value;
+
+            if (query) {
+                $.ajax({
+                    url: '@Url.Action("SearchCourse", "Courses")',
+                    type: 'GET',
+                    data: { search: query },
+                    success: function (response) {
+                        console.log(response);
+                        $('#courses-list').html(response);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Error loading search results:', xhr.responseText);
+                        alert('Error loading search results: ' + xhr.responseText);
+                    }
+                });
             }
         }
-    });
 
-    function loadBillDetails(month) {
-        console.log('Loading details for month:', month); // Debug log
-
-        // Format month as expected (trim and capitalize).
-        month = month.trim().toUpperCase();
-
-        $.ajax({
-            url: '@Url.Action("GetBillDetails", "Revenue")',
-            type: 'GET',
-            data: { month: month },
-            success: function (response) {
-                console.log('Success:', response); // Debug log
-                $('#billDetailsModal .modal-body').html(response);
-                $('#billDetailsModal').modal('show');
+        var ctx = document.getElementById('revenueChart').getContext('2d');
+        var revenueChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Labels)),
+                datasets: [
+                    {
+                        label: 'Revenue',
+                        data: @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.Revenues)),
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)',
+                            'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)',
+                            'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)',
+                            'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)'
+                        ]
+                    }
+                ]
             },
-            error: function (xhr, status, error) {
-                console.error('Error loading bill details:', xhr.responseText); // Detailed error log
-                alert('Error loading bill details: ' + xhr.responseText);
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                onClick: function (e, element) {
+                    if (element.length > 0) {
+                        var index = element[0].index;
+                        var label = revenueChart.data.labels[index];
+                        loadBillDetails(label);
+                    }
+                }
             }
         });
-    }
-</script>
 
+        function loadBillDetails(month) {
+            console.log('Loading details for month:', month);
 
+            month = month.trim().toUpperCase();
 
-<!-- Modal for displaying bill details -->
-<div class="modal fade" id="billDetailsModal" tabindex="-1" aria-labelledby="billDetailsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="billDetailsModalLabel">Chi Tiết Doanh Thu Tháng</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Bill details will be loaded here -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            $.ajax({
+                url: '@Url.Action("GetBillDetails", "Revenue")',
+                type: 'GET',
+                data: { month: month },
+                success: function (response) {
+                    console.log('Success:', response);
+                    $('#billDetailsModal .modal-body').html(response);
+                    $('#billDetailsModal').modal('show');
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error loading bill details:', xhr.responseText);
+                    alert('Error loading bill details: ' + xhr.responseText);
+                }
+            });
+        }
+    </script>
+
+    <div class="modal fade" id="billDetailsModal" tabindex="-1" aria-labelledby="billDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="billDetailsModalLabel">Chi Tiết Doanh Thu Tháng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Bill details will be loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+</body>
+</html>

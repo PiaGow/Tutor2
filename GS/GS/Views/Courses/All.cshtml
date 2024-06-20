@@ -48,14 +48,45 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 sidebar">
+
+					@* -------search------- *@
 					<div class="sidebar-box bg-white ftco-animate">
-						<form id="searchForm" class="search-form" onsubmit="return false;">
+						<form id="searchForm" class="search-form" onsubmit="handleSearch(event)">
 							<div class="form-group">
-								<span class="icon fa fa-search"></span>
+								<button class="icon fa fa-search" onclick="handleSearch(event)"></button>
 								<input type="text" id="searchQuery" class="form-control" placeholder="Search...">
 							</div>
 						</form>
 					</div>
+
+					
+
+					<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+					<script>
+						function handleSearch(event) {
+							event.preventDefault(); // Ngăn chặn việc gửi biểu mẫu theo cách thông thường
+
+							// Lấy giá trị từ ô input
+							var query = document.getElementById('searchQuery').value;
+
+							// Thực hiện hành động tìm kiếm
+							if (query) {
+								$.ajax({
+									url: '@Url.Action("SearchCourse", "Courses")',
+									type: 'GET',
+									data: { search: query },
+									success: function (response) {
+										console.log(response);
+										$('#courses-list').html(response);
+									},
+									error: function (xhr, status, error) {
+										console.error(error);
+									}
+								});
+							}
+						}
+					</script>
+
 					@* ------------------- thẻ Lớp học------------------- *@
 					<div class="sidebar-box bg-white p-4 ftco-animate">
 						<h3 class="heading-sidebar">Lớp Học</h3>

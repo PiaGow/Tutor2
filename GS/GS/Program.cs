@@ -55,31 +55,31 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllerRoute(
-        name: "paymentNotifyRoute",
-        pattern: "Courses/PaymentNotify",
-        defaults: new { controller = "Courses", action = "PaymentNotify" });
-    endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}");
-});
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{id?}");
-////app.UseEndpoints(endpoints =>
-////{
-////    endpoints.MapControllerRoute(
-////        name: "default",
-////        pattern: "{controller=Home}/{action=Index}/{id?}");
-////});
-//app.MapControllerRoute(
-//            name: "paymentNotify",
-//            pattern: "Courses/PaymentNotify",
-//            defaults: new { controller = "Courses", action = "PaymentNotify" });
-//app.MapControllerRoute(
-//	   name: "courseByClass",
-//	   pattern: "Course/ByClass/{id}",
-//	   defaults: new { controller = "Course", action = "ByClass" });
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllerRoute(
+//        name: "paymentNotifyRoute",
+//        pattern: "Courses/PaymentNotify",
+//        defaults: new { controller = "Courses", action = "PaymentNotify" });
+//    endpoints.MapControllerRoute(
+//        name: "default",
+//        pattern: "{controller=Home}/{action=Index}/{id?}");
+//});
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+//app.UseEndpoints(endpoints =>
+//{
+//    endpoints.MapControllerRoute(
+//        name: "default",
+//        pattern: "{controller=Home}/{action=Index}/{id?}");
+//});
+app.MapControllerRoute(
+            name: "paymentNotify",
+            pattern: "Courses/PaymentNotify",
+            defaults: new { controller = "Courses", action = "PaymentNotify" });
+app.MapControllerRoute(
+       name: "courseByClass",
+       pattern: "Course/ByClass/{id}",
+       defaults: new { controller = "Course", action = "ByClass" });
 app.Run();

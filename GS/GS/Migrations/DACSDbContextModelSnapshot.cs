@@ -22,51 +22,6 @@ namespace GS.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ApplicationUserClass", b =>
-                {
-                    b.Property<int>("ClassesIdcs")
-                        .HasColumnType("int");
-
-                    b.Property<string>("applicationsId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("ClassesIdcs", "applicationsId");
-
-                    b.HasIndex("applicationsId");
-
-                    b.ToTable("ApplicationUserClass");
-                });
-
-            modelBuilder.Entity("ApplicationUserSubject", b =>
-                {
-                    b.Property<int>("SubjectsIdst")
-                        .HasColumnType("int");
-
-                    b.Property<string>("applicationsId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("SubjectsIdst", "applicationsId");
-
-                    b.HasIndex("applicationsId");
-
-                    b.ToTable("ApplicationUserSubject");
-                });
-
-            modelBuilder.Entity("ClassSubject", b =>
-                {
-                    b.Property<int>("classesIdcs")
-                        .HasColumnType("int");
-
-                    b.Property<int>("subjectsIdst")
-                        .HasColumnType("int");
-
-                    b.HasKey("classesIdcs", "subjectsIdst");
-
-                    b.HasIndex("subjectsIdst");
-
-                    b.ToTable("ClassSubject");
-                });
-
             modelBuilder.Entity("GS.Models.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
@@ -225,12 +180,17 @@ namespace GS.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Idcs"));
 
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Idcs");
+
+                    b.HasIndex("ApplicationUserId");
 
                     b.ToTable("Class");
                 });
@@ -476,10 +436,15 @@ namespace GS.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Idst"));
 
+                    b.Property<string>("ApplicationUserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Namest")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Idst");
+
+                    b.HasIndex("ApplicationUserId");
 
                     b.ToTable("Subjects");
                 });
@@ -660,51 +625,6 @@ namespace GS.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("ApplicationUserClass", b =>
-                {
-                    b.HasOne("GS.Models.Class", null)
-                        .WithMany()
-                        .HasForeignKey("ClassesIdcs")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GS.Models.ApplicationUser", null)
-                        .WithMany()
-                        .HasForeignKey("applicationsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ApplicationUserSubject", b =>
-                {
-                    b.HasOne("GS.Models.Subject", null)
-                        .WithMany()
-                        .HasForeignKey("SubjectsIdst")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GS.Models.ApplicationUser", null)
-                        .WithMany()
-                        .HasForeignKey("applicationsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ClassSubject", b =>
-                {
-                    b.HasOne("GS.Models.Class", null)
-                        .WithMany()
-                        .HasForeignKey("classesIdcs")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GS.Models.Subject", null)
-                        .WithMany()
-                        .HasForeignKey("subjectsIdst")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("GS.Models.Assess", b =>
                 {
                     b.HasOne("GS.Models.ApplicationUser", "ApplicationUser")
@@ -723,16 +643,23 @@ namespace GS.Migrations
                     b.Navigation("ApplicationUser");
                 });
 
+            modelBuilder.Entity("GS.Models.Class", b =>
+                {
+                    b.HasOne("GS.Models.ApplicationUser", null)
+                        .WithMany("Classes")
+                        .HasForeignKey("ApplicationUserId");
+                });
+
             modelBuilder.Entity("GS.Models.Course", b =>
                 {
                     b.HasOne("GS.Models.Class", "Class")
-                        .WithMany("courses")
+                        .WithMany()
                         .HasForeignKey("Idcs")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("GS.Models.Subject", "Subject")
-                        .WithMany("courses")
+                        .WithMany()
                         .HasForeignKey("Idst")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -840,6 +767,13 @@ namespace GS.Migrations
                         .HasForeignKey("ApplicationUserId");
                 });
 
+            modelBuilder.Entity("GS.Models.Subject", b =>
+                {
+                    b.HasOne("GS.Models.ApplicationUser", null)
+                        .WithMany("Subjects")
+                        .HasForeignKey("ApplicationUserId");
+                });
+
             modelBuilder.Entity("GS.Models.TransactionHistory", b =>
                 {
                     b.HasOne("GS.Models.Bill", "Bill")
@@ -904,22 +838,16 @@ namespace GS.Migrations
 
             modelBuilder.Entity("GS.Models.ApplicationUser", b =>
                 {
-                    b.Navigation("service");
-                });
+                    b.Navigation("Classes");
 
-            modelBuilder.Entity("GS.Models.Class", b =>
-                {
-                    b.Navigation("courses");
+                    b.Navigation("Subjects");
+
+                    b.Navigation("service");
                 });
 
             modelBuilder.Entity("GS.Models.CoursesStudent", b =>
                 {
                     b.Navigation("HomeworkList");
-                });
-
-            modelBuilder.Entity("GS.Models.Subject", b =>
-                {
-                    b.Navigation("courses");
                 });
 #pragma warning restore 612, 618
         }

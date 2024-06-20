@@ -14,6 +14,8 @@
             overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
+        
+
         .navbar {
             background-color: #3c4043;
             color: white;
@@ -86,31 +88,43 @@
         .course-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 2rem; /* Increased gap between items */
+            list-style: none;
+            padding: 0;
         }
 
         .course-card {
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: calc(33.333% - 40px);
-            margin-bottom: 20px;
-            transition: transform 0.2s;
+            flex: 1 1 calc(50% - 2rem); /* Adjusted width */
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            padding: 2rem; /* Increased padding */
+            transition: transform 0.2s, box-shadow 0.2s;
+            min-height: 200px; /* Adjusted height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
         }
 
-            .course-card:hover {
-                transform: translateY(-5px);
-            }
-
-        .course-title {
-            font-size: 1.2em;
-            margin-bottom: 10px;
+        .course-card-title {
+            font-size: 2rem; /* Adjusted font size */
+            font-weight: bold;
+            margin-bottom: 1rem;
         }
 
-        .course-description {
-            color: #757575;
+        .course-card-description {
+            font-size: 1.5rem; /* Adjusted font size */
+            color: #555;
         }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+
     </style>
 </head>
 <body>
@@ -160,14 +174,19 @@
                     <ul class="course-list">
                         @foreach (var homework in Model.HomeworkList)
                         {
-                            <div class="course-card" onclick="location.href='@Url.Action("Details", "Homework", new { id = homework.Idhk })'">
-                                <div class="course-card-title">@homework.Namehk</div>
-                                <div class="course-card-description">@homework.Timeend</div>
-                            </div>
-
-                           
+                            <li class="course-card-container" onclick="location.href='@Url.Action("Details", "Homework", new { id = homework.Idhk })'">
+                                <div class="course-card">
+                                    <div class="course-card-title">
+                                        @homework.Namehk
+                                    </div>
+                                    <div class="course-card-description">
+                                        @homework.Timeend
+                                    </div>
+                                </div>
+                            </li>
                         }
                     </ul>
+
                     <br>
                     <!-- Button to Create Homework -->
                     <form method="post" asp-action="Create" asp-controller="HomeWork" asp-route-idce="@Model.Course.Idce">

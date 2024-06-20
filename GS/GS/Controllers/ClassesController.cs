@@ -23,7 +23,6 @@ namespace GS.Controllers
 		{
 			// return await _context.Products.ToListAsync();
 			return await _context.Class
-			.Include(p => p.courses) // Include thông tin về category
 			.ToListAsync();
 		}
         // GET: Classes

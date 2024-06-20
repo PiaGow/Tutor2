@@ -69,7 +69,50 @@ namespace GS.Controllers
 			return Json(courses);
 		}
 
-        [HttpGet]
+		[HttpGet]
+        public async Task<IActionResult> SearchCourse(string search, int page=1,int pageSize = 6)
+        {
+			IQueryable<Course> query = _context.Courses.Include(c => c.Class)
+													  .Include(c => c.Subject)
+													  .Include(c => c.ApplicationUser);
+			// Kiểm tra nếu không có phân loại
+			if (string.IsNullOrEmpty(search))
+			{
+				// Trả về tất cả khóa học nếu không có phân loại
+				var courses = await query.ToListAsync();
+				if (courses.IsNullOrEmpty())
+				{
+					return Content("Không Tìm Thấy Khóa Học Cần Tìm");
+				}
+
+				var totalItems = courses.Count;
+				var coursesPaged = courses.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+				var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+				var model = new PaginatedList<Course>(coursesPaged, totalItems, page, pageSize);
+
+				return PartialView("_View", model);
+			}
+            else
+            {
+				var queryByClassAndSubject = _context.Courses.Include(c => c.Class)
+															.Include(c => c.Subject)
+															.Include(c => c.ApplicationUser)
+															.Where(c => search.Contains(c.Class.Name) || search.Contains(c.Subject.Namest) || search.Contains(c.Subject.Namest))
+															.ToList();
+                if (queryByClassAndSubject.Count >0)
+                {
+					var totalItems = queryByClassAndSubject.Count;
+					var coursesPaged = queryByClassAndSubject.Skip((page - 1) * pageSize).Take(pageSize).ToList();
+					var totalPages = (int)Math.Ceiling(totalItems / (double)pageSize);
+					var model = new PaginatedList<Course>(coursesPaged, totalItems, page, pageSize);
+
+					return PartialView("_View", model);
+				}
+				return Content("Không Tìm Thấy Khóa Học Cần Tìm");
+			}
+		}
+
+		[HttpGet]
         public async Task<IActionResult> GetCoursesByCategories(string categories, int page = 1, int pageSize = 6)
         {
             var selectedCategories = categories?.Split(',') ?? new string[0];
@@ -159,8 +202,9 @@ namespace GS.Controllers
 
 
 
+		[Authorize]
 
-        public async Task<IActionResult> Index()
+		public async Task<IActionResult> Index()
         {
             // Assuming you have a way to get the currently logged-in user's ID
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -254,7 +298,13 @@ namespace GS.Controllers
                 .Where(c => c.Idcs == course.Idcs && c.Idce != course.Idce)
                 .Include(c => c.ApplicationUser)
                 .ToList();
-
+            if(suggestedCourses==null)
+            {
+				suggestedCourses = _context.Courses
+				.Where(c => c.Idst == course.Idst && c.Idst != course.Idst)
+				.Include(c => c.ApplicationUser)
+				.ToList();
+			}
             var viewModel = new CourseDetailsViewModel
             {
                 Course = course,
@@ -267,41 +317,80 @@ namespace GS.Controllers
         // GET: Courses/Create
         public IActionResult Create()
         {
-            ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id");
-            ViewData["Idcs"] = new SelectList(_context.Class, "Idcs", "Name");
-            ViewData["Idst"] = new SelectList(_context.Subjects, "Idst", "Namest");
-            ViewData["Idtimece"] = new SelectList(_context.TimeCourses, "Idtimece", "Idtimece");
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = _context.ApplicationUsers.SingleOrDefault(u => u.Id == userId);
+            var classes = _context.Class.ToList();
+            var subjects = _context.Subjects.ToList();
+            var timeCourses = _context.TimeCourses.ToList();
+
+            if (user == null || classes == null || subjects == null || timeCourses == null)
+            {
+                // Xử lý lỗi nếu dữ liệu không có sẵn
+                return View("Error", new ErrorViewModel { ErrorMessage = "Dữ liệu không tìm thấy." });
+            }
+
+            ViewData["UserId"] = new SelectList(new List<ApplicationUser> { user }, "Id", "FullName", user.Id);
+            ViewData["Idcs"] = new SelectList(classes, "Idcs", "Name");
+            ViewData["Idst"] = new SelectList(subjects, "Idst", "Namest");
+            ViewData["Idtimece"] = new SelectList(timeCourses, "Idtimece", "Idtimece");
+
             return View();
         }
 
-        // POST: Courses/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        // POST: Courses/Create
         [HttpPost]
         public async Task<IActionResult> Create(Course course, IFormFile courseImg)
         {
             if (ModelState.IsValid)
             {
-                if (courseImg != null)
+                if (course.Starttime >= DateTime.Now)
                 {
-                    course.CourseImg = await SaveImage(courseImg);
-                }
+                    if (course.Starttime < course.Endtime)
+                    {
+                        if (courseImg != null)
+                        {
+                            course.CourseImg = await SaveImage(courseImg);
+                        }
 
-                
-                _context.Courses.Add(course);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                        _context.Courses.Add(course);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Ngày giờ bắt đầu của khóa học phải lớn hơn ngày kết thúc khóa học!.");
+                    }    
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Ngày giờ bắt đầu của khóa học phải lớn hơn hoặc bằng thời gian hiện tại.");
+                }
             }
 
-            // If model state is not valid, set necessary ViewData
-            ViewData["UserId"] = new SelectList(_context.ApplicationUsers, "Id", "Id", course.UserId);
-            ViewData["Idcs"] = new SelectList(_context.Class, "Idcs", "Name", course.Idcs);
-            ViewData["Idst"] = new SelectList(_context.Subjects, "Idst", "Namest", course.Idst);
-            ViewData["Idtimece"] = new SelectList(_context.TimeCourses, "Idtimece", "Idtimece", course.Idtimece);
+            // Nếu model state không hợp lệ, thiết lập lại ViewData
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = _context.ApplicationUsers.SingleOrDefault(u => u.Id == userId);
+            var classes = _context.Class.ToList();
+            var subjects = _context.Subjects.ToList();
+            var timeCourses = _context.TimeCourses.ToList();
+
+            if (user == null || classes == null || subjects == null || timeCourses == null)
+            {
+                // Xử lý lỗi nếu dữ liệu không có sẵn
+                return View("Error", new ErrorViewModel { ErrorMessage = "Dữ liệu không tìm thấy." });
+            }
+
+            ViewData["UserId"] = new SelectList(new List<ApplicationUser> { user }, "Id", "FullName", user.Id);
+            ViewData["Idcs"] = new SelectList(classes, "Idcs", "Name", course.Idcs);
+            ViewData["Idst"] = new SelectList(subjects, "Idst", "Namest", course.Idst);
+            ViewData["Idtimece"] = new SelectList(timeCourses, "Idtimece", "Idtimece", course.Idtimece);
 
             return View(course);
         }
+
+
+
+
+
 
 
         private async Task<string> SaveImage(IFormFile image)
@@ -320,6 +409,7 @@ namespace GS.Controllers
 
         // GET: Courses/Edit/5
         [Authorize]
+
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -339,12 +429,13 @@ namespace GS.Controllers
             return View(course);
         }
 
+
         // POST: Courses/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Idce,NameCourse,Starttime,Endtime,Courseinformation,DayInWeek,CourseImg,UserId,ClassLink,Price,Idst,Idtimece,Idcs")] Course course)
+        public async Task<IActionResult> Edit(int id,  Course course,IFormFile CourseImg)
         {
             if (id != course.Idce)
             {
@@ -355,6 +446,10 @@ namespace GS.Controllers
             {
                 try
                 {
+                    if (CourseImg != null)
+                    {
+                        course.CourseImg = await SaveImage(CourseImg);
+                    }
                     _context.Update(course);
                     await _context.SaveChangesAsync();
                 }

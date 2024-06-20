@@ -10,8 +10,6 @@ namespace GS.Models
         [Required, StringLength(100)]
         [DisplayName("Tên Lớp Học")]
         public string? Name { get; set; }
-        public List<Course> courses { get; set; }
-        public List<Subject> subjects { get; set; }
-        public List<ApplicationUser> applications { get; set; }
+
     }
 }
